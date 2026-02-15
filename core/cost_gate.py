@@ -126,3 +126,69 @@ class CostGate:
         }
         with self.log_path.open("w") as f:
             json.dump(log_data, f, indent=2)
+
+
+
+# Global instance
+_gate: Optional[CostGate] = None
+
+
+def get_gate() -> CostGate:
+    """Get global cost gate instance"""
+    global _gate
+    if _gate is None:
+        from pathlib import Path
+        base_path = Path(__file__).parent.parent
+        rules_path = base_path / "config" / "cost_optimization_rules.yaml"
+        
+        # Default rules if config doesn't exist
+        default_rules = {
+            "openai_first": True,
+            "require_justification": ["search", "browser", "map"],
+            "cost_thresholds": {
+                "low": 5,
+                "medium": 20,
+                "high": 50
+            }
+        }
+        
+        _gate = CostGate(default_rules, base_path)
+    return _gate
+
+
+def should_allow_operation(
+    action_type: str,
+    task_description: str,
+    proposed_tool: str,
+    estimated_cost: float
+) -> tuple[bool, str, float, str]:
+    """
+    Convenience function to check if an operation should be allowed.
+    
+    Args:
+        action_type: Type of action (research, analysis, etc.)
+        task_description: Description of the task
+        proposed_tool: Tool the agent wants to use
+        estimated_cost: Estimated cost in credits
+    
+    Returns:
+        Tuple of (allowed, recommended_tool, final_cost, reason)
+        - allowed: True if operation should proceed
+        - recommended_tool: Tool to use (original or alternative)
+        - final_cost: Estimated cost for recommended tool
+        - reason: Explanation of the decision
+    
+    Example:
+        >>> allowed, tool, cost, reason = should_allow_operation(
+        ...     "research", 
+        ...     "Find information about file indexing",
+        ...     "search",
+        ...     20.0
+        ... )
+        >>> if not allowed:
+        ...     print(f"Blocked: {reason}. Use {tool} instead (cost: {cost}).")
+        >>> else:
+        ...     print(f"Approved: {reason}")
+    """
+    gate = get_gate()
+    return gate.validate_action(action_type, task_description, proposed_tool, estimated_cost)

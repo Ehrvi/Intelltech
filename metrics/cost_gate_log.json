@@ -1,46 +1,15 @@
 {
-  "blocks": [
-    {
-      "timestamp": "2026-02-15T05:32:32.223742",
-      "action_type": "research",
-      "task": "Find top 10 construction companies in Australia",
-      "proposed_tool": "manus_browser",
-      "recommended_tool": "openai_api",
-      "reason": "BLOCKED: OpenAI can handle this for 0.01 credits (vs 50 for manus_browser). Savings: 49.99 credits"
-    },
-    {
-      "timestamp": "2026-02-15T05:32:32.224009",
-      "action_type": "summarization",
-      "task": "Summarize this 50-page report",
-      "proposed_tool": "manus_research",
-      "recommended_tool": "openai_api",
-      "reason": "BLOCKED: OpenAI can handle this for 0.01 credits (vs 40 for manus_research). Savings: 39.99 credits"
-    }
-  ],
+  "blocks": [],
   "approvals": [
     {
-      "timestamp": "2026-02-15T05:32:32.224206",
-      "action_type": "translation",
-      "task": "Translate document to Portuguese",
-      "tool": "openai_api",
-      "reason": "APPROVED: openai_api cost (0.01 credits) is reasonable"
-    },
-    {
-      "timestamp": "2026-02-15T05:32:32.224533",
-      "action_type": "data_collection",
-      "task": "Collect stock prices for AAPL",
-      "tool": "apollo_api",
-      "reason": "APPROVED: apollo_api cost (2.5 credits) is reasonable"
-    },
-    {
-      "timestamp": "2026-02-15T05:32:32.224766",
-      "action_type": "knowledge_lookup",
-      "task": "Find existing initialization system",
-      "tool": "manus_search",
-      "reason": "WARNING: manus_search is expensive (30 credits). Consider alternatives or get user approval."
+      "timestamp": "2026-02-15T11:31:15.271143",
+      "action_type": "research",
+      "task": "Test task",
+      "tool": "search",
+      "reason": "APPROVED: search cost (20.0000 credits) is within acceptable limits."
     }
   ],
-  "total_blocks": 2,
-  "total_approvals": 3,
-  "block_rate": 0.4
+  "total_blocks": 0,
+  "total_approvals": 1,
+  "block_rate": 0.0
 }

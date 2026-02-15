@@ -326,6 +326,11 @@ def get_recommendations() -> List[str]:
     return engine.get_recommendations()
 
 
+def analyze_and_learn() -> str:
+    """Analyze operations and learn patterns (alias for learn_and_improve)"""
+    return learn_and_improve()
+
+
 if __name__ == '__main__':
     # Demo
     engine = SelfImprovementEngine()
