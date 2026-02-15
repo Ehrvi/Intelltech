@@ -28,8 +28,8 @@
   "archive/MANUS_GLOBAL_SYSTEM_V2_FINAL/MANUS_GLOBAL_SYSTEM_V2_ARCHITECTURE.md": "886ace2fd492f253df3dffe271226f31",
   "archive/MANUS_GLOBAL_SYSTEM_V2_FINAL/README.md": "51cf2ee0b5b8e8359193be472d199599",
   "archive/MANUS_GLOBAL_SYSTEM_V2_FINAL/UNIFIED_ENFORCEMENT_PIPELINE.md": "340a8e819b4ad0f2980d607df85de5c1",
-  "core/SCIENTIFIC_METHODOLOGY_REQUIREMENTS.md": "deea7cd4602697804fe4e045f4aef3a6",
-  "core/COGNITIVE_ENFORCEMENT_PROTOCOL.md": "c273563281509e71d1b728c5b569e56d",
+  "core/SCIENTIFIC_METHODOLOGY_REQUIREMENTS.md": "a7ae91a96025aa98752be6464fbd0189",
+  "core/COGNITIVE_ENFORCEMENT_PROTOCOL.md": "7306198c4e51aa9a059712074f791b68",
   "core/SCIENTIFIC_METHODOLOGY_REQUIREMENTS_V1_BACKUP.md": "f8c6ca2c00101f62491ce48ffb397a25",
   "cross_project/shared_processes.md": "791c2b9a2d4881abd59d18ab723bc9b2",
   "docs/architecture/MANUS_GLOBAL_SYSTEM.md": "c954a31d74950f09a0f083b440c8a6ab",
@@ -69,5 +69,9 @@
   "projects/intelltech/data/market_data/competitive_intelligence.md": "5306b0f04d14e45567adfa57d0f19e23",
   "projects/intelltech/data/market_data/strategic_frameworks.md": "2bb36280f21f81ede2a51614d01950b0",
   "projects/intelltech/data/research/best_practices_findings.md": "430abf64a63bafa5359ee5f07aadc988",
-  "skills/manus-global-init/SKILL.md": "bc44652b755d4c8f324740ca4d06a84b"
+  "skills/manus-global-init/SKILL.md": "bc44652b755d4c8f324740ca4d06a84b",
+  "ai_university/lessons/LESSON_020_Integrated_Development_Process.md": "12603f43a63632acbcc01738eaedee10",
+  "ai_university/lessons/LESSON_021_Scientific_Foundation_Mandatory.md": "d88c08ed6ac4001fbdb5152021cb21b7",
+  "docs/prompts/prompt_knowledge_indexing_system_v2.md": "d99f6508c2a4b6fd564f0318b8535fe1",
+  "docs/validation/prompt_validation_report.md": "a41d240eef4dd3546df403b053a59741"
 }
