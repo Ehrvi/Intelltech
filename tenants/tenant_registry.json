@@ -1,0 +1,98 @@
+{
+  "tenants": {
+    "b70f10a739c36840": {
+      "tenant_id": "b70f10a739c36840",
+      "tenant_name": "Acme Corp",
+      "plan": "enterprise",
+      "api_key": "2p2MjSP00HSaiVcOdTC2g6V1dKQSRtunNstOeHvhlI4",
+      "created_at": "2026-02-15T13:46:22.818680",
+      "status": "active",
+      "quotas": {
+        "max_tasks_per_day": -1,
+        "max_storage_mb": -1,
+        "max_compute_hours_per_month": -1,
+        "max_api_calls_per_day": -1,
+        "features": [
+          "basic",
+          "analytics",
+          "ml",
+          "predictive",
+          "priority_support",
+          "custom",
+          "sla"
+        ]
+      },
+      "usage": {
+        "tasks_count": 50,
+        "storage_mb": 0,
+        "compute_hours": 5.5,
+        "api_calls": 0
+      },
+      "config": {
+        "custom_branding": true,
+        "sla": "99.9%"
+      },
+      "directory": "/home/ubuntu/manus_global_knowledge/tenants/b70f10a739c36840"
+    },
+    "228b10ef457b75a9": {
+      "tenant_id": "228b10ef457b75a9",
+      "tenant_name": "StartupXYZ",
+      "plan": "premium",
+      "api_key": "yVOcjOxSy3YnesSbRj8nVawlk2deyo1hi-2jBFwQvUw",
+      "created_at": "2026-02-15T13:46:22.819346",
+      "status": "active",
+      "quotas": {
+        "max_tasks_per_day": 1000,
+        "max_storage_mb": 10000,
+        "max_compute_hours_per_month": 1000,
+        "max_api_calls_per_day": 10000,
+        "features": [
+          "basic",
+          "analytics",
+          "ml",
+          "predictive",
+          "priority_support"
+        ]
+      },
+      "usage": {
+        "tasks_count": 0,
+        "storage_mb": 0,
+        "compute_hours": 0,
+        "api_calls": 0
+      },
+      "config": {
+        "priority_support": true
+      },
+      "directory": "/home/ubuntu/manus_global_knowledge/tenants/228b10ef457b75a9",
+      "updated_at": "2026-02-15T13:46:22.821484"
+    },
+    "65723ca7f5565065": {
+      "tenant_id": "65723ca7f5565065",
+      "tenant_name": "FreeTier User",
+      "plan": "free",
+      "api_key": "tLsLR0Mozfc-23dCVkgJD9W2Ug7-nMVlfckNOjb5klM",
+      "created_at": "2026-02-15T13:46:22.819883",
+      "status": "deleted",
+      "quotas": {
+        "max_tasks_per_day": 10,
+        "max_storage_mb": 100,
+        "max_compute_hours_per_month": 10,
+        "max_api_calls_per_day": 100,
+        "features": [
+          "basic"
+        ]
+      },
+      "usage": {
+        "tasks_count": 8,
+        "storage_mb": 0,
+        "compute_hours": 0,
+        "api_calls": 75
+      },
+      "config": {},
+      "directory": "/home/ubuntu/manus_global_knowledge/tenants/65723ca7f5565065",
+      "deleted_at": "2026-02-15T13:46:22.821786"
+    }
+  },
+  "created_at": "2026-02-15T13:46:22.818256",
+  "total_tenants": 3
+}

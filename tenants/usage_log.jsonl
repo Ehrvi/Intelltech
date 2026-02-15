@@ -1,0 +1,9 @@
+{"timestamp": "2026-02-15T13:46:22.818996", "tenant_id": "b70f10a739c36840", "event": "tenant_created", "details": {"tenant_name": "Acme Corp", "plan": "enterprise"}}
+{"timestamp": "2026-02-15T13:46:22.819586", "tenant_id": "228b10ef457b75a9", "event": "tenant_created", "details": {"tenant_name": "StartupXYZ", "plan": "standard"}}
+{"timestamp": "2026-02-15T13:46:22.820093", "tenant_id": "65723ca7f5565065", "event": "tenant_created", "details": {"tenant_name": "FreeTier User", "plan": "free"}}
+{"timestamp": "2026-02-15T13:46:22.820404", "tenant_id": "b70f10a739c36840", "event": "resource_used", "details": {"resource": "tasks", "amount": 50}}
+{"timestamp": "2026-02-15T13:46:22.820750", "tenant_id": "b70f10a739c36840", "event": "resource_used", "details": {"resource": "compute", "amount": 5.5}}
+{"timestamp": "2026-02-15T13:46:22.821047", "tenant_id": "65723ca7f5565065", "event": "resource_used", "details": {"resource": "tasks", "amount": 8}}
+{"timestamp": "2026-02-15T13:46:22.821376", "tenant_id": "65723ca7f5565065", "event": "resource_used", "details": {"resource": "api_calls", "amount": 75}}
+{"timestamp": "2026-02-15T13:46:22.821691", "tenant_id": "228b10ef457b75a9", "event": "tenant_updated", "details": {"plan": "premium", "config": {"priority_support": true}}}
+{"timestamp": "2026-02-15T13:46:22.821966", "tenant_id": "65723ca7f5565065", "event": "tenant_deleted", "details": {"hard_delete": false}}
