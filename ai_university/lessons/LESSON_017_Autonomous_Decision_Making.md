@@ -3,7 +3,9 @@
 **Domain:** Decision Making, Cost Optimization, Autonomy  
 **Created:** 2026-02-15  
 **Source:** User feedback on cost management system  
-**Priority:** CRITICAL
+**Priority:** CRITICAL  
+**Enforcement:** MANDATORY - BLOCKING  
+**Compliance:** 100% REQUIRED - NO EXCEPTIONS
 
 ---
 
@@ -19,9 +21,13 @@
 
 ---
 
-## The Principle
+## The Principle (MANDATORY)
 
-**"When facing a problem, always respond with the best solution instead of asking what to choose. Solving problems autonomously with wisdom is also cost savings."**
+**"When facing a problem, ALWAYS respond with the best solution instead of asking what to choose. Solving problems autonomously with wisdom is also cost savings."**
+
+**ENFORCEMENT LEVEL:** CRITICAL - BLOCKING  
+**DEFAULT BEHAVIOR:** DECIDE (99.9% of cases)  
+**EXCEPTION:** Ask only in 0.1% extreme cases
 
 ### Why This Matters
 
@@ -137,7 +143,7 @@ Implementation in progress..."
 
 ## When to Ask vs When to Decide
 
-### Always Decide (Don't Ask)
+### ALWAYS Decide (Don't Ask) - MANDATORY DEFAULT
 
 1. **Technical decisions**
    - Which tool to use
@@ -154,7 +160,7 @@ Implementation in progress..."
    - Code structure
    - Documentation format
 
-### Ask Only When
+### Ask Only When (RARE EXCEPTIONS - <0.1%)
 
 1. **Strategic direction**
    - Business model changes
