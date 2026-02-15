@@ -1,0 +1,109 @@
+[
+  {
+    "name": "shms",
+    "projects": [
+      "intelltech"
+    ],
+    "files": [
+      "projects/intelltech/PROJECT_PROFILE.md",
+      "projects/intelltech/data/case_studies/construction_mrt_singapore.md",
+      "projects/intelltech/data/case_studies/energy_donghai_china.md",
+      "projects/intelltech/data/case_studies/oil_gas_ormen_lange_norway_malaysia.md",
+      "projects/intelltech/data/case_studies/railways_korea_hsr.md",
+      "projects/intelltech/data/case_studies/water_dams_sermo_indonesia.md",
+      "projects/intelltech/data/case_studies/environmental_fukuoka_landfill.md",
+      "projects/intelltech/data/case_studies/renewable_greenough_australia.md",
+      "projects/intelltech/data/case_studies/mining_cadia_australia.md",
+      "projects/intelltech/data/case_studies/infrastructure_penang_bridge_malaysia.md",
+      "projects/intelltech/data/case_studies/ports_quay_wall_korea.md",
+      "projects/intelltech/data/market_data/competitive_intelligence.md",
+      "projects/intelltech/data/market_data/strategic_frameworks.md",
+      "projects/intelltech/archives/2026-02-14_APAC_Strategic_Report/IntellTech_APAC_Strategic_Report_COMPLETE.md",
+      "projects/intelltech/archives/2026-02-14_APAC_Strategic_Report/LESSONS_LEARNED.md",
+      "projects/intelltech/archives/2026-02-14_APAC_Strategic_Report/chapters/chapter3_complete.md",
+      "projects/intelltech/archives/2026-02-14_APAC_Strategic_Report/chapters/chapter5_conclusion.md"
+    ]
+  },
+  {
+    "name": "geo inspector",
+    "projects": [
+      "intelltech"
+    ],
+    "files": [
+      "projects/intelltech/PROJECT_PROFILE.md",
+      "projects/intelltech/data/case_studies/construction_mrt_singapore.md",
+      "projects/intelltech/data/case_studies/energy_donghai_china.md",
+      "projects/intelltech/data/case_studies/oil_gas_ormen_lange_norway_malaysia.md",
+      "projects/intelltech/data/case_studies/railways_korea_hsr.md",
+      "projects/intelltech/data/case_studies/water_dams_sermo_indonesia.md",
+      "projects/intelltech/data/case_studies/environmental_fukuoka_landfill.md",
+      "projects/intelltech/data/case_studies/renewable_greenough_australia.md",
+      "projects/intelltech/data/case_studies/mining_cadia_australia.md",
+      "projects/intelltech/data/case_studies/infrastructure_penang_bridge_malaysia.md",
+      "projects/intelltech/data/case_studies/ports_quay_wall_korea.md",
+      "projects/intelltech/data/market_data/competitive_intelligence.md",
+      "projects/intelltech/data/market_data/strategic_frameworks.md"
+    ]
+  },
+  {
+    "name": "structural health monitoring",
+    "projects": [
+      "intelltech"
+    ],
+    "files": [
+      "projects/intelltech/PROJECT_PROFILE.md",
+      "projects/intelltech/data/case_studies/infrastructure_penang_bridge_malaysia.md",
+      "projects/intelltech/data/case_studies/ports_quay_wall_korea.md",
+      "projects/intelltech/data/market_data/SHM_market_intelligence.md",
+      "projects/intelltech/archives/2026-02-14_APAC_Strategic_Report/IntellTech_APAC_Strategic_Report_COMPLETE.md",
+      "projects/intelltech/archives/2026-02-14_APAC_Strategic_Report/chapters/chapter3_complete.md",
+      "projects/intelltech/archives/2026-02-14_APAC_Strategic_Report/chapters/chapter5_conclusion.md"
+    ]
+  },
+  {
+    "name": "geotechnical monitoring",
+    "projects": [
+      "intelltech"
+    ],
+    "files": [
+      "projects/intelltech/PROJECT_PROFILE.md",
+      "projects/intelltech/data/case_studies/construction_mrt_singapore.md",
+      "projects/intelltech/data/case_studies/railways_korea_hsr.md",
+      "projects/intelltech/data/case_studies/environmental_fukuoka_landfill.md",
+      "projects/intelltech/data/case_studies/renewable_greenough_australia.md",
+      "projects/intelltech/data/case_studies/infrastructure_penang_bridge_malaysia.md",
+      "projects/intelltech/data/case_studies/ports_quay_wall_korea.md",
+      "projects/intelltech/data/market_data/competitive_intelligence.md",
+      "projects/intelltech/archives/2026-02-14_APAC_Strategic_Report/IntellTech_APAC_Strategic_Report_COMPLETE.md",
+      "projects/intelltech/archives/2026-02-14_APAC_Strategic_Report/chapters/chapter2_complete.md",
+      "projects/intelltech/archives/2026-02-14_APAC_Strategic_Report/chapters/chapter5_conclusion.md"
+    ]
+  },
+  {
+    "name": "sensors",
+    "projects": [
+      "intelltech"
+    ],
+    "files": [
+      "projects/intelltech/data/case_studies/oil_gas_ormen_lange_norway_malaysia.md",
+      "projects/intelltech/data/case_studies/water_dams_sermo_indonesia.md",
+      "projects/intelltech/data/case_studies/ports_quay_wall_korea.md",
+      "projects/intelltech/data/market_data/SHM_market_intelligence.md",
+      "projects/intelltech/data/market_data/competitive_intelligence.md",
+      "projects/intelltech/archives/2026-02-14_APAC_Strategic_Report/IntellTech_APAC_Strategic_Report_COMPLETE.md",
+      "projects/intelltech/archives/2026-02-14_APAC_Strategic_Report/chapters/chapter3_complete.md"
+    ]
+  },
+  {
+    "name": "iot",
+    "projects": [
+      "intelltech"
+    ],
+    "files": [
+      "projects/intelltech/data/market_data/SHM_market_intelligence.md",
+      "projects/intelltech/data/market_data/competitive_intelligence.md",
+      "projects/intelltech/data/market_data/strategic_frameworks.md",
+      "projects/intelltech/archives/2026-02-14_APAC_Strategic_Report/IntellTech_APAC_Strategic_Report_COMPLETE.md"
+    ]
+  }
+]

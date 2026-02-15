@@ -1,0 +1,152 @@
+{
+  "projects/intelltech/PROJECT_PROFILE.md": {
+    "path": "projects/intelltech/PROJECT_PROFILE.md",
+    "project": "intelltech",
+    "size": 3493,
+    "preview": "# IntellTech Project Profile\n\n**Project Name:** IntellTech  \n**Industry:** Geotechnical Monitoring & Infrastructure Safety  \n**Primary Objective:** Market intelligence, lead generation, and strategic "
+  },
+  "projects/intelltech/data/README.md": {
+    "path": "projects/intelltech/data/README.md",
+    "project": "intelltech",
+    "size": 768,
+    "preview": "# Data Directory\n\nThis directory stores validated, cleaned, and reusable datasets that are used across multiple analyses and reports.\n\n## Files\n\n- **`market_sizing_APAC.csv`**: Market size and growth "
+  },
+  "projects/intelltech/data/case_studies/construction_mrt_singapore.md": {
+    "path": "projects/intelltech/data/case_studies/construction_mrt_singapore.md",
+    "project": "intelltech",
+    "size": 1330,
+    "preview": "# Construction Sector Case Study: MRT Tunnelling Project Singapore\n\n**Source:** Ackcio Case Study - Real-Time Monitoring of an MRT Tunnelling Project in Singapore\n**URL:** https://www.ackcio.com/wp-co"
+  },
+  "projects/intelltech/data/case_studies/energy_donghai_china.md": {
+    "path": "projects/intelltech/data/case_studies/energy_donghai_china.md",
+    "project": "intelltech",
+    "size": 3639,
+    "preview": "# Energy Sector Case Study: Donghai Bridge Offshore Wind Farm, East China Sea\n\n**Source:** Jie Chen and Jifu Zhan, \"Monitoring the New Fixed Offshore Wind Turbine Foundation in the East China Sea,\" Jo"
+  },
+  "projects/intelltech/data/case_studies/oil_gas_ormen_lange_norway_malaysia.md": {
+    "path": "projects/intelltech/data/case_studies/oil_gas_ormen_lange_norway_malaysia.md",
+    "project": "intelltech",
+    "size": 4389,
+    "preview": "# Oil & Gas Sector Case Study: Offshore Subsidence Monitoring - Ormen Lange and Malaysia\n\n**Source:** Sonardyne International Ltd - Subsidence monitoring at offshore oilfields\n**URL:** https://www.son"
+  },
+  "projects/intelltech/data/case_studies/railways_korea_hsr.md": {
+    "path": "projects/intelltech/data/case_studies/railways_korea_hsr.md",
+    "project": "intelltech",
+    "size": 3529,
+    "preview": "# Railways Sector Case Study: High Speed Rail Monitoring, South Korea\n\n**Source:** G\u00fcralp Systems - High Speed Rail Monitoring, Korea (Case Study - Seismology)\n**URL:** https://www.guralp.com/images/p"
+  },
+  "projects/intelltech/data/case_studies/water_dams_sermo_indonesia.md": {
+    "path": "projects/intelltech/data/case_studies/water_dams_sermo_indonesia.md",
+    "project": "intelltech",
+    "size": 4243,
+    "preview": "# Water & Dams Sector Case Study: Sermo Dam, Yogyakarta Province, Indonesia\n\n**Source:** Sunantyo TARSISIUS, ARIS; Suryolelono KABUL, BASAH; Djawahir FAKRURAZZI; Swastana ADIN; Darmawan ADHI; and Adit"
+  },
+  "projects/intelltech/data/case_studies/environmental_fukuoka_landfill.md": {
+    "path": "projects/intelltech/data/case_studies/environmental_fukuoka_landfill.md",
+    "project": "intelltech",
+    "size": 5000,
+    "preview": "# Environmental Services Sector Case Study: Fukuoka Landfill Method, Kabul City\n\n**Source:** Abdul Wahid Amiri, June-ichiro Giorgos Tsutsumi, Ryo Nakamatsu, \"A Case Study of Fukuoka Landfill Method an"
+  },
+  "projects/intelltech/data/case_studies/renewable_greenough_australia.md": {
+    "path": "projects/intelltech/data/case_studies/renewable_greenough_australia.md",
+    "project": "intelltech",
+    "size": 4538,
+    "preview": "# Renewable Energy Sector Case Study: Greenough River Solar Farm, Western Australia\n\n**Source:** Angus King and Burak Omer Saracoglu, \"Greenough River Solar Farm Case Study & Validation Initialization"
+  },
+  "projects/intelltech/data/case_studies/mining_cadia_australia.md": {
+    "path": "projects/intelltech/data/case_studies/mining_cadia_australia.md",
+    "project": "intelltech",
+    "size": 3089,
+    "preview": "# Mining Sector Case Study: Cadia Mine Tailings Dam, Australia\n\n**Source:** Thomas, A, Edwards, SJ, Engels, J, McCormack, H, Hopkins, V & Holley, R 2019, 'Earth observation data and satellite InSAR fo"
+  },
+  "projects/intelltech/data/case_studies/infrastructure_penang_bridge_malaysia.md": {
+    "path": "projects/intelltech/data/case_studies/infrastructure_penang_bridge_malaysia.md",
+    "project": "intelltech",
+    "size": 3655,
+    "preview": "# Infrastructure Sector Case Study: Second Penang Bridge, Malaysia\n\n**Source:** GeoSIG - Structural Health Monitoring Case Study: Second Penang Bridge, Malaysia\n**URL:** https://www.geosig.com/Structu"
+  },
+  "projects/intelltech/data/case_studies/ports_quay_wall_korea.md": {
+    "path": "projects/intelltech/data/case_studies/ports_quay_wall_korea.md",
+    "project": "intelltech",
+    "size": 5971,
+    "preview": "# Ports & Maritime Sector Case Study: AI-Based Quay Wall Monitoring System, South Korea\n\n**Source:** Junsik Shin, Junyoung Park, Jongbin Won, Jongwoong Park, and Jiyoung Min, \"Development of AI-Based "
+  },
+  "projects/intelltech/data/market_data/SHM_market_intelligence.md": {
+    "path": "projects/intelltech/data/market_data/SHM_market_intelligence.md",
+    "project": "intelltech",
+    "size": 3304,
+    "preview": "# Structural Health Monitoring Market Intelligence\n\n## Global Market Sizing\n\n### SHM Market Size (Multiple Sources)\n| Source | 2024 Value | 2025 Value | 2030/2033 Projection | CAGR |\n|--------|-------"
+  },
+  "projects/intelltech/data/market_data/competitive_intelligence.md": {
+    "path": "projects/intelltech/data/market_data/competitive_intelligence.md",
+    "project": "intelltech",
+    "size": 6901,
+    "preview": "# Competitive Intelligence: SHM & Geotechnical Monitoring Market\n\n## Major Global Players\n\n### Tier 1: Market Leaders (>15% market share)\n\n**1. Fugro N.V. (Netherlands)**\n- Market Share: >15% (geotech"
+  },
+  "projects/intelltech/data/market_data/APAC_infrastructure_investment.md": {
+    "path": "projects/intelltech/data/market_data/APAC_infrastructure_investment.md",
+    "project": "intelltech",
+    "size": 6038,
+    "preview": "# Asia-Pacific Infrastructure Investment Data\n\n## Overall APAC Infrastructure Market\n\n### Market Size\n| Source | 2025 Value | 2030 Projection | CAGR |\n|--------|------------|-----------------|------|\n"
+  },
+  "projects/intelltech/data/market_data/strategic_frameworks.md": {
+    "path": "projects/intelltech/data/market_data/strategic_frameworks.md",
+    "project": "intelltech",
+    "size": 10900,
+    "preview": "# Strategic Frameworks for IntellTech Market Analysis\n\n## 1. MARKET OPPORTUNITY FRAMEWORK\n\n### TAM/SAM/SOM Calculation\n\n**TAM (Total Addressable Market) - Global SHM+GTIM**\n- Global SHM Market (2025):"
+  },
+  "projects/intelltech/data/research/best_practices_findings.md": {
+    "path": "projects/intelltech/data/research/best_practices_findings.md",
+    "project": "intelltech",
+    "size": 20659,
+    "preview": "# Best Practices Research Findings\n**Date:** 2026-02-14  \n**Purpose:** Research findings for IntellTech Knowledge University design\n\n## KNOWLEDGE MANAGEMENT BEST PRACTICES\n\n### Source: Bloomfire (2026"
+  },
+  "projects/intelltech/archives/README.md": {
+    "path": "projects/intelltech/archives/README.md",
+    "project": "intelltech",
+    "size": 720,
+    "preview": "# Archives Directory\n\nThis directory is for storing completed projects, old versions of files, and other historical data. It serves as a record of past work and a source of lessons learned.\n\n## Struct"
+  },
+  "projects/intelltech/archives/2026-02-14_APAC_Strategic_Report/IntellTech_APAC_Strategic_Report_COMPLETE.md": {
+    "path": "projects/intelltech/archives/2026-02-14_APAC_Strategic_Report/IntellTech_APAC_Strategic_Report_COMPLETE.md",
+    "project": "intelltech",
+    "size": 120782,
+    "preview": "---\ntitle: \"IntellTech APAC Market Intelligence Report\"\nsubtitle: \"Strategic Analysis of Structural Health Monitoring Opportunities in Asia-Pacific\"\nauthor: \"Manus AI Strategic Intelligence\"\ndate: \"Fe"
+  },
+  "projects/intelltech/archives/2026-02-14_APAC_Strategic_Report/KNOWLEDGE_MANAGEMENT.md": {
+    "path": "projects/intelltech/archives/2026-02-14_APAC_Strategic_Report/KNOWLEDGE_MANAGEMENT.md",
+    "project": "intelltech",
+    "size": 6519,
+    "preview": "# Knowledge Management Document\n## IntellTech APAC Strategic Report Project\n\n**Date:** February 15, 2026  \n**Project:** Complete APAC Market Intelligence Report  \n**Status:** COMPLETED\n\n---\n\n## Projec"
+  },
+  "projects/intelltech/archives/2026-02-14_APAC_Strategic_Report/LESSONS_LEARNED.md": {
+    "path": "projects/intelltech/archives/2026-02-14_APAC_Strategic_Report/LESSONS_LEARNED.md",
+    "project": "intelltech",
+    "size": 13111,
+    "preview": "# Lessons Learned & Continuation Guide\n## IntellTech APAC Strategic Report Project\n\n**Date:** February 15, 2026  \n**Purpose:** Document key learnings and provide guidance for future work continuation\n"
+  },
+  "projects/intelltech/archives/2026-02-14_APAC_Strategic_Report/chapters/chapter2_complete.md": {
+    "path": "projects/intelltech/archives/2026-02-14_APAC_Strategic_Report/chapters/chapter2_complete.md",
+    "project": "intelltech",
+    "size": 15287,
+    "preview": "# Chapter 2: Geographic Market Analysis\n\n## 2.1 Introduction\n\nThe Asia-Pacific region represents a complex mosaic of economic development stages, regulatory environments, and infrastructure needs. Thi"
+  },
+  "projects/intelltech/archives/2026-02-14_APAC_Strategic_Report/chapters/chapter3_complete.md": {
+    "path": "projects/intelltech/archives/2026-02-14_APAC_Strategic_Report/chapters/chapter3_complete.md",
+    "project": "intelltech",
+    "size": 14552,
+    "preview": "# Chapter 3: Sectoral Market Analysis\n\n## 3.1 Introduction\n\nWhile geographic analysis identifies where to compete, sectoral analysis reveals how to win. This chapter provides a comprehensive, data-dri"
+  },
+  "projects/intelltech/archives/2026-02-14_APAC_Strategic_Report/chapters/chapter4_complete.md": {
+    "path": "projects/intelltech/archives/2026-02-14_APAC_Strategic_Report/chapters/chapter4_complete.md",
+    "project": "intelltech",
+    "size": 11598,
+    "preview": "# Chapter 4: Stakeholder Ecosystem Analysis\n\n## 4.1 Introduction\n\nMarket success requires more than understanding geography and sectors. It demands a precise map of the stakeholder ecosystem: who buys"
+  },
+  "projects/intelltech/archives/2026-02-14_APAC_Strategic_Report/chapters/chapter5_conclusion.md": {
+    "path": "projects/intelltech/archives/2026-02-14_APAC_Strategic_Report/chapters/chapter5_conclusion.md",
+    "project": "intelltech",
+    "size": 10399,
+    "preview": "# Chapter 5: Conclusion & Strategic Recommendations\n\n## 5.1 Executive Summary\n\nThe Asia-Pacific structural health monitoring market represents a compelling opportunity characterized by strong fundamen"
+  }
+}

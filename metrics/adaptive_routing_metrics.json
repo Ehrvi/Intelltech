@@ -1,0 +1,157 @@
+{
+  "total_tasks": 21,
+  "openai_tasks": 18,
+  "manus_tasks": 3,
+  "rule_based_decisions": 21,
+  "learned_decisions": 0,
+  "learning_enabled": true,
+  "routing_history": [
+    {
+      "task": "Research top 10 mining companies",
+      "engine": "openai",
+      "method": "rule_based",
+      "confidence": 0.8,
+      "timestamp": "2026-02-15T03:23:56.065436"
+    },
+    {
+      "task": "Translate document to Portuguese",
+      "engine": "openai",
+      "method": "rule_based",
+      "confidence": 0.8,
+      "timestamp": "2026-02-15T03:23:56.065881"
+    },
+    {
+      "task": "Write Python code",
+      "engine": "openai",
+      "method": "rule_based",
+      "confidence": 0.8,
+      "timestamp": "2026-02-15T03:23:56.066446"
+    },
+    {
+      "task": "Final client presentation",
+      "engine": "manus",
+      "method": "rule_based",
+      "confidence": 0.8,
+      "timestamp": "2026-02-15T03:23:56.066828"
+    },
+    {
+      "task": "Summarize technical report",
+      "engine": "openai",
+      "method": "rule_based",
+      "confidence": 0.8,
+      "timestamp": "2026-02-15T03:23:56.067275"
+    },
+    {
+      "task": "Find contact information",
+      "engine": "openai",
+      "method": "rule_based",
+      "confidence": 0.8,
+      "timestamp": "2026-02-15T03:23:56.067699"
+    },
+    {
+      "task": "Strategic decision on market entry",
+      "engine": "manus",
+      "method": "rule_based",
+      "confidence": 0.8,
+      "timestamp": "2026-02-15T03:23:56.068142"
+    },
+    {
+      "task": "Format data into table",
+      "engine": "openai",
+      "method": "rule_based",
+      "confidence": 0.8,
+      "timestamp": "2026-02-15T03:23:56.068626"
+    },
+    {
+      "task": "Research renewable energy projects",
+      "engine": "openai",
+      "method": "rule_based",
+      "confidence": 0.8,
+      "timestamp": "2026-02-15T03:23:56.069177"
+    },
+    {
+      "task": "Legal contract review",
+      "engine": "manus",
+      "method": "rule_based",
+      "confidence": 0.8,
+      "timestamp": "2026-02-15T03:23:56.069916"
+    },
+    {
+      "task": "Analyze market trends",
+      "engine": "openai",
+      "method": "rule_based",
+      "confidence": 0.8,
+      "timestamp": "2026-02-15T03:23:56.070627"
+    },
+    {
+      "task": "Create draft proposal",
+      "engine": "openai",
+      "method": "rule_based",
+      "confidence": 0.8,
+      "timestamp": "2026-02-15T03:23:56.071323"
+    },
+    {
+      "task": "Search for industry reports",
+      "engine": "openai",
+      "method": "rule_based",
+      "confidence": 0.8,
+      "timestamp": "2026-02-15T03:23:56.071968"
+    },
+    {
+      "task": "Compile list of competitors",
+      "engine": "openai",
+      "method": "rule_based",
+      "confidence": 0.8,
+      "timestamp": "2026-02-15T03:23:56.072754"
+    },
+    {
+      "task": "Write blog post draft",
+      "engine": "openai",
+      "method": "rule_based",
+      "confidence": 0.8,
+      "timestamp": "2026-02-15T03:23:56.073481"
+    },
+    {
+      "task": "Research construction regulations",
+      "engine": "openai",
+      "method": "rule_based",
+      "confidence": 0.8,
+      "timestamp": "2026-02-15T03:23:56.074277"
+    },
+    {
+      "task": "Translate user manual",
+      "engine": "openai",
+      "method": "rule_based",
+      "confidence": 0.8,
+      "timestamp": "2026-02-15T03:23:56.075401"
+    },
+    {
+      "task": "Format spreadsheet data",
+      "engine": "openai",
+      "method": "rule_based",
+      "confidence": 0.8,
+      "timestamp": "2026-02-15T03:23:56.076233"
+    },
+    {
+      "task": "Find technical specifications",
+      "engine": "openai",
+      "method": "rule_based",
+      "confidence": 0.8,
+      "timestamp": "2026-02-15T03:23:56.077330"
+    },
+    {
+      "task": "Summarize meeting notes",
+      "engine": "openai",
+      "method": "rule_based",
+      "confidence": 0.8,
+      "timestamp": "2026-02-15T03:23:56.078254"
+    },
+    {
+      "task": "Research SHMS applications",
+      "engine": "openai",
+      "method": "rule_based_fallback",
+      "confidence": 0.0,
+      "timestamp": "2026-02-15T03:23:56.079234"
+    }
+  ]
+}
