@@ -1,0 +1,75 @@
+{
+  "system": {
+    "name": "Sistema Operacional Manus",
+    "version": "V2.1",
+    "tagline": "Entregar máximo valor com máxima eficiência",
+    "status": {
+      "ready": "Pronto para Produção",
+      "initializing": "Inicializando...",
+      "error": "Erro",
+      "success": "Sucesso"
+    }
+  },
+  "principles": {
+    "p1": {
+      "name": "Sempre Estudar Primeiro",
+      "description": "Nunca responder imediatamente. Sempre estudar conhecimento interno e pesquisar externamente antes de fornecer respostas."
+    },
+    "p2": {
+      "name": "Sempre Decidir Autonomamente",
+      "description": "Ao enfrentar múltiplas opções, analisar todas as possibilidades e escolher a melhor solução em vez de perguntar ao usuário."
+    },
+    "p3": {
+      "name": "Sempre Otimizar Custo",
+      "description": "Toda operação usa a ferramenta mais barata que atende aos requisitos de qualidade."
+    },
+    "p4": {
+      "name": "Sempre Garantir Qualidade",
+      "description": "Todas as saídas são cientificamente fundamentadas, validadas e incluem referências bibliográficas obrigatórias."
+    },
+    "p5": {
+      "name": "Sempre Reportar com Precisão",
+      "description": "Toda tarefa termina com um relatório de custo preciso e multi-plataforma."
+    },
+    "p6": {
+      "name": "Sempre Aprender e Melhorar",
+      "description": "O sistema captura lições de cada tarefa e melhora continuamente."
+    }
+  },
+  "dashboard": {
+    "title": "Painel de Monitoramento em Tempo Real",
+    "system_status": "Status do Sistema",
+    "overall_compliance": "Conformidade Geral",
+    "total_tasks": "Total de Tarefas",
+    "avg_rating": "Avaliação Média",
+    "satisfaction": "Satisfação",
+    "cost_savings": "Economia de Custos",
+    "quality_score": "Pontuação de Qualidade",
+    "recent_activity": "Atividade Recente",
+    "compliance_metrics": "Conformidade dos 6 Princípios Fundamentais"
+  },
+  "common": {
+    "loading": "Carregando...",
+    "error": "Erro",
+    "success": "Sucesso",
+    "warning": "Aviso",
+    "info": "Informação",
+    "save": "Salvar",
+    "cancel": "Cancelar",
+    "delete": "Excluir",
+    "edit": "Editar",
+    "view": "Visualizar",
+    "close": "Fechar",
+    "submit": "Enviar",
+    "reset": "Resetar"
+  },
+  "messages": {
+    "welcome": "Bem-vindo ao Sistema Operacional Manus",
+    "task_complete": "Tarefa concluída com sucesso",
+    "task_failed": "Tarefa falhou",
+    "invalid_input": "Entrada inválida",
+    "unauthorized": "Acesso não autorizado",
+    "not_found": "Não encontrado",
+    "internal_error": "Erro interno ocorreu"
+  }
+}

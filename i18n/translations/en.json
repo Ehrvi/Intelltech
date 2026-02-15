@@ -1,0 +1,75 @@
+{
+  "system": {
+    "name": "Manus Operating System",
+    "version": "V2.1",
+    "tagline": "Deliver maximum value with maximum efficiency",
+    "status": {
+      "ready": "Production Ready",
+      "initializing": "Initializing...",
+      "error": "Error",
+      "success": "Success"
+    }
+  },
+  "principles": {
+    "p1": {
+      "name": "Always Study First",
+      "description": "Never respond immediately. Always study internal knowledge and research externally before providing answers."
+    },
+    "p2": {
+      "name": "Always Decide Autonomously",
+      "description": "When facing multiple options, analyze all possibilities and choose the best solution instead of asking the user."
+    },
+    "p3": {
+      "name": "Always Optimize Cost",
+      "description": "Every operation uses the cheapest tool that meets quality requirements."
+    },
+    "p4": {
+      "name": "Always Ensure Quality",
+      "description": "All outputs are scientifically grounded, validated, and include mandatory bibliographic references."
+    },
+    "p5": {
+      "name": "Always Report Accurately",
+      "description": "Every task ends with an accurate, multi-platform cost report."
+    },
+    "p6": {
+      "name": "Always Learn and Improve",
+      "description": "The system captures lessons from every task and continuously improves."
+    }
+  },
+  "dashboard": {
+    "title": "Real-Time Monitoring Dashboard",
+    "system_status": "System Status",
+    "overall_compliance": "Overall Compliance",
+    "total_tasks": "Total Tasks",
+    "avg_rating": "Avg Rating",
+    "satisfaction": "Satisfaction",
+    "cost_savings": "Cost Savings",
+    "quality_score": "Quality Score",
+    "recent_activity": "Recent Activity",
+    "compliance_metrics": "6 Core Principles Compliance"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "warning": "Warning",
+    "info": "Information",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "view": "View",
+    "close": "Close",
+    "submit": "Submit",
+    "reset": "Reset"
+  },
+  "messages": {
+    "welcome": "Welcome to Manus Operating System",
+    "task_complete": "Task completed successfully",
+    "task_failed": "Task failed",
+    "invalid_input": "Invalid input",
+    "unauthorized": "Unauthorized access",
+    "not_found": "Not found",
+    "internal_error": "Internal error occurred"
+  }
+}

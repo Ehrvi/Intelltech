@@ -1,0 +1,8 @@
+{"timestamp": "2026-02-15T13:26:14.811653", "event": "access_granted", "user": "user1", "resource": "ai_university/lessons/LESSON_001.md", "permission": "read"}
+{"timestamp": "2026-02-15T13:26:14.811973", "event": "access_granted", "user": "user1", "resource": "ai_university/lessons/LESSON_001.md", "permission": "write"}
+{"timestamp": "2026-02-15T13:26:14.812026", "event": "access_denied", "user": "user1", "resource": "security/keys/master.key", "permission": "read", "reason": "resource_denied"}
+{"timestamp": "2026-02-15T13:26:14.812062", "event": "access_denied", "user": "user1", "resource": "docs/report.md", "permission": "delete", "reason": "permission_denied"}
+{"timestamp": "2026-02-15T13:26:25.415948", "event": "access_granted", "user": "user1", "resource": "ai_university/lessons/LESSON_001.md", "permission": "read"}
+{"timestamp": "2026-02-15T13:26:25.416183", "event": "access_granted", "user": "user1", "resource": "ai_university/lessons/LESSON_001.md", "permission": "write"}
+{"timestamp": "2026-02-15T13:26:25.416223", "event": "access_denied", "user": "user1", "resource": "security/keys/master.key", "permission": "read", "reason": "resource_denied"}
+{"timestamp": "2026-02-15T13:26:25.416260", "event": "access_denied", "user": "user1", "resource": "docs/report.md", "permission": "delete", "reason": "permission_denied"}

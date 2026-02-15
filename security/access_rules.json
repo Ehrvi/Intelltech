@@ -1,0 +1,39 @@
+{
+  "roles": {
+    "admin": {
+      "permissions": [
+        "read",
+        "write",
+        "delete",
+        "execute",
+        "admin"
+      ],
+      "resources": [
+        "*"
+      ]
+    },
+    "user": {
+      "permissions": [
+        "read",
+        "write",
+        "execute"
+      ],
+      "resources": [
+        "ai_university/*",
+        "docs/*",
+        "feedback/*",
+        "learning/*"
+      ]
+    },
+    "readonly": {
+      "permissions": [
+        "read"
+      ],
+      "resources": [
+        "*"
+      ]
+    }
+  },
+  "default_role": "user",
+  "require_authentication": false
+}

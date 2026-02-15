@@ -1,0 +1,31 @@
+{
+  "thresholds": {
+    "compliance_critical": 90,
+    "compliance_warning": 95,
+    "quality_critical": 70,
+    "quality_warning": 80,
+    "cost_savings_warning": 70,
+    "satisfaction_critical": 60
+  },
+  "notification_channels": {
+    "email": {
+      "enabled": false,
+      "recipients": []
+    },
+    "slack": {
+      "enabled": false,
+      "webhook_url": ""
+    },
+    "console": {
+      "enabled": true
+    }
+  },
+  "auto_correction": {
+    "enabled": true,
+    "max_attempts": 3
+  },
+  "escalation": {
+    "enabled": true,
+    "escalate_after_minutes": 30
+  }
+}

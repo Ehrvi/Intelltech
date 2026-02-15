@@ -1,0 +1,2 @@
+{"level": "warning", "type": "compliance", "message": "WARNING: Overall compliance at 93.3% (threshold: 95%)", "metric": "overall_compliance", "value": 93.3, "threshold": 95, "auto_correctable": false, "timestamp": "2026-02-15T13:25:53.062814", "alert_id": "ALERT_20260215_132553"}
+{"level": "warning", "type": "quality", "message": "WARNING: Quality score at 75.0% (threshold: 80%)", "metric": "quality_score", "value": 75, "threshold": 80, "auto_correctable": true, "timestamp": "2026-02-15T13:25:53.063010", "alert_id": "ALERT_20260215_132553"}
