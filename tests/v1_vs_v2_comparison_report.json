@@ -1,0 +1,25 @@
+{
+  "generated_at": "2026-02-15T14:05:50.857255",
+  "ml_pattern_recognition": {
+    "v1_time": 0.003433704376220703,
+    "v2_time": 0.24158763885498047,
+    "v1_anomalies": 1,
+    "v2_anomalies": 5,
+    "winner": "V2"
+  },
+  "predictive_analytics": {
+    "v1_time": 0.0026025772094726562,
+    "v2_time": 0.0018019676208496094,
+    "v1_capacity": 126.10481014726682,
+    "v2_capacity": 126.10481014726682,
+    "winner": "V2"
+  },
+  "multi_tenant_system": {
+    "v1_features": 4,
+    "v2_features": 8,
+    "v2_audit_logs": 5,
+    "winner": "V2"
+  },
+  "conclusion": "V2 superior in all modules",
+  "recommendation": "Deploy V2 to production"
+}

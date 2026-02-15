@@ -1,0 +1,195 @@
+{
+  "timestamp": "2026-02-15T14:02:22.509484",
+  "total_samples": 50,
+  "version": "V2 (sklearn)",
+  "analyses": {
+    "anomalies": {
+      "anomalies_detected": 5,
+      "anomaly_indices": [
+        2,
+        9,
+        22,
+        24,
+        36
+      ],
+      "anomaly_details": [
+        {
+          "index": 9,
+          "anomaly_score": -0.572812436276007,
+          "rating": 4.615168643403932,
+          "cost": 0.3214373110237051,
+          "complexity": 1.15
+        },
+        {
+          "index": 24,
+          "anomaly_score": -0.528604865109251,
+          "rating": 3.443526420386423,
+          "cost": 0.28406561508108874,
+          "complexity": 2.6
+        },
+        {
+          "index": 2,
+          "anomaly_score": -0.5283729357432302,
+          "rating": 3.680948898882148,
+          "cost": 0.557423298424392,
+          "complexity": 2.3833333333333333
+        },
+        {
+          "index": 22,
+          "anomaly_score": -0.5206611706617208,
+          "rating": 4.371798127676972,
+          "cost": 0.6609100343445282,
+          "complexity": 1.25
+        },
+        {
+          "index": 36,
+          "anomaly_score": -0.5188703106326072,
+          "rating": 4.705311607890156,
+          "cost": 0.09665677113104099,
+          "complexity": 1.7
+        }
+      ],
+      "total_samples": 50,
+      "contamination": 0.1,
+      "method": "IsolationForest (sklearn)"
+    },
+    "clusters": {
+      "clusters_found": 3,
+      "clusters": [
+        {
+          "cluster_id": 0,
+          "name": "High Performance",
+          "size": 27,
+          "avg_rating": 4.537135708381037,
+          "avg_cost": 0.5804105389329258,
+          "avg_complexity": 1.5677436926084738,
+          "characteristics": "Good: Solid ratings (\u22654.0). May have optimization opportunities for cost."
+        },
+        {
+          "cluster_id": 1,
+          "name": "Standard Performance",
+          "size": 10,
+          "avg_rating": 4.400317803617977,
+          "avg_cost": 0.5058379980508224,
+          "avg_complexity": 1.445,
+          "characteristics": "Good: Solid ratings (\u22654.0). May have optimization opportunities for cost."
+        },
+        {
+          "cluster_id": 2,
+          "name": "Needs Improvement",
+          "size": 13,
+          "avg_rating": 3.6894032003948514,
+          "avg_cost": 0.4842861357756607,
+          "avg_complexity": 2.4615384615384617,
+          "characteristics": "Needs Improvement: Lower ratings (<4.0). Requires quality enhancement."
+        }
+      ],
+      "total_samples": 50,
+      "inertia": 425.1974327936912,
+      "method": "KMeans (sklearn)"
+    },
+    "feature_importance": {
+      "features_analyzed": 10,
+      "top_features": [
+        {
+          "feature": "complexity_score",
+          "correlation": -0.753281858305629,
+          "importance": 0.753281858305629,
+          "relationship": "negative"
+        },
+        {
+          "feature": "p3_compliance",
+          "correlation": 0.28685085849648656,
+          "importance": 0.28685085849648656,
+          "relationship": "positive"
+        },
+        {
+          "feature": "p5_compliance",
+          "correlation": -0.15750989274956,
+          "importance": 0.15750989274956,
+          "relationship": "negative"
+        },
+        {
+          "feature": "p6_compliance",
+          "correlation": -0.07142079715998616,
+          "importance": 0.07142079715998616,
+          "relationship": "negative"
+        },
+        {
+          "feature": "duration_minutes",
+          "correlation": 0.07059043964347027,
+          "importance": 0.07059043964347027,
+          "relationship": "positive"
+        }
+      ],
+      "all_features": [
+        {
+          "feature": "complexity_score",
+          "correlation": -0.753281858305629,
+          "importance": 0.753281858305629,
+          "relationship": "negative"
+        },
+        {
+          "feature": "p3_compliance",
+          "correlation": 0.28685085849648656,
+          "importance": 0.28685085849648656,
+          "relationship": "positive"
+        },
+        {
+          "feature": "p5_compliance",
+          "correlation": -0.15750989274956,
+          "importance": 0.15750989274956,
+          "relationship": "negative"
+        },
+        {
+          "feature": "p6_compliance",
+          "correlation": -0.07142079715998616,
+          "importance": 0.07142079715998616,
+          "relationship": "negative"
+        },
+        {
+          "feature": "duration_minutes",
+          "correlation": 0.07059043964347027,
+          "importance": 0.07059043964347027,
+          "relationship": "positive"
+        },
+        {
+          "feature": "cost",
+          "correlation": 0.05275498270497164,
+          "importance": 0.05275498270497164,
+          "relationship": "positive"
+        },
+        {
+          "feature": "p1_compliance",
+          "correlation": 0.05097576036848818,
+          "importance": 0.05097576036848818,
+          "relationship": "positive"
+        },
+        {
+          "feature": "p2_compliance",
+          "correlation": 0.04624667180069371,
+          "importance": 0.04624667180069371,
+          "relationship": "positive"
+        },
+        {
+          "feature": "p4_compliance",
+          "correlation": -0.027445933806899386,
+          "importance": 0.027445933806899386,
+          "relationship": "negative"
+        },
+        {
+          "feature": "day_of_week",
+          "correlation": 0.003129624607720042,
+          "importance": 0.003129624607720042,
+          "relationship": "positive"
+        }
+      ],
+      "method": "Correlation Analysis"
+    }
+  },
+  "insights": [
+    "\u26a0\ufe0f  5 anomalous tasks detected using IsolationForest. Review these cases for potential issues.",
+    "\ud83d\udd27 13 tasks in 'Needs Improvement' cluster (avg rating: 3.69). Focus on quality enhancement.",
+    "\ud83c\udfaf 'complexity_score' has strongest influence on ratings (correlation: -0.753). Optimize this factor."
+  ]
+}

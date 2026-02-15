@@ -1,0 +1,101 @@
+{
+  "generated_at": "2026-02-15T14:03:37.792971",
+  "version": "V2 (statsmodels)",
+  "forecasts": {
+    "rating": {
+      "metric": "rating",
+      "forecast": [],
+      "error": "Insufficient historical data (need \u22653 data points)"
+    },
+    "cost": {
+      "metric": "cost",
+      "forecast": [],
+      "error": "Insufficient historical data (need \u22653 data points)"
+    }
+  },
+  "predictions": {
+    "resource_demand": {
+      "predictions": [],
+      "error": "Insufficient historical data"
+    }
+  },
+  "planning": {
+    "capacity": {
+      "current_daily_cost": 4.0,
+      "growth_rate": 0.1,
+      "horizon_days": 30,
+      "projections": [
+        {
+          "day": 1,
+          "date": "2026-02-16T14:03:37.793802",
+          "projected_daily_cost": 4.012728232102857,
+          "cumulative_cost": 4.012728232102857
+        },
+        {
+          "day": 2,
+          "date": "2026-02-17T14:03:37.793815",
+          "projected_daily_cost": 4.025496966178831,
+          "cumulative_cost": 8.050993932357661
+        },
+        {
+          "day": 3,
+          "date": "2026-02-18T14:03:37.793819",
+          "projected_daily_cost": 4.038306331107548,
+          "cumulative_cost": 12.114918993322643
+        },
+        {
+          "day": 4,
+          "date": "2026-02-19T14:03:37.793822",
+          "projected_daily_cost": 4.051156456178742,
+          "cumulative_cost": 16.204625824714967
+        },
+        {
+          "day": 5,
+          "date": "2026-02-20T14:03:37.793826",
+          "projected_daily_cost": 4.0640474710935495,
+          "cumulative_cost": 20.320237355467746
+        },
+        {
+          "day": 6,
+          "date": "2026-02-21T14:03:37.793829",
+          "projected_daily_cost": 4.076979505965826,
+          "cumulative_cost": 24.461877035794956
+        },
+        {
+          "day": 7,
+          "date": "2026-02-22T14:03:37.793832",
+          "projected_daily_cost": 4.089952691323457,
+          "cumulative_cost": 28.629668839264202
+        },
+        {
+          "day": 8,
+          "date": "2026-02-23T14:03:37.793841",
+          "projected_daily_cost": 4.102967158109675,
+          "cumulative_cost": 32.8237372648774
+        },
+        {
+          "day": 9,
+          "date": "2026-02-24T14:03:37.793846",
+          "projected_daily_cost": 4.11602303768438,
+          "cumulative_cost": 37.04420733915942
+        },
+        {
+          "day": 10,
+          "date": "2026-02-25T14:03:37.793850",
+          "projected_daily_cost": 4.129120461825469,
+          "cumulative_cost": 41.29120461825469
+        }
+      ],
+      "total_projected_cost": 126.10481014726682,
+      "recommendations": [
+        {
+          "priority": "info",
+          "recommendation": "Expected 30-day cost: $126.10",
+          "action": "Budget accordingly and review monthly"
+        }
+      ],
+      "method": "Exponential Growth Model",
+      "generated_at": "2026-02-15T14:03:37.793933"
+    }
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "timestamp": "2026-02-15T14:05:50.604905",
+  "total_samples": 50,
+  "analyses": {
+    "anomalies": {
+      "anomalies_detected": 1,
+      "anomaly_indices": [
+        43
+      ],
+      "anomaly_details": [
+        {
+          "index": 43,
+          "feature": "complexity_score",
+          "value": 3.6,
+          "z_score": 3.2459015924821903,
+          "mean": 1.7596666666666665,
+          "std": 0.5669713886569194
+        }
+      ],
+      "total_samples": 50
+    },
+    "trends": {
+      "trends_found": 0,
+      "trends": [],
+      "total_samples": 50
+    },
+    "clusters": {
+      "clusters_found": 3,
+      "clusters": [
+        {
+          "cluster_id": 1,
+          "name": "Good Performance",
+          "size": 32,
+          "avg_rating": 4.51867404805541,
+          "avg_cost": 0.5390347439761524,
+          "characteristics": "Tasks with good ratings (\u22654.0) but potentially higher costs. Opportunities for cost optimization."
+        },
+        {
+          "cluster_id": 2,
+          "name": "Needs Improvement",
+          "size": 14,
+          "avg_rating": 3.608221693140308,
+          "avg_cost": 0.4950997052963401,
+          "characteristics": "Tasks with lower ratings (<4.0). Requires quality improvement and investigation."
+        },
+        {
+          "cluster_id": 0,
+          "name": "Excellent Performance",
+          "size": 4,
+          "avg_rating": 4.926383905648745,
+          "avg_cost": 0.34048249039117606,
+          "characteristics": "Tasks with excellent ratings (\u22654.5) and low cost (\u22640.5). This is the target performance level."
+        }
+      ],
+      "total_samples": 50
+    },
+    "feature_importance": {
+      "features_analyzed": 10,
+      "top_features": [
+        {
+          "feature": "complexity_score",
+          "correlation": -0.8198239632836666,
+          "importance": 0.8198239632836666,
+          "relationship": "negative"
+        },
+        {
+          "feature": "duration_minutes",
+          "correlation": -0.32737149760619105,
+          "importance": 0.32737149760619105,
+          "relationship": "negative"
+        },
+        {
+          "feature": "p5_compliance",
+          "correlation": -0.19753365613063092,
+          "importance": 0.19753365613063092,
+          "relationship": "negative"
+        },
+        {
+          "feature": "p6_compliance",
+          "correlation": -0.18009172348551353,
+          "importance": 0.18009172348551353,
+          "relationship": "negative"
+        },
+        {
+          "feature": "p1_compliance",
+          "correlation": -0.1767458220658098,
+          "importance": 0.1767458220658098,
+          "relationship": "negative"
+        }
+      ],
+      "all_features": [
+        {
+          "feature": "complexity_score",
+          "correlation": -0.8198239632836666,
+          "importance": 0.8198239632836666,
+          "relationship": "negative"
+        },
+        {
+          "feature": "duration_minutes",
+          "correlation": -0.32737149760619105,
+          "importance": 0.32737149760619105,
+          "relationship": "negative"
+        },
+        {
+          "feature": "p5_compliance",
+          "correlation": -0.19753365613063092,
+          "importance": 0.19753365613063092,
+          "relationship": "negative"
+        },
+        {
+          "feature": "p6_compliance",
+          "correlation": -0.18009172348551353,
+          "importance": 0.18009172348551353,
+          "relationship": "negative"
+        },
+        {
+          "feature": "p1_compliance",
+          "correlation": -0.1767458220658098,
+          "importance": 0.1767458220658098,
+          "relationship": "negative"
+        },
+        {
+          "feature": "p2_compliance",
+          "correlation": 0.10685125605624464,
+          "importance": 0.10685125605624464,
+          "relationship": "positive"
+        },
+        {
+          "feature": "cost",
+          "correlation": 0.09032187351964963,
+          "importance": 0.09032187351964963,
+          "relationship": "positive"
+        },
+        {
+          "feature": "day_of_week",
+          "correlation": 0.08218515069621976,
+          "importance": 0.08218515069621976,
+          "relationship": "positive"
+        },
+        {
+          "feature": "p3_compliance",
+          "correlation": 0.0798917978577361,
+          "importance": 0.0798917978577361,
+          "relationship": "positive"
+        },
+        {
+          "feature": "p4_compliance",
+          "correlation": -0.03273000454657578,
+          "importance": 0.03273000454657578,
+          "relationship": "negative"
+        }
+      ]
+    }
+  },
+  "insights": [
+    "\u26a0\ufe0f  1 anomalous tasks detected. Review these cases for potential issues or exceptional circumstances.",
+    "\ud83d\udd27 14 tasks need improvement (avg rating: 3.61). Focus on quality enhancement for this segment.",
+    "\ud83c\udfaf 'complexity_score' has the strongest influence on ratings (correlation: -0.820). Optimize this factor for maximum impact."
+  ]
+}

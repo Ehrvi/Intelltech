@@ -91,8 +91,117 @@
       "config": {},
       "directory": "/home/ubuntu/manus_global_knowledge/tenants/65723ca7f5565065",
       "deleted_at": "2026-02-15T13:46:22.821786"
+    },
+    "e92bf6f301966c07": {
+      "tenant_id": "e92bf6f301966c07",
+      "tenant_name": "Acme Corp",
+      "plan": "enterprise",
+      "api_key": "zE_PPkX_xHPIdF7v7czvagf6RCu9uOGzOKWzRdC-xgM",
+      "quotas": {
+        "max_tasks_per_day": -1,
+        "max_storage_mb": -1,
+        "max_compute_hours_per_month": -1,
+        "max_api_calls_per_day": -1
+      },
+      "created_at": "2026-02-15T14:04:46.920545",
+      "status": "active",
+      "config": {},
+      "usage": {
+        "tasks_today": 0,
+        "storage_mb": 0,
+        "compute_hours_month": 0,
+        "api_calls_today": 0
+      }
+    },
+    "9a4a8ffd432e749a": {
+      "tenant_id": "9a4a8ffd432e749a",
+      "tenant_name": "StartupXYZ",
+      "plan": "standard",
+      "api_key": "PL7pTHhbgP0nY0mHxgIGjkS6mn-DZ0PxTRcWM5kTpmQ",
+      "quotas": {
+        "max_tasks_per_day": 100,
+        "max_storage_mb": 1024,
+        "max_compute_hours_per_month": 100,
+        "max_api_calls_per_day": 1000
+      },
+      "created_at": "2026-02-15T14:04:46.921208",
+      "status": "active",
+      "config": {},
+      "usage": {
+        "tasks_today": 0,
+        "storage_mb": 0,
+        "compute_hours_month": 0,
+        "api_calls_today": 0
+      }
+    },
+    "b0c96aef7830f3c9": {
+      "tenant_id": "b0c96aef7830f3c9",
+      "tenant_name": "FreeTier User",
+      "plan": "free",
+      "api_key": "063Oi0aMevu8HJJPWO2u2O79X66canVEO3dVQeALDnU",
+      "quotas": {
+        "max_tasks_per_day": 10,
+        "max_storage_mb": 100,
+        "max_compute_hours_per_month": 10,
+        "max_api_calls_per_day": 100
+      },
+      "created_at": "2026-02-15T14:04:46.921666",
+      "status": "active",
+      "config": {},
+      "usage": {
+        "tasks_today": 0,
+        "storage_mb": 0,
+        "compute_hours_month": 0,
+        "api_calls_today": 0
+      }
+    },
+    "b4931c900525b6d9": {
+      "tenant_id": "b4931c900525b6d9",
+      "tenant_name": "TestV1",
+      "plan": "free",
+      "api_key": "zajyhzSikARKnwRq5unTyNA0FvGnWgConX6tLcy3-bc",
+      "created_at": "2026-02-15T14:05:50.855045",
+      "status": "active",
+      "quotas": {
+        "max_tasks_per_day": 10,
+        "max_storage_mb": 100,
+        "max_compute_hours_per_month": 10,
+        "max_api_calls_per_day": 100,
+        "features": [
+          "basic"
+        ]
+      },
+      "usage": {
+        "tasks_count": 0,
+        "storage_mb": 0,
+        "compute_hours": 0,
+        "api_calls": 0
+      },
+      "config": {},
+      "directory": "/home/ubuntu/manus_global_knowledge/tenants/b4931c900525b6d9"
+    },
+    "376a1e2e280c4989": {
+      "tenant_id": "376a1e2e280c4989",
+      "tenant_name": "TestV2",
+      "plan": "free",
+      "api_key": "EoFVjbBwhXXUCN7NztE3UAgA0CsHjGOp54iK7H0zXx0",
+      "quotas": {
+        "max_tasks_per_day": 10,
+        "max_storage_mb": 100,
+        "max_compute_hours_per_month": 10,
+        "max_api_calls_per_day": 100
+      },
+      "created_at": "2026-02-15T14:05:50.856505",
+      "status": "active",
+      "config": {},
+      "usage": {
+        "tasks_today": 0,
+        "storage_mb": 0,
+        "compute_hours_month": 0,
+        "api_calls_today": 0
+      }
     }
   },
   "created_at": "2026-02-15T13:46:22.818256",
-  "total_tenants": 3
+  "total_tenants": 8
 }

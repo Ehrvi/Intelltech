@@ -1,0 +1,195 @@
+{
+  "timestamp": "2026-02-15T14:05:50.608319",
+  "total_samples": 50,
+  "version": "V2 (sklearn)",
+  "analyses": {
+    "anomalies": {
+      "anomalies_detected": 5,
+      "anomaly_indices": [
+        17,
+        24,
+        36,
+        39,
+        43
+      ],
+      "anomaly_details": [
+        {
+          "index": 39,
+          "anomaly_score": -0.5531619513656092,
+          "rating": 5.214636484710185,
+          "cost": 0.4922310320878752,
+          "complexity": 1.2333333333333334
+        },
+        {
+          "index": 43,
+          "anomaly_score": -0.5401249176697234,
+          "rating": 2.8509033537734676,
+          "cost": 0.6642066921356229,
+          "complexity": 3.6
+        },
+        {
+          "index": 24,
+          "anomaly_score": -0.5386530736702917,
+          "rating": 4.272369327782655,
+          "cost": 0.41297477549056905,
+          "complexity": 0.9833333333333333
+        },
+        {
+          "index": 36,
+          "anomaly_score": -0.5244430813623253,
+          "rating": 5.203952628784429,
+          "cost": 0.8247718346305908,
+          "complexity": 1.2833333333333332
+        },
+        {
+          "index": 17,
+          "anomaly_score": -0.5130390275492736,
+          "rating": 4.43372240715535,
+          "cost": 0.9756495966791454,
+          "complexity": 1.8166666666666667
+        }
+      ],
+      "total_samples": 50,
+      "contamination": 0.1,
+      "method": "IsolationForest (sklearn)"
+    },
+    "clusters": {
+      "clusters_found": 3,
+      "clusters": [
+        {
+          "cluster_id": 0,
+          "name": "High Performance",
+          "size": 17,
+          "avg_rating": 4.63375528889847,
+          "avg_cost": 0.4286709653343411,
+          "avg_complexity": 1.3764705882352941,
+          "characteristics": "Excellent: High ratings (\u22654.5) with low cost (\u2264$0.50). Target performance level."
+        },
+        {
+          "cluster_id": 2,
+          "name": "Needs Improvement",
+          "size": 17,
+          "avg_rating": 4.5102189357357,
+          "avg_cost": 0.6187594249679789,
+          "avg_complexity": 1.496078431372549,
+          "characteristics": "Good: Solid ratings (\u22654.0). May have optimization opportunities for cost."
+        },
+        {
+          "cluster_id": 1,
+          "name": "Standard Performance",
+          "size": 16,
+          "avg_rating": 3.710665440346969,
+          "avg_cost": 0.4835075629881813,
+          "avg_complexity": 2.4468750000000004,
+          "characteristics": "Needs Improvement: Lower ratings (<4.0). Requires quality enhancement."
+        }
+      ],
+      "total_samples": 50,
+      "inertia": 413.8916891142868,
+      "method": "KMeans (sklearn)"
+    },
+    "feature_importance": {
+      "features_analyzed": 10,
+      "top_features": [
+        {
+          "feature": "complexity_score",
+          "correlation": -0.8198239632836666,
+          "importance": 0.8198239632836666,
+          "relationship": "negative"
+        },
+        {
+          "feature": "duration_minutes",
+          "correlation": -0.32737149760619105,
+          "importance": 0.32737149760619105,
+          "relationship": "negative"
+        },
+        {
+          "feature": "p5_compliance",
+          "correlation": -0.19753365613063092,
+          "importance": 0.19753365613063092,
+          "relationship": "negative"
+        },
+        {
+          "feature": "p6_compliance",
+          "correlation": -0.18009172348551353,
+          "importance": 0.18009172348551353,
+          "relationship": "negative"
+        },
+        {
+          "feature": "p1_compliance",
+          "correlation": -0.1767458220658098,
+          "importance": 0.1767458220658098,
+          "relationship": "negative"
+        }
+      ],
+      "all_features": [
+        {
+          "feature": "complexity_score",
+          "correlation": -0.8198239632836666,
+          "importance": 0.8198239632836666,
+          "relationship": "negative"
+        },
+        {
+          "feature": "duration_minutes",
+          "correlation": -0.32737149760619105,
+          "importance": 0.32737149760619105,
+          "relationship": "negative"
+        },
+        {
+          "feature": "p5_compliance",
+          "correlation": -0.19753365613063092,
+          "importance": 0.19753365613063092,
+          "relationship": "negative"
+        },
+        {
+          "feature": "p6_compliance",
+          "correlation": -0.18009172348551353,
+          "importance": 0.18009172348551353,
+          "relationship": "negative"
+        },
+        {
+          "feature": "p1_compliance",
+          "correlation": -0.1767458220658098,
+          "importance": 0.1767458220658098,
+          "relationship": "negative"
+        },
+        {
+          "feature": "p2_compliance",
+          "correlation": 0.10685125605624464,
+          "importance": 0.10685125605624464,
+          "relationship": "positive"
+        },
+        {
+          "feature": "cost",
+          "correlation": 0.09032187351964963,
+          "importance": 0.09032187351964963,
+          "relationship": "positive"
+        },
+        {
+          "feature": "day_of_week",
+          "correlation": 0.08218515069621976,
+          "importance": 0.08218515069621976,
+          "relationship": "positive"
+        },
+        {
+          "feature": "p3_compliance",
+          "correlation": 0.0798917978577361,
+          "importance": 0.0798917978577361,
+          "relationship": "positive"
+        },
+        {
+          "feature": "p4_compliance",
+          "correlation": -0.03273000454657578,
+          "importance": 0.03273000454657578,
+          "relationship": "negative"
+        }
+      ],
+      "method": "Correlation Analysis"
+    }
+  },
+  "insights": [
+    "\u26a0\ufe0f  5 anomalous tasks detected using IsolationForest. Review these cases for potential issues.",
+    "\ud83d\udd27 17 tasks in 'Needs Improvement' cluster (avg rating: 4.51). Focus on quality enhancement.",
+    "\ud83c\udfaf 'complexity_score' has strongest influence on ratings (correlation: -0.820). Optimize this factor."
+  ]
+}

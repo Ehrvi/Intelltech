@@ -7,3 +7,4 @@
 {"timestamp": "2026-02-15T13:46:22.821376", "tenant_id": "65723ca7f5565065", "event": "resource_used", "details": {"resource": "api_calls", "amount": 75}}
 {"timestamp": "2026-02-15T13:46:22.821691", "tenant_id": "228b10ef457b75a9", "event": "tenant_updated", "details": {"plan": "premium", "config": {"priority_support": true}}}
 {"timestamp": "2026-02-15T13:46:22.821966", "tenant_id": "65723ca7f5565065", "event": "tenant_deleted", "details": {"hard_delete": false}}
+{"timestamp": "2026-02-15T14:05:50.855561", "tenant_id": "b4931c900525b6d9", "event": "tenant_created", "details": {"tenant_name": "TestV1", "plan": "free"}}
