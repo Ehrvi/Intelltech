@@ -97,16 +97,27 @@ READ /home/ubuntu/manus_global_knowledge/core/SCIENTIFIC_METHODOLOGY_REQUIREMENT
 
 **ALWAYS load these files (universal for all projects):**
 
-1. `/home/ubuntu/manus_university/core/DECISION_TREE.md`
+1. `/home/ubuntu/manus_global_knowledge/core/COGNITIVE_ENFORCEMENT_PROTOCOL.md`
+   - **CRITICAL:** Autonomous decision-making framework
+   - Cost optimization through cognitive enforcement
+   - Decision checklist before every tool call
+   - "Don't ask, decide" principle
+
+2. `/home/ubuntu/manus_global_knowledge/ai_university/lessons/LESSON_017_Autonomous_Decision_Making.md`
+   - **CRITICAL:** Autonomous problem-solving
+   - When to ask vs when to decide
+   - Cost impact of asking vs deciding
+
+3. `/home/ubuntu/manus_university/core/DECISION_TREE.md`
    - Tool selection framework (Manus vs GPT vs APIs)
 
-2. `/home/ubuntu/manus_university/core/COST_OPTIMIZATION.md`
+4. `/home/ubuntu/manus_university/core/COST_OPTIMIZATION.md`
    - 3-tier cost model for all tasks
 
-3. `/home/ubuntu/manus_university/core/QUALITY_STANDARDS.md`
+5. `/home/ubuntu/manus_university/core/QUALITY_STANDARDS.md`
    - Quality thresholds and validation criteria
 
-4. `/home/ubuntu/manus_university/core/LESSONS_LEARNED.md`
+6. `/home/ubuntu/manus_university/core/LESSONS_LEARNED.md`
    - Universal lessons applicable to all projects
 
 ---
