@@ -12,7 +12,22 @@ This runs at the start of EVERY Manus conversation, providing unlimited cross-pr
 
 ---
 
-### Step 0: Credit Check (MANDATORY FIRST)
+### Step 0: Sync from GitHub (MANDATORY FIRST)
+
+**Purpose:** Ensure you always have the latest version of the knowledge system.
+
+```bash
+# Clone if doesn't exist, pull if exists
+if [ ! -d /home/ubuntu/manus_global_knowledge ]; then
+  git clone https://github.com/Ehrvi/Intelltech.git /home/ubuntu/manus_global_knowledge
+fi
+
+cd /home/ubuntu/manus_global_knowledge && git pull origin main
+```
+
+---
+
+### Step 1: Credit Check (MANDATORY)
 
 **Purpose:** Ensure APIs have credits before routing tasks.
 
@@ -28,7 +43,7 @@ python3.11 /home/ubuntu/skills/ai-task-optimizer/scripts/credit_monitor.py
 
 ---
 
-### Step 1: Optimized Knowledge Sync (Phase 1 - Cache-First)
+### Step 2: Optimized Knowledge Sync (Phase 1 - Cache-First)
 
 **Purpose:** Get latest knowledge with 80-90% credit savings.
 
@@ -49,7 +64,7 @@ cd /home/ubuntu/manus_global_knowledge && ./optimized_sync.sh pull
 
 ---
 
-### Step 2: Load Master Index (ALL Projects)
+### Step 3: Load Master Index (ALL Projects)
 
 **ALWAYS load:**
 
@@ -78,7 +93,7 @@ READ /home/ubuntu/manus_global_knowledge/core/SCIENTIFIC_METHODOLOGY_REQUIREMENT
 
 ---
 
-### Step 3: Load Core Universal Frameworks
+### Step 4: Load Core Universal Frameworks
 
 **ALWAYS load these files (universal for all projects):**
 
@@ -96,7 +111,7 @@ READ /home/ubuntu/manus_global_knowledge/core/SCIENTIFIC_METHODOLOGY_REQUIREMENT
 
 ---
 
-### Step 4: Detect Current Project Context (if any)
+### Step 5: Detect Current Project Context (if any)
 
 ```
 IF project_context exists in user message or conversation:
@@ -116,7 +131,7 @@ ELSE:
 
 ---
 
-### Step 5: Enable Cross-Project Search
+### Step 6: Enable Cross-Project Search
 
 **Set global search mode:**
 
@@ -134,7 +149,7 @@ cross_project_access = UNLIMITED
 
 ---
 
-### Step 6: Apply Unified Routing Logic
+### Step 7: Apply Unified Routing Logic
 
 **Integrated decision system combining:**
 - First Rule Over All (OpenAI capable?)
@@ -186,7 +201,7 @@ User Task
 
 ---
 
-### Step 7: Execute with Cost Optimization & Cross-Project Access
+### Step 8: Execute with Cost Optimization & Cross-Project Access
 
 1. **Check for reusable assets (across ALL projects):**
    - Templates in `/manus_university/templates/`
@@ -206,7 +221,7 @@ User Task
 
 ---
 
-### Step 7: Cross-Project Entity Lookup (Automatic)
+### Step 9: Cross-Project Entity Lookup (Automatic)
 
 **When any entity is mentioned:**
 
@@ -229,7 +244,7 @@ IF entity_type:
 
 ---
 
-### Step 8: Post-Task Learning & Sync
+### Step 10: Post-Task Learning & Sync
 
 After completing ANY task:
 
