@@ -1,0 +1,51 @@
+[
+  {
+    "rule_id": "openai_first",
+    "rule_name": "Rule: Always check if OpenAI can do it first",
+    "context": {
+      "tool": "manus_browser",
+      "task": "Research top 10 companies",
+      "action_type": "research"
+    },
+    "reason": "BLOCKED: OpenAI can handle research. Use OpenAI API instead of manus_browser.",
+    "timestamp": "2026-02-15T05:34:18.045922"
+  },
+  {
+    "rule_id": "check_existing",
+    "rule_name": "Rule: Check registry before creating new system",
+    "context": {
+      "action": "create_system",
+      "system_name": "initialization_system"
+    },
+    "reason": "BLOCKED: System 'initialization_system' already exists at /home/ubuntu/manus_global_knowledge/INITIALIZER.md. Use existing system instead of creating new one.",
+    "timestamp": "2026-02-15T05:34:18.048620"
+  },
+  {
+    "rule_id": "scientific_methodology",
+    "rule_name": "Rule: Must follow scientific methodology for analysis/research",
+    "context": {
+      "action_type": "research",
+      "has_citations": false,
+      "has_methodology": false
+    },
+    "reason": "BLOCKED: Research/analysis must include citations and sources.",
+    "timestamp": "2026-02-15T05:34:18.048881"
+  },
+  {
+    "rule_id": "cost_threshold",
+    "rule_name": "Rule: Actions above cost threshold require approval",
+    "context": {
+      "cost": 50,
+      "has_approval": false
+    },
+    "reason": "BLOCKED: Cost (50 credits) exceeds threshold (20). Requires user approval.",
+    "timestamp": "2026-02-15T05:34:18.049181"
+  },
+  {
+    "rule_id": "mandatory_init",
+    "rule_name": "Rule: Mandatory initialization must complete before actions",
+    "context": {},
+    "reason": "BLOCKED: Mandatory initialization not complete. Run: python3 /home/ubuntu/manus_global_knowledge/mandatory_init.py",
+    "timestamp": "2026-02-15T05:34:18.049402"
+  }
+]

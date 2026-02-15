@@ -1,0 +1,5 @@
+[2026-02-14 23:41:12] === PUSH OPERATION STARTED ===
+[2026-02-14 23:41:12] \033[1;33mRebuilding search indices...\033[0m
+[2026-02-14 23:41:12] \033[0;32m✅ Search indices rebuilt\033[0m
+[2026-02-14 23:41:12] \033[1;33mSyncing FROM local TO Google Drive...\033[0m
+2026/02/14 23:41:12 CRITICAL: Can't set -v and --log-level

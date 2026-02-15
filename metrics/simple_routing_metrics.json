@@ -1,0 +1,239 @@
+{
+  "total_tasks": 29,
+  "openai_tasks": 22,
+  "manus_tasks": 7,
+  "routing_history": [
+    {
+      "task": "Research top 10 construction companies in Australia",
+      "engine": "openai",
+      "keywords": [
+        "research",
+        "search"
+      ],
+      "timestamp": "2026-02-15T03:15:16.986937"
+    },
+    {
+      "task": "Summarize this 50-page technical report",
+      "engine": "openai",
+      "keywords": [
+        "summarize"
+      ],
+      "timestamp": "2026-02-15T03:15:16.987233"
+    },
+    {
+      "task": "Translate document from English to Portuguese",
+      "engine": "openai",
+      "keywords": [
+        "translate"
+      ],
+      "timestamp": "2026-02-15T03:15:16.987445"
+    },
+    {
+      "task": "Write a draft blog post about SHMS technology",
+      "engine": "openai",
+      "keywords": [
+        "write",
+        "draft"
+      ],
+      "timestamp": "2026-02-15T03:15:16.987813"
+    },
+    {
+      "task": "Find contact information for mining companies in Chile",
+      "engine": "openai",
+      "keywords": [
+        "find",
+        "format"
+      ],
+      "timestamp": "2026-02-15T03:15:16.987999"
+    },
+    {
+      "task": "Create a list of renewable energy projects in Asia",
+      "engine": "openai",
+      "keywords": [
+        "list"
+      ],
+      "timestamp": "2026-02-15T03:15:16.988191"
+    },
+    {
+      "task": "Format this data into a table",
+      "engine": "openai",
+      "keywords": [
+        "format"
+      ],
+      "timestamp": "2026-02-15T03:15:16.988376"
+    },
+    {
+      "task": "Write Python code to parse CSV files",
+      "engine": "openai",
+      "keywords": [
+        "code",
+        "write"
+      ],
+      "timestamp": "2026-02-15T03:15:16.988731"
+    },
+    {
+      "task": "Create final client presentation for BHP Group",
+      "engine": "manus",
+      "keywords": [
+        "final client"
+      ],
+      "timestamp": "2026-02-15T03:15:16.988982"
+    },
+    {
+      "task": "Make strategic decision on market entry timing",
+      "engine": "manus",
+      "keywords": [
+        "strategic decision"
+      ],
+      "timestamp": "2026-02-15T03:15:16.989200"
+    },
+    {
+      "task": "Validate financial projections for investor pitch",
+      "engine": "openai",
+      "keywords": [],
+      "timestamp": "2026-02-15T03:15:16.989417"
+    },
+    {
+      "task": "Review legal contract for compliance",
+      "engine": "manus",
+      "keywords": [
+        "legal contract"
+      ],
+      "timestamp": "2026-02-15T03:15:16.989628"
+    },
+    {
+      "task": "Prepare board presentation on Q4 results",
+      "engine": "openai",
+      "keywords": [],
+      "timestamp": "2026-02-15T03:15:16.989854"
+    },
+    {
+      "task": "Decide whether to acquire competitor",
+      "engine": "openai",
+      "keywords": [],
+      "timestamp": "2026-02-15T03:15:16.990142"
+    },
+    {
+      "task": "Final deliverable for CEO review",
+      "engine": "openai",
+      "keywords": [],
+      "timestamp": "2026-02-15T03:15:16.990367"
+    },
+    {
+      "task": "Research top 10 mining companies in Chile",
+      "engine": "openai",
+      "keywords": [
+        "research",
+        "search"
+      ],
+      "timestamp": "2026-02-15T03:16:55.825568"
+    },
+    {
+      "task": "Summarize this technical report on structural health monitoring",
+      "engine": "openai",
+      "keywords": [
+        "summarize"
+      ],
+      "timestamp": "2026-02-15T03:17:02.580526"
+    },
+    {
+      "task": "Translate user manual from English to Portuguese",
+      "engine": "openai",
+      "keywords": [
+        "translate"
+      ],
+      "timestamp": "2026-02-15T03:17:05.202327"
+    },
+    {
+      "task": "Write Python script to analyze CSV data",
+      "engine": "openai",
+      "keywords": [
+        "analyze",
+        "script",
+        "write"
+      ],
+      "timestamp": "2026-02-15T03:17:06.730085"
+    },
+    {
+      "task": "Create final client presentation for BHP Group",
+      "engine": "manus",
+      "keywords": [
+        "final client"
+      ],
+      "timestamp": "2026-02-15T03:17:15.030288"
+    },
+    {
+      "task": "Find contact information for renewable energy companies in Japan",
+      "engine": "openai",
+      "keywords": [
+        "find",
+        "format"
+      ],
+      "timestamp": "2026-02-15T03:17:15.030761"
+    },
+    {
+      "task": "Make strategic decision on market entry timing for Indonesia",
+      "engine": "manus",
+      "keywords": [
+        "strategic decision"
+      ],
+      "timestamp": "2026-02-15T03:17:18.673707"
+    },
+    {
+      "task": "Format this data into a professional table",
+      "engine": "openai",
+      "keywords": [
+        "format"
+      ],
+      "timestamp": "2026-02-15T03:17:18.674402"
+    },
+    {
+      "task": "Prepare board presentation on Q4 financial results",
+      "engine": "openai",
+      "keywords": [],
+      "timestamp": "2026-02-15T03:17:19.570346"
+    },
+    {
+      "task": "Research top 10 mining companies",
+      "engine": "openai",
+      "keywords": [
+        "research",
+        "search"
+      ],
+      "timestamp": "2026-02-15T03:17:41.335376"
+    },
+    {
+      "task": "Final client presentation",
+      "engine": "manus",
+      "keywords": [
+        "final client"
+      ],
+      "timestamp": "2026-02-15T03:17:41.335887"
+    },
+    {
+      "task": "Translate document",
+      "engine": "openai",
+      "keywords": [
+        "translate"
+      ],
+      "timestamp": "2026-02-15T03:17:41.336317"
+    },
+    {
+      "task": "Write code",
+      "engine": "openai",
+      "keywords": [
+        "code",
+        "write"
+      ],
+      "timestamp": "2026-02-15T03:17:41.336649"
+    },
+    {
+      "task": "Strategic decision on market entry",
+      "engine": "manus",
+      "keywords": [
+        "strategic decision"
+      ],
+      "timestamp": "2026-02-15T03:17:41.337024"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "systems": {
+    "initialization_system": {
+      "exists": true,
+      "location": "/home/ubuntu/manus_global_knowledge/INITIALIZER.md",
+      "version": "3.0",
+      "last_updated": "2026-02-14",
+      "description": "Complete initialization sequence with optimized sync, adaptive router, and scientific methodology"
+    },
+    "mandatory_init": {
+      "exists": true,
+      "location": "/home/ubuntu/manus_global_knowledge/mandatory_init.py",
+      "version": "1.0",
+      "last_updated": "2026-02-15",
+      "description": "Mandatory initialization hook (Fix 1)"
+    },
+    "cost_gate": {
+      "exists": true,
+      "location": "/home/ubuntu/manus_global_knowledge/core/cost_gate.py",
+      "version": "1.0",
+      "last_updated": "2026-02-15",
+      "description": "Cost validation gate (Fix 2)"
+    },
+    "adaptive_router": {
+      "exists": true,
+      "location": "/home/ubuntu/manus_global_knowledge/core/adaptive_router.py",
+      "version": "2.1",
+      "last_updated": "2026-02-15",
+      "description": "Self-learning adaptive router with 80-90% OpenAI routing"
+    },
+    "cost_optimization": {
+      "exists": true,
+      "location": "/home/ubuntu/manus_global_knowledge/INITIALIZER.md",
+      "version": "3.0",
+      "integrated": true,
+      "last_updated": "2026-02-14",
+      "description": "Integrated cost optimization (Phase 1 + 2.1)"
+    },
+    "scientific_methodology": {
+      "exists": true,
+      "location": "/home/ubuntu/manus_global_knowledge/core/SCIENTIFIC_METHODOLOGY_REQUIREMENTS.md",
+      "version": "1.0",
+      "last_updated": "2026-02-14",
+      "description": "Scientific methodology requirements for all responses"
+    },
+    "guardian_validator": {
+      "exists": true,
+      "location": "/home/ubuntu/manus_global_knowledge/core/guardian_validator.py",
+      "version": "1.0",
+      "last_updated": "2026-02-15",
+      "description": "Guardian validation middleware for quality assurance"
+    },
+    "optimized_sync": {
+      "exists": true,
+      "location": "/home/ubuntu/manus_global_knowledge/optimized_sync.sh",
+      "version": "1.0",
+      "last_updated": "2026-02-14",
+      "description": "Optimized sync with cache-first strategy (80-90% savings)"
+    }
+  },
+  "last_updated": "2026-02-15T05:33:19.586015",
+  "total_systems": 8
+}

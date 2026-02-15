@@ -1,0 +1,557 @@
+[
+  {
+    "task": "Research top 10 mining companies",
+    "routed_to": "openai",
+    "features": {
+      "length": 32,
+      "word_count": 5,
+      "has_numbers": true,
+      "has_question": false,
+      "manus_keyword_count": 0,
+      "openai_keyword_count": 2,
+      "manus_keywords": [],
+      "openai_keywords": [
+        "research",
+        "search"
+      ],
+      "starts_with_verb": true
+    },
+    "confidence": 0.8,
+    "timestamp": "2026-02-15T03:23:56.065436",
+    "outcome": {
+      "success": true,
+      "quality_score": 90,
+      "escalated": false,
+      "user_feedback": null,
+      "timestamp": "2026-02-15T03:23:56.065683"
+    }
+  },
+  {
+    "task": "Translate document to Portuguese",
+    "routed_to": "openai",
+    "features": {
+      "length": 32,
+      "word_count": 4,
+      "has_numbers": false,
+      "has_question": false,
+      "manus_keyword_count": 0,
+      "openai_keyword_count": 1,
+      "manus_keywords": [],
+      "openai_keywords": [
+        "translate"
+      ],
+      "starts_with_verb": true
+    },
+    "confidence": 0.8,
+    "timestamp": "2026-02-15T03:23:56.065881",
+    "outcome": {
+      "success": true,
+      "quality_score": 85,
+      "escalated": false,
+      "user_feedback": null,
+      "timestamp": "2026-02-15T03:23:56.066221"
+    }
+  },
+  {
+    "task": "Write Python code",
+    "routed_to": "openai",
+    "features": {
+      "length": 17,
+      "word_count": 3,
+      "has_numbers": false,
+      "has_question": false,
+      "manus_keyword_count": 0,
+      "openai_keyword_count": 2,
+      "manus_keywords": [],
+      "openai_keywords": [
+        "code",
+        "write"
+      ],
+      "starts_with_verb": true
+    },
+    "confidence": 0.8,
+    "timestamp": "2026-02-15T03:23:56.066446",
+    "outcome": {
+      "success": true,
+      "quality_score": 88,
+      "escalated": false,
+      "user_feedback": null,
+      "timestamp": "2026-02-15T03:23:56.066592"
+    }
+  },
+  {
+    "task": "Final client presentation",
+    "routed_to": "manus",
+    "features": {
+      "length": 25,
+      "word_count": 3,
+      "has_numbers": false,
+      "has_question": false,
+      "manus_keyword_count": 1,
+      "openai_keyword_count": 0,
+      "manus_keywords": [
+        "final client"
+      ],
+      "openai_keywords": [],
+      "starts_with_verb": false
+    },
+    "confidence": 0.8,
+    "timestamp": "2026-02-15T03:23:56.066828",
+    "outcome": {
+      "success": true,
+      "quality_score": 95,
+      "escalated": false,
+      "user_feedback": null,
+      "timestamp": "2026-02-15T03:23:56.066976"
+    }
+  },
+  {
+    "task": "Summarize technical report",
+    "routed_to": "openai",
+    "features": {
+      "length": 26,
+      "word_count": 3,
+      "has_numbers": false,
+      "has_question": false,
+      "manus_keyword_count": 0,
+      "openai_keyword_count": 1,
+      "manus_keywords": [],
+      "openai_keywords": [
+        "summarize"
+      ],
+      "starts_with_verb": true
+    },
+    "confidence": 0.8,
+    "timestamp": "2026-02-15T03:23:56.067275",
+    "outcome": {
+      "success": true,
+      "quality_score": 92,
+      "escalated": false,
+      "user_feedback": null,
+      "timestamp": "2026-02-15T03:23:56.067439"
+    }
+  },
+  {
+    "task": "Find contact information",
+    "routed_to": "openai",
+    "features": {
+      "length": 24,
+      "word_count": 3,
+      "has_numbers": false,
+      "has_question": false,
+      "manus_keyword_count": 0,
+      "openai_keyword_count": 2,
+      "manus_keywords": [],
+      "openai_keywords": [
+        "find",
+        "format"
+      ],
+      "starts_with_verb": true
+    },
+    "confidence": 0.8,
+    "timestamp": "2026-02-15T03:23:56.067699",
+    "outcome": {
+      "success": true,
+      "quality_score": 87,
+      "escalated": false,
+      "user_feedback": null,
+      "timestamp": "2026-02-15T03:23:56.067848"
+    }
+  },
+  {
+    "task": "Strategic decision on market entry",
+    "routed_to": "manus",
+    "features": {
+      "length": 34,
+      "word_count": 5,
+      "has_numbers": false,
+      "has_question": false,
+      "manus_keyword_count": 1,
+      "openai_keyword_count": 0,
+      "manus_keywords": [
+        "strategic decision"
+      ],
+      "openai_keywords": [],
+      "starts_with_verb": false
+    },
+    "confidence": 0.8,
+    "timestamp": "2026-02-15T03:23:56.068142",
+    "outcome": {
+      "success": true,
+      "quality_score": 95,
+      "escalated": false,
+      "user_feedback": null,
+      "timestamp": "2026-02-15T03:23:56.068302"
+    }
+  },
+  {
+    "task": "Format data into table",
+    "routed_to": "openai",
+    "features": {
+      "length": 22,
+      "word_count": 4,
+      "has_numbers": false,
+      "has_question": false,
+      "manus_keyword_count": 0,
+      "openai_keyword_count": 1,
+      "manus_keywords": [],
+      "openai_keywords": [
+        "format"
+      ],
+      "starts_with_verb": false
+    },
+    "confidence": 0.8,
+    "timestamp": "2026-02-15T03:23:56.068626",
+    "outcome": {
+      "success": true,
+      "quality_score": 90,
+      "escalated": false,
+      "user_feedback": null,
+      "timestamp": "2026-02-15T03:23:56.068809"
+    }
+  },
+  {
+    "task": "Research renewable energy projects",
+    "routed_to": "openai",
+    "features": {
+      "length": 34,
+      "word_count": 4,
+      "has_numbers": false,
+      "has_question": false,
+      "manus_keyword_count": 0,
+      "openai_keyword_count": 2,
+      "manus_keywords": [],
+      "openai_keywords": [
+        "research",
+        "search"
+      ],
+      "starts_with_verb": true
+    },
+    "confidence": 0.8,
+    "timestamp": "2026-02-15T03:23:56.069177",
+    "outcome": {
+      "success": true,
+      "quality_score": 89,
+      "escalated": false,
+      "user_feedback": null,
+      "timestamp": "2026-02-15T03:23:56.069359"
+    }
+  },
+  {
+    "task": "Legal contract review",
+    "routed_to": "manus",
+    "features": {
+      "length": 21,
+      "word_count": 3,
+      "has_numbers": false,
+      "has_question": false,
+      "manus_keyword_count": 1,
+      "openai_keyword_count": 0,
+      "manus_keywords": [
+        "legal contract"
+      ],
+      "openai_keywords": [],
+      "starts_with_verb": false
+    },
+    "confidence": 0.8,
+    "timestamp": "2026-02-15T03:23:56.069916",
+    "outcome": {
+      "success": true,
+      "quality_score": 95,
+      "escalated": false,
+      "user_feedback": null,
+      "timestamp": "2026-02-15T03:23:56.070176"
+    }
+  },
+  {
+    "task": "Analyze market trends",
+    "routed_to": "openai",
+    "features": {
+      "length": 21,
+      "word_count": 3,
+      "has_numbers": false,
+      "has_question": false,
+      "manus_keyword_count": 0,
+      "openai_keyword_count": 1,
+      "manus_keywords": [],
+      "openai_keywords": [
+        "analyze"
+      ],
+      "starts_with_verb": false
+    },
+    "confidence": 0.8,
+    "timestamp": "2026-02-15T03:23:56.070627",
+    "outcome": {
+      "success": true,
+      "quality_score": 88,
+      "escalated": false,
+      "user_feedback": null,
+      "timestamp": "2026-02-15T03:23:56.070885"
+    }
+  },
+  {
+    "task": "Create draft proposal",
+    "routed_to": "openai",
+    "features": {
+      "length": 21,
+      "word_count": 3,
+      "has_numbers": false,
+      "has_question": false,
+      "manus_keyword_count": 0,
+      "openai_keyword_count": 1,
+      "manus_keywords": [],
+      "openai_keywords": [
+        "draft"
+      ],
+      "starts_with_verb": true
+    },
+    "confidence": 0.8,
+    "timestamp": "2026-02-15T03:23:56.071323",
+    "outcome": {
+      "success": true,
+      "quality_score": 86,
+      "escalated": false,
+      "user_feedback": null,
+      "timestamp": "2026-02-15T03:23:56.071522"
+    }
+  },
+  {
+    "task": "Search for industry reports",
+    "routed_to": "openai",
+    "features": {
+      "length": 27,
+      "word_count": 4,
+      "has_numbers": false,
+      "has_question": false,
+      "manus_keyword_count": 0,
+      "openai_keyword_count": 1,
+      "manus_keywords": [],
+      "openai_keywords": [
+        "search"
+      ],
+      "starts_with_verb": false
+    },
+    "confidence": 0.8,
+    "timestamp": "2026-02-15T03:23:56.071968",
+    "outcome": {
+      "success": true,
+      "quality_score": 91,
+      "escalated": false,
+      "user_feedback": null,
+      "timestamp": "2026-02-15T03:23:56.072273"
+    }
+  },
+  {
+    "task": "Compile list of competitors",
+    "routed_to": "openai",
+    "features": {
+      "length": 27,
+      "word_count": 4,
+      "has_numbers": false,
+      "has_question": false,
+      "manus_keyword_count": 0,
+      "openai_keyword_count": 2,
+      "manus_keywords": [],
+      "openai_keywords": [
+        "compile",
+        "list"
+      ],
+      "starts_with_verb": false
+    },
+    "confidence": 0.8,
+    "timestamp": "2026-02-15T03:23:56.072754",
+    "outcome": {
+      "success": true,
+      "quality_score": 89,
+      "escalated": false,
+      "user_feedback": null,
+      "timestamp": "2026-02-15T03:23:56.072965"
+    }
+  },
+  {
+    "task": "Write blog post draft",
+    "routed_to": "openai",
+    "features": {
+      "length": 21,
+      "word_count": 4,
+      "has_numbers": false,
+      "has_question": false,
+      "manus_keyword_count": 0,
+      "openai_keyword_count": 2,
+      "manus_keywords": [],
+      "openai_keywords": [
+        "write",
+        "draft"
+      ],
+      "starts_with_verb": true
+    },
+    "confidence": 0.8,
+    "timestamp": "2026-02-15T03:23:56.073481",
+    "outcome": {
+      "success": true,
+      "quality_score": 87,
+      "escalated": false,
+      "user_feedback": null,
+      "timestamp": "2026-02-15T03:23:56.073724"
+    }
+  },
+  {
+    "task": "Research construction regulations",
+    "routed_to": "openai",
+    "features": {
+      "length": 33,
+      "word_count": 3,
+      "has_numbers": false,
+      "has_question": false,
+      "manus_keyword_count": 0,
+      "openai_keyword_count": 2,
+      "manus_keywords": [],
+      "openai_keywords": [
+        "research",
+        "search"
+      ],
+      "starts_with_verb": true
+    },
+    "confidence": 0.8,
+    "timestamp": "2026-02-15T03:23:56.074277",
+    "outcome": {
+      "success": true,
+      "quality_score": 90,
+      "escalated": false,
+      "user_feedback": null,
+      "timestamp": "2026-02-15T03:23:56.074631"
+    }
+  },
+  {
+    "task": "Translate user manual",
+    "routed_to": "openai",
+    "features": {
+      "length": 21,
+      "word_count": 3,
+      "has_numbers": false,
+      "has_question": false,
+      "manus_keyword_count": 0,
+      "openai_keyword_count": 1,
+      "manus_keywords": [],
+      "openai_keywords": [
+        "translate"
+      ],
+      "starts_with_verb": true
+    },
+    "confidence": 0.8,
+    "timestamp": "2026-02-15T03:23:56.075401",
+    "outcome": {
+      "success": true,
+      "quality_score": 85,
+      "escalated": false,
+      "user_feedback": null,
+      "timestamp": "2026-02-15T03:23:56.075648"
+    }
+  },
+  {
+    "task": "Format spreadsheet data",
+    "routed_to": "openai",
+    "features": {
+      "length": 23,
+      "word_count": 3,
+      "has_numbers": false,
+      "has_question": false,
+      "manus_keyword_count": 0,
+      "openai_keyword_count": 1,
+      "manus_keywords": [],
+      "openai_keywords": [
+        "format"
+      ],
+      "starts_with_verb": false
+    },
+    "confidence": 0.8,
+    "timestamp": "2026-02-15T03:23:56.076233",
+    "outcome": {
+      "success": true,
+      "quality_score": 92,
+      "escalated": false,
+      "user_feedback": null,
+      "timestamp": "2026-02-15T03:23:56.076549"
+    }
+  },
+  {
+    "task": "Find technical specifications",
+    "routed_to": "openai",
+    "features": {
+      "length": 29,
+      "word_count": 3,
+      "has_numbers": false,
+      "has_question": false,
+      "manus_keyword_count": 0,
+      "openai_keyword_count": 1,
+      "manus_keywords": [],
+      "openai_keywords": [
+        "find"
+      ],
+      "starts_with_verb": true
+    },
+    "confidence": 0.8,
+    "timestamp": "2026-02-15T03:23:56.077330",
+    "outcome": {
+      "success": true,
+      "quality_score": 88,
+      "escalated": false,
+      "user_feedback": null,
+      "timestamp": "2026-02-15T03:23:56.077588"
+    }
+  },
+  {
+    "task": "Summarize meeting notes",
+    "routed_to": "openai",
+    "features": {
+      "length": 23,
+      "word_count": 3,
+      "has_numbers": false,
+      "has_question": false,
+      "manus_keyword_count": 0,
+      "openai_keyword_count": 2,
+      "manus_keywords": [],
+      "openai_keywords": [
+        "summarize",
+        "notes"
+      ],
+      "starts_with_verb": true
+    },
+    "confidence": 0.8,
+    "timestamp": "2026-02-15T03:23:56.078254",
+    "outcome": {
+      "success": true,
+      "quality_score": 90,
+      "escalated": false,
+      "user_feedback": null,
+      "timestamp": "2026-02-15T03:23:56.078513"
+    }
+  },
+  {
+    "task": "Research SHMS applications",
+    "routed_to": "openai",
+    "features": {
+      "length": 26,
+      "word_count": 3,
+      "has_numbers": false,
+      "has_question": false,
+      "manus_keyword_count": 0,
+      "openai_keyword_count": 2,
+      "manus_keywords": [],
+      "openai_keywords": [
+        "research",
+        "search"
+      ],
+      "starts_with_verb": true
+    },
+    "confidence": 0.0,
+    "timestamp": "2026-02-15T03:23:56.079234",
+    "outcome": {
+      "success": true,
+      "quality_score": 89,
+      "escalated": false,
+      "user_feedback": null,
+      "timestamp": "2026-02-15T03:23:56.079581"
+    }
+  }
+]

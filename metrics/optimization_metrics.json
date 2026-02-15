@@ -1,0 +1,17 @@
+{
+  "phase1_start_date": "2026-02-15T00:31:37.138833",
+  "total_conversations": 2,
+  "google_drive_calls": 0,
+  "cache_hits": 1,
+  "cache_misses": 0,
+  "estimated_credits_saved": 5.0,
+  "daily_stats": [
+    {
+      "date": "2026-02-15",
+      "conversations": 2,
+      "drive_calls": 0,
+      "cache_hits": 1,
+      "cache_misses": 0
+    }
+  ]
+}

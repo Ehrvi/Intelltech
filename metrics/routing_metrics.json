@@ -1,0 +1,98 @@
+{
+  "total_tasks": 6,
+  "openai_tasks": 0,
+  "manus_tasks": 6,
+  "escalations": 0,
+  "quality_failures": 0,
+  "routing_history": [
+    {
+      "task": "Research top 10 construction companies in Australia",
+      "engine": "manus",
+      "analysis": {
+        "complexity": 9,
+        "criticality": 9,
+        "category": "other",
+        "volume": 1,
+        "homogeneity": 1,
+        "client_facing": true,
+        "strategic": true,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "timestamp": "2026-02-15T03:05:18.524385"
+    },
+    {
+      "task": "Create final client presentation for BHP Group",
+      "engine": "manus",
+      "analysis": {
+        "complexity": 9,
+        "criticality": 9,
+        "category": "other",
+        "volume": 1,
+        "homogeneity": 1,
+        "client_facing": true,
+        "strategic": true,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "timestamp": "2026-02-15T03:05:20.819675"
+    },
+    {
+      "task": "Summarize this 50-page technical report",
+      "engine": "manus",
+      "analysis": {
+        "complexity": 9,
+        "criticality": 9,
+        "category": "other",
+        "volume": 1,
+        "homogeneity": 1,
+        "client_facing": true,
+        "strategic": true,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "timestamp": "2026-02-15T03:05:22.588063"
+    },
+    {
+      "task": "Make strategic decision on market entry timing",
+      "engine": "manus",
+      "analysis": {
+        "complexity": 9,
+        "criticality": 10,
+        "category": "strategic_decision",
+        "volume": 1,
+        "homogeneity": 1,
+        "client_facing": true,
+        "strategic": true
+      },
+      "timestamp": "2026-02-15T03:05:24.630332"
+    },
+    {
+      "task": "Translate document from English to Portuguese",
+      "engine": "manus",
+      "analysis": {
+        "complexity": 9,
+        "criticality": 9,
+        "category": "other",
+        "volume": 1,
+        "homogeneity": 1,
+        "client_facing": true,
+        "strategic": true,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "timestamp": "2026-02-15T03:05:27.207116"
+    },
+    {
+      "task": "Validate financial projections for investor pitch",
+      "engine": "manus",
+      "analysis": {
+        "complexity": 9,
+        "criticality": 9,
+        "category": "other",
+        "volume": 1,
+        "homogeneity": 1,
+        "client_facing": true,
+        "strategic": true,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "timestamp": "2026-02-15T03:05:28.868650"
+    }
+  ]
+}
