@@ -194,21 +194,36 @@ for item in items:
 
 ## 📊 Logging Protocol
 
-### After EVERY Operation
+### At Task Start (MANDATORY)
 
-**Mandatory:**
 ```python
-from core.cost_tracker import log_cost
+from core.precise_cost_tracker import start_task
 
-log_cost(
-    operation="Description of what was done",
+start_task("Task description")
+```
+
+### After EVERY Operation (MANDATORY)
+
+```python
+from core.precise_cost_tracker import log_op
+
+log_op(
     tool="Tool used",
-    cost=actual_cost,
+    action="What was done",
+    cost_credits=precise_cost,  # From cost table, not estimate
     alternative_tool="What else could have been used",
     alternative_cost=cost_of_alternative,
-    reason="Why this tool was chosen",
     quality_score=0-100  # Optional
 )
+```
+
+### At Task End (MANDATORY)
+
+```python
+from core.precise_cost_tracker import end_task
+
+report = end_task()
+print(report)  # Show compact cost report to user
 ```
 
 **Example:**
@@ -431,6 +446,26 @@ log_cost(
 - 75-90% cost savings
 - Autonomous, wise decision-making
 - Continuous learning and improvement
+
+---
+
+## 🔄 Weekly Self-Improvement (AUTOMATIC)
+
+**Every Monday:**
+
+```python
+from core.self_improvement import learn_and_improve
+
+report = learn_and_improve()
+print(report)
+```
+
+**System will:**
+- Analyze last 7 days of operations
+- Identify wasteful patterns
+- Learn new optimization rules
+- Generate recommendations
+- Improve decision-making automatically
 
 ---
 

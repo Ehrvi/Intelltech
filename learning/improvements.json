@@ -1,0 +1,1 @@
+{"timestamp": "2026-02-15T10:35:50.207698", "new_rules": [], "updated_rules": [], "insights": [{"type": "low_savings_rate", "value": -19.760479041916167, "action": "increase_openai_usage", "recommendation": "Review all operations and route more to OpenAI"}]}
