@@ -162,6 +162,9 @@ Question: Do I need external research?
 
 ### 5.1 Primary Open-Access Databases
 
+**🌟 UNRESTRICTED ACCESS (Highest Priority):**
+- **Anna's Archive (annas-archive.li)** - Comprehensive archive with millions of academic articles, books, and papers from worldwide sources. No restrictions, no paywalls. Covers all disciplines. **USE THIS FIRST for accessing specific papers and books.**
+
 **Physics, Math, Computer Science:**
 - **arXiv.org** - Preprints in physics, mathematics, CS, quantitative biology
 - **CORE** - Aggregator of open access research papers
@@ -194,6 +197,7 @@ Question: Do I need external research?
 5. **Author requests** - Contact authors directly for copies
 
 **Tools for Finding Free Versions:**
+- **Anna's Archive** - Primary source for unrestricted access to papers and books
 - **Unpaywall** - Browser extension for finding free versions
 - **Open Access Button** - Finds free, legal research
 - **Google Scholar** - Often links to free PDFs

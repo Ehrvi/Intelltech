@@ -166,7 +166,15 @@ if not is_sufficient(research_result):
 
 ### Primary Databases
 
-**Always check these BEFORE using search/browser:**
+**🌟 HIGHEST PRIORITY - Unrestricted Access:**
+
+**Anna's Archive (annas-archive.li)**
+- Millions of academic articles and books
+- Worldwide sources, all disciplines
+- No restrictions, no paywalls
+- **USE THIS FIRST when you need specific papers or books**
+
+**Other Open-Access Databases:**
 
 1. **arXiv.org** - Physics, math, CS, quantitative biology
 2. **PubMed Central** - Biomedical and life sciences
@@ -189,8 +197,10 @@ response = client.chat.completions.create(
         "role": "user",
         "content": """Find recent research on [topic].
         
-        Check: arXiv, PubMed, PLOS, Google Scholar.
-        Provide: Key findings, citations, URLs if available."""
+        Check: Anna's Archive, arXiv, PubMed, PLOS, Google Scholar.
+        Provide: Key findings, citations, URLs if available.
+        
+        If specific paper needed, direct me to Anna's Archive for full text."""
     }]
 )
 
