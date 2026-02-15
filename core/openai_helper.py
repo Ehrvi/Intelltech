@@ -156,17 +156,8 @@ class OpenAIHelper:
         """
         prompt_lower = prompt.lower()
         prompt_length = len(prompt)
-        
-        # Short prompts = fast model
-        if prompt_length < 200:
-            return 'gpt-4-turbo'
-        
-        # Keywords indicating simple tasks
-        simple_keywords = ['summarize', 'translate', 'list', 'define', 'what is']
-        if any(kw in prompt_lower for kw in simple_keywords):
-            return 'gpt-4-turbo'
-        
-        # Keywords indicating complex tasks
+
+        # Keywords indicating complex tasks (highest priority)
         complex_keywords = [
             'analyze', 'design', 'implement', 'comprehensive',
             'complete implementation', 'production-ready',
@@ -174,8 +165,17 @@ class OpenAIHelper:
         ]
         if any(kw in prompt_lower for kw in complex_keywords):
             return 'gpt-5'
+
+        # Keywords indicating simple tasks
+        simple_keywords = ['summarize', 'translate', 'list', 'define', 'what is']
+        if any(kw in prompt_lower for kw in simple_keywords):
+            return 'gpt-4-turbo'
+
+        # Short prompts = fast model (if no keywords match)
+        if prompt_length < 200:
+            return 'gpt-4-turbo'
         
-        # Default to fast model
+        # Default to fast model for longer prompts without specific keywords
         return 'gpt-4-turbo'
     
     def _extract_text(self, output: list) -> str:

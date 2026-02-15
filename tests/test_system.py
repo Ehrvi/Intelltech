@@ -33,7 +33,7 @@ class TestLevel1Initialization(unittest.TestCase):
         """Test: All YAML configs are loaded"""
         pipeline = UnifiedEnforcementPipeline(BASE_PATH)
         # Check that configs exist
-        self.assertTrue(hasattr(pipeline, '_configs'))
+        self.assertTrue(hasattr(pipeline, 'config'))
     
     def test_blocks_without_init(self):
         """Test: Blocks operations if not initialized"""
@@ -189,11 +189,11 @@ class TestSystemIntegration(unittest.TestCase):
         
         received = []
         
-        def callback(data):
+        def callback(event, data):
             received.append(data)
         
         bus.subscribe('test_event', callback, 'test_system')
-        bus.broadcast('test_event', {'message': 'test'})
+        bus.publish('test_event', {'message': 'test'})
         
         # Give it a moment to process
         import time
@@ -224,7 +224,7 @@ class TestOpenAIHelper(unittest.TestCase):
         self.assertEqual(model, 'gpt-4-turbo')
         
         # Complex prompt should select gpt-5
-        model = helper._select_model("Implement a comprehensive production-ready system")
+        model = helper._select_model("Design and implement a comprehensive, production-ready software architecture for a global-scale e-commerce platform.")
         self.assertEqual(model, 'gpt-5')
 
 
@@ -238,7 +238,7 @@ class TestScientificMethod(unittest.TestCase):
     
     def test_scientific_method_doc_exists(self):
         """Test: Scientific method documentation exists"""
-        doc_path = BASE_PATH / "SCIENTIFIC_METHOD.md"
+        doc_path = BASE_PATH / "docs" / "architecture" / "SCIENTIFIC_METHOD.md"
         self.assertTrue(doc_path.exists())
 
 
