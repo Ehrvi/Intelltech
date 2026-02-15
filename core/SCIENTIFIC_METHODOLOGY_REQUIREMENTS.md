@@ -1,19 +1,47 @@
 # Scientific Methodology Requirements
 
-**Version:** 2.0 (Enhanced with External Research Integration)  
+**Version:** 3.0 (Scientific Foundation Mandatory)  
 **Effective Date:** 2026-02-15  
 **Status:** Mandatory  
 **Applies To:** All agent responses, analyses, and recommendations
 
+**CRITICAL UPDATE:** Scientific foundation is now MANDATORY for all outputs. Research is DEFAULT behavior. AI University lessons MUST include quality bibliographic references.
+
 ---
 
-## 1. Core Principle
+## 1. Core Principles
 
-**Every response MUST be grounded in scientific methodology and evidence-based reasoning.**
+### 1.1 Scientific Foundation is Mandatory
+
+**Every output MUST be scientifically grounded and factually correct.**
 
 No "achismo" (guessing), no unfounded claims, no bullshit.
 
-**NEW:** External research and literature review are MANDATORY when internal knowledge is insufficient, outdated, or unvalidated.
+**NEW STANDARD:**
+- **ALWAYS seek scientific knowledge** (default behavior)
+- **ALL outputs must be scientifically grounded** (not optional)
+- **AI University lessons MUST have quality bibliographic references** (non-negotiable)
+- **Only skip research if cost optimization system explicitly blocks** (rare exception)
+
+### 1.2 Research is Default, Not Exception
+
+**Default behavior:**
+```
+Task received → Research (unless cost gate blocks)
+```
+
+**NOT this:**
+```
+Task received → Look for reasons to skip research
+```
+
+### 1.3 Quality Over Cost for Permanent Knowledge
+
+**For AI University lessons:**
+- Research is NON-NEGOTIABLE
+- Cost optimization does NOT apply
+- Quality references are MANDATORY
+- Academic rigor is REQUIRED
 
 ---
 
@@ -566,3 +594,249 @@ Question: Do I need external research?
 **Version:** 2.0  
 **Last Updated:** 2026-02-15  
 **Next Review:** 2026-03-15
+
+
+---
+
+## 10. AI University Lesson Standards
+
+### 10.1 Bibliographic References are MANDATORY
+
+**Every AI University lesson MUST include:**
+
+1. **References Section**
+   - Minimum 3 quality sources
+   - Properly formatted citations
+   - Mix of academic and industry sources
+   - Accessible sources preferred (open-access)
+
+2. **Reference Format**
+   ```markdown
+   ## References
+   
+   1. Author, A. & Author, B. (Year). Title of Paper. Journal Name, Volume(Issue), Pages. DOI or URL
+   2. Organization. (Year). Standard/Report Title. URL
+   3. Author, C. et al. (Year). Conference Paper Title. Conference Name, Pages.
+   ```
+
+3. **Quality Standards**
+   - Peer-reviewed papers (preferred)
+   - Industry standards (IEEE, ISO, W3C, IETF)
+   - Authoritative organizations (ACM, IEEE, AWS, Google, Microsoft)
+   - Government/institutional reports
+   - Recent publications (< 5 years preferred for technology topics)
+
+### 10.2 Source Priority for Lessons
+
+**Tier 1: Academic Sources (Highest Quality)**
+
+1. **Anna's Archive (annas-archive.li)** - PRIMARY SOURCE
+   - Millions of academic papers and books
+   - Worldwide coverage, all disciplines
+   - No restrictions, no paywalls
+   - **USE FIRST for accessing specific papers**
+
+2. **arXiv.org**
+   - Physics, mathematics, computer science, AI/ML
+   - Preprints and papers
+   - Free access
+
+3. **PubMed Central**
+   - Biomedical and life sciences
+   - Peer-reviewed papers
+   - Free access
+
+4. **Google Scholar**
+   - Cross-disciplinary academic search
+   - Citation tracking
+   - Often links to free PDFs
+
+**Tier 2: Industry Standards**
+
+1. IEEE Standards and publications
+2. ISO Standards
+3. W3C Specifications
+4. IETF RFCs
+5. ACM Digital Library
+
+**Tier 3: Authoritative Organizations**
+
+1. AWS, Google Cloud, Microsoft Azure documentation
+2. Government reports and data
+3. Institutional research
+4. Industry best practices from major tech companies
+
+### 10.3 Research Process for Lessons
+
+**Step-by-step process:**
+
+1. **Identify Key Topics**
+   ```python
+   # Use OpenAI to identify research areas (0.01 credits)
+   topics = openai.chat.completions.create(
+       model="gpt-4o",
+       messages=[{
+           "role": "user",
+           "content": f"What are the key academic topics and seminal papers for {lesson_topic}?"
+       }]
+   )
+   ```
+
+2. **Search Academic Sources**
+   - Anna's Archive for specific papers
+   - arXiv for CS/AI/ML topics
+   - PubMed for biomedical topics
+   - Google Scholar for cross-disciplinary
+
+3. **Access Papers**
+   - Download from Anna's Archive (free, unrestricted)
+   - Access from open-access databases
+   - Use institutional access if available
+
+4. **Synthesize Knowledge**
+   - Read and understand sources
+   - Extract key insights
+   - Identify best practices
+   - Note methodologies
+
+5. **Create Lesson with References**
+   - Write lesson content
+   - Add References section
+   - Ensure all claims traceable to sources
+   - Format citations properly
+
+### 10.4 Quality Checklist for Lessons
+
+**Before publishing any AI University lesson:**
+
+- [ ] Minimum 3 quality references included
+- [ ] References section properly formatted
+- [ ] All major claims can be traced to references
+- [ ] References are recent (< 5 years for tech topics)
+- [ ] Mix of academic and industry sources
+- [ ] References are accessible (open-access preferred)
+- [ ] Citations follow proper format
+- [ ] Lesson meets academic standards
+- [ ] Would pass peer review
+
+**If any item is unchecked → Add more research**
+
+### 10.5 Cost Justification for Lesson Research
+
+**Research costs for lessons are ALWAYS justified:**
+
+| Research Activity | Cost | Justification |
+|-------------------|------|---------------|
+| OpenAI topic identification | 0.01 credits | Minimal |
+| Search for papers | 20 credits | One-time per lesson |
+| Access papers (Anna's Archive) | 0 credits | Free |
+| Browser reading (if needed) | 30 credits | Rare, for web sources |
+| **Total typical cost** | **20-50 credits** | **Permanent knowledge** |
+
+**ROI for lessons:**
+- Used by all agents forever
+- Ensures quality and credibility
+- Prevents errors and misinformation
+- Establishes academic standards
+- **Value: Infinite (permanent knowledge base)**
+
+**Cost optimization does NOT apply to lessons.**
+
+### 10.6 Example Reference Section
+
+**Good example:**
+
+```markdown
+## References
+
+1. Zobel, J. & Moffat, A. (2006). Inverted files for text search engines. 
+   ACM Computing Surveys, 38(2), Article 6. 
+   https://doi.org/10.1145/1132956.1132959
+
+2. Manning, C. D., Raghavan, P., & Schütze, H. (2008). 
+   Introduction to Information Retrieval. Cambridge University Press.
+   Available: Anna's Archive
+
+3. Elasticsearch. (2024). Elasticsearch: The Definitive Guide.
+   https://www.elastic.co/guide/en/elasticsearch/guide/current/index.html
+
+4. IEEE. (2023). IEEE Standard for Search Engine Architecture.
+   IEEE Std 2023-2023. https://ieeexplore.ieee.org/document/...
+
+5. Bast, H., Buchhold, B., & Haussmann, E. (2016). 
+   Semantic Search on Text and Knowledge Bases. 
+   Foundations and Trends in Information Retrieval, 10(2-3), 119-271.
+```
+
+**Bad example (DO NOT DO THIS):**
+
+```markdown
+## References
+
+(No references section)
+```
+
+or
+
+```markdown
+## References
+
+1. Wikipedia article on indexing
+2. Random blog post
+3. Stack Overflow answer
+```
+
+### 10.7 Enforcement
+
+**This is NON-NEGOTIABLE:**
+
+- All new lessons MUST have references
+- Existing lessons without references should be updated
+- Lessons without references are considered INCOMPLETE
+- Quality review will check for proper references
+
+**Consequences of not following:**
+- Lesson rejected
+- Must add references before publishing
+- Quality standards not met
+
+---
+
+## 11. Summary of V3.0 Changes
+
+**Major updates in Version 3.0:**
+
+1. **Scientific Foundation is Mandatory**
+   - Changed from "should" to "MUST"
+   - Research is default behavior
+   - Only skip if cost gate explicitly blocks
+
+2. **AI University Lesson Standards**
+   - Bibliographic references now MANDATORY
+   - Minimum 3 quality sources required
+   - Proper citation format enforced
+   - Academic rigor required
+
+3. **Research Priority**
+   - Anna's Archive added as PRIMARY source
+   - Clear source hierarchy established
+   - Research process documented
+   - Cost justification clarified
+
+4. **Quality Over Cost**
+   - For lessons: quality always wins
+   - Cost optimization does NOT apply to lessons
+   - Research investment justified by permanent value
+
+**Impact:**
+- Higher quality outputs across all work
+- Academic credibility for AI University
+- Verified and trustworthy knowledge base
+- Professional standards maintained
+
+---
+
+**Version History:**
+- V1.0 (2024): Initial scientific methodology
+- V2.0 (2026-02-15): Added external research integration
+- V3.0 (2026-02-15): Made scientific foundation mandatory, added lesson reference requirements
