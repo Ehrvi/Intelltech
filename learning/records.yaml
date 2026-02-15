@@ -19,3 +19,31 @@
     quality_threshold: 0.8
     observed_quality: 0.945
   timestamp: null
+- action_type: test.openai.generate
+  metadata:
+    tool: test_tool
+    module: test_module
+    cost_estimate: 0.1
+  result_status: ok
+  result_meta:
+    execution_target: openai
+    tool: test_tool
+    requires_manus: false
+    estimated_quality: 0.9
+    quality_threshold: 0.8
+    observed_quality: 0.9
+  timestamp: null
+- action_type: test.openai.generate
+  metadata:
+    tool: test_tool
+    module: test_module
+    cost_estimate: 0.1
+  result_status: ok
+  result_meta:
+    execution_target: openai
+    tool: test_tool
+    requires_manus: false
+    estimated_quality: 0.9
+    quality_threshold: 0.8
+    observed_quality: 0.9
+  timestamp: null

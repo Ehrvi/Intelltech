@@ -6,6 +6,7 @@ import logging
 from functools import wraps
 from pathlib import Path
 from typing import Any, Callable, Dict, List, Optional, Tuple
+from core.openai_helper import openai_helper
 
 import yaml
 
@@ -691,21 +692,33 @@ class UnifiedEnforcementPipeline:
             Tuple of (output, quality).
         """
         payload = act.get("payload")
-        text = ""
+        prompt = ""
         if isinstance(payload, str):
-            text = payload
-        elif isinstance(payload, dict) and "text" in payload and isinstance(payload["text"], str):
-            text = payload["text"]
+            prompt = payload
+        elif isinstance(payload, dict):
+            # Extract prompt from kwargs if available, following the tool call structure
+            prompt = payload.get("kwargs", {}).get("prompt", str(payload))
         else:
-            text = str(payload)
+            prompt = str(payload)
 
-        complexity = max(1, len(text.split()))
-        # Heuristic: more complex -> lower quality for OpenAI path in this stub.
-        quality = max(0.60, 0.95 - min(complexity, 50) * 0.005)
-        output = {
-            "result": f"Simulated OpenAI response for: {act.get('type')}",
-            "payload_echo": text[:256],
-        }
+        # Use the robust openai_helper for the actual API call
+        response = openai_helper.generate(prompt=prompt, model='auto')
+
+        # Determine quality based on the success of the API call
+        if response.get('success'):
+            quality = 0.9  # High quality for a successful call
+            output = {
+                "result": response.get('output'),
+                "model_used": response.get('model_used'),
+                "duration": response.get('duration'),
+            }
+        else:
+            quality = 0.1  # Low quality for a failed call
+            output = {
+                "result": "OpenAI execution failed.",
+                "error": response.get('error'),
+            }
+        
         return output, quality
 
     def _execute_manus(

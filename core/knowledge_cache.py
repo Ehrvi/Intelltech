@@ -1,230 +1,126 @@
 #!/usr/bin/env python3
 """
-Knowledge Cache with Semantic Search
+Knowledge Cache with In-Memory Indexing and Retry Logic
 
-Prevents duplicate work by caching and reusing previous results.
-Fixes BUG-005: No Knowledge Reuse
-
-Based on: Reimers, N. & Gurevych, I. (2019). "Sentence-BERT: Sentence 
-Embeddings using Siamese BERT-Networks"
+Adds resilience to network errors by implementing retry logic for embedding generation.
 """
 
 import json
-import os
+import numpy as np
+import time
 from datetime import datetime
 from pathlib import Path
 from typing import Dict, Optional, List
-from openai import OpenAI
+from openai import OpenAI, APIConnectionError
 
 class KnowledgeCache:
-    """Semantic knowledge cache for reusing previous work"""
+    """A semantic knowledge cache using an in-memory vector index."""
     
-    def __init__(self, base_path: Path = Path("/home/ubuntu/manus_global_knowledge")):
+    def __init__(self, base_path: Path = Path("/home/ubuntu/manus_global_knowledge"), similarity_threshold: float = 0.85):
         self.base_path = base_path
         self.cache_dir = base_path / "cache"
         self.cache_dir.mkdir(exist_ok=True)
-        
-        self.cache_file = self.cache_dir / "knowledge.jsonl"
-        self.embeddings_file = self.cache_dir / "embeddings.jsonl"
+        self.cache_file = self.cache_dir / "knowledge_cache.jsonl"
         
         self.client = OpenAI()
-        self.similarity_threshold = 0.85  # 85% similarity = cache hit
-    
-    def search(self, query: str) -> Optional[Dict]:
-        """
-        Search cache for similar queries
+        self.similarity_threshold = similarity_threshold
         
-        Args:
-            query: The query to search for
-        
-        Returns:
-            Cached result if found, None otherwise
-        """
-        if not self.cache_file.exists():
-            return None
-        
-        # Get query embedding
-        query_embedding = self._get_embedding(query)
-        
-        # Search through cache
-        best_match = None
-        best_similarity = 0
-        
-        with open(self.cache_file, 'r') as f:
-            for line in f:
-                entry = json.loads(line)
-                
-                # Calculate similarity
-                cached_embedding = entry.get('embedding')
-                if cached_embedding:
-                    similarity = self._cosine_similarity(query_embedding, cached_embedding)
-                    
-                    if similarity > best_similarity:
-                        best_similarity = similarity
-                        best_match = entry
-        
-        # Return if similarity exceeds threshold
-        if best_similarity >= self.similarity_threshold:
-            return {
-                'query': best_match['query'],
-                'result': best_match['result'],
-                'timestamp': best_match['timestamp'],
-                'similarity': best_similarity,
-                'cache_hit': True
-            }
-        
-        return None
-    
-    def save(self, query: str, result: str, metadata: Optional[Dict] = None):
-        """
-        Save query and result to cache
-        
-        Args:
-            query: The original query
-            result: The result/answer
-            metadata: Optional metadata
-        """
-        # Get embedding
-        embedding = self._get_embedding(query)
-        
-        entry = {
-            'timestamp': datetime.now().isoformat(),
-            'query': query,
-            'result': result,
-            'embedding': embedding,
-            'metadata': metadata or {}
-        }
-        
-        # Append to cache
-        with open(self.cache_file, 'a') as f:
-            f.write(json.dumps(entry) + '\n')
-    
-    def _get_embedding(self, text: str) -> List[float]:
-        """Get embedding vector for text using OpenAI"""
-        try:
-            response = self.client.embeddings.create(
-                model="text-embedding-3-small",
-                input=text
-            )
-            return response.data[0].embedding
-        except Exception as e:
-            # Fallback: return zero vector if embedding fails
-            return [0.0] * 1536
-    
-    def _cosine_similarity(self, vec1: List[float], vec2: List[float]) -> float:
-        """Calculate cosine similarity between two vectors"""
-        if len(vec1) != len(vec2):
-            return 0.0
-        
-        dot_product = sum(a * b for a, b in zip(vec1, vec2))
-        magnitude1 = sum(a * a for a in vec1) ** 0.5
-        magnitude2 = sum(b * b for b in vec2) ** 0.5
-        
-        if magnitude1 == 0 or magnitude2 == 0:
-            return 0.0
-        
-        return dot_product / (magnitude1 * magnitude2)
-    
-    def get_stats(self) -> Dict:
-        """Get cache statistics"""
-        if not self.cache_file.exists():
-            return {
-                'total_entries': 0,
-                'cache_size_kb': 0
-            }
-        
-        # Count entries
-        with open(self.cache_file, 'r') as f:
-            entries = sum(1 for _ in f)
-        
-        # Get file size
-        size_kb = self.cache_file.stat().st_size / 1024
-        
-        return {
-            'total_entries': entries,
-            'cache_size_kb': size_kb
-        }
-    
-    def clear_old_entries(self, days: int = 30):
-        """Remove entries older than N days"""
+        self._embeddings: Optional[np.ndarray] = None
+        self._metadata: List[Dict] = []
+        self._load_cache_into_memory()
+
+    def _load_cache_into_memory(self):
         if not self.cache_file.exists():
             return
-        
-        cutoff = datetime.now().timestamp() - (days * 86400)
-        
-        # Read all entries
-        entries = []
-        with open(self.cache_file, 'r') as f:
+        embeddings, metadata = [], []
+        with self.cache_file.open("r") as f:
             for line in f:
-                entry = json.loads(line)
-                timestamp = datetime.fromisoformat(entry['timestamp']).timestamp()
-                if timestamp > cutoff:
-                    entries.append(entry)
+                try:
+                    entry = json.loads(line)
+                    if "embedding" in entry and "query" in entry:
+                        embeddings.append(entry["embedding"])
+                        meta = {k: v for k, v in entry.items() if k != "embedding"}
+                        metadata.append(meta)
+                except json.JSONDecodeError:
+                    continue
+        if embeddings:
+            self._embeddings = np.array(embeddings, dtype=np.float32)
+            self._metadata = metadata
+
+    def search(self, query: str) -> Optional[Dict]:
+        if self._embeddings is None or len(self._embeddings) == 0:
+            return None
+
+        query_embedding = self._get_embedding_with_retry(query)
+        if query_embedding is None:
+            return None
+
+        similarities = self._cosine_similarity_numpy(np.array(query_embedding, dtype=np.float32), self._embeddings)
+        best_index = np.argmax(similarities)
+        best_similarity = similarities[best_index]
+
+        if best_similarity >= self.similarity_threshold:
+            best_match_meta = self._metadata[best_index]
+            return {**best_match_meta, "similarity": float(best_similarity), "cache_hit": True}
         
-        # Rewrite file with only recent entries
-        with open(self.cache_file, 'w') as f:
-            for entry in entries:
-                f.write(json.dumps(entry) + '\n')
+        return None
 
+    def save(self, query: str, result: str, metadata: Optional[Dict] = None):
+        embedding = self._get_embedding_with_retry(query)
+        if embedding is None:
+            print(f"Skipping cache save for query \"{query}\" due to embedding failure.")
+            return
 
-# Convenience functions
-_cache = None
+        entry = {
+            "timestamp": datetime.now().isoformat(),
+            "query": query,
+            "result": result,
+            "embedding": embedding,
+            "metadata": metadata or {}
+        }
+        
+        with self.cache_file.open("a") as f:
+            f.write(json.dumps(entry) + "\n")
+        
+        embedding_np = np.array([embedding], dtype=np.float32)
+        if self._embeddings is None:
+            self._embeddings = embedding_np
+        else:
+            self._embeddings = np.vstack([self._embeddings, embedding_np])
+        
+        self._metadata.append({k: v for k, v in entry.items() if k != "embedding"})
+
+    def _get_embedding_with_retry(self, text: str, max_retries: int = 3, delay: float = 1.0) -> Optional[List[float]]:
+        """Gets an embedding with retry logic for transient network errors."""
+        for attempt in range(max_retries):
+            try:
+                response = self.client.embeddings.create(model="text-embedding-3-small", input=text.strip())
+                return response.data[0].embedding
+            except APIConnectionError as e:
+                print(f"Attempt {attempt + 1}/{max_retries} failed: {e}. Retrying in {delay}s...")
+                time.sleep(delay)
+            except Exception as e:
+                print(f"An unexpected error occurred while getting embedding: {e}")
+                return None
+        print(f"Failed to get embedding for \"{text}\" after {max_retries} attempts.")
+        return None
+
+    def _cosine_similarity_numpy(self, vec1: np.ndarray, vec2: np.ndarray) -> np.ndarray:
+        vec1_norm = np.linalg.norm(vec1)
+        if vec1_norm == 0: return np.zeros(vec2.shape[0])
+        vec2_norm = np.linalg.norm(vec2, axis=1)
+        vec2_norm[vec2_norm == 0] = 1e-9
+        return np.dot(vec2, vec1) / (vec1_norm * vec2_norm)
+
+_cache_instance: Optional[KnowledgeCache] = None
 
 def get_cache() -> KnowledgeCache:
-    """Get the global cache instance"""
-    global _cache
-    if _cache is None:
-        _cache = KnowledgeCache()
-    return _cache
-
-
-def search_cache(query: str) -> Optional[Dict]:
-    """Quick cache search"""
-    return get_cache().search(query)
-
-
-def save_to_cache(query: str, result: str, metadata: Optional[Dict] = None):
-    """Quick cache save"""
-    get_cache().save(query, result, metadata)
-
-
-if __name__ == '__main__':
-    # Demo usage
-    cache = KnowledgeCache()
-    
-    print("Testing Knowledge Cache...")
-    print("=" * 70)
-    
-    # Save some knowledge
-    print("Saving knowledge to cache...")
-    cache.save(
-        query="What are the top AI companies?",
-        result="OpenAI, Google DeepMind, Anthropic, Microsoft, Meta",
-        metadata={'source': 'research', 'quality': 95}
-    )
-    
-    # Search for exact match
-    print("\nSearching for exact match...")
-    result = cache.search("What are the top AI companies?")
-    if result:
-        print(f"✅ Cache hit! Similarity: {result['similarity']:.2%}")
-        print(f"   Result: {result['result']}")
-    else:
-        print("❌ Cache miss")
-    
-    # Search for similar query
-    print("\nSearching for similar query...")
-    result = cache.search("List the best AI companies")
-    if result:
-        print(f"✅ Cache hit! Similarity: {result['similarity']:.2%}")
-        print(f"   Result: {result['result']}")
-    else:
-        print("❌ Cache miss")
-    
-    # Get stats
-    print("\nCache statistics:")
-    stats = cache.get_stats()
-    print(f"  Total entries: {stats['total_entries']}")
-    print(f"  Cache size: {stats['cache_size_kb']:.2f} KB")
-    
-    print("=" * 70)
+    global _cache_instance
+    if _cache_instance is None:
+        try:
+            import numpy
+        except ImportError:
+            import subprocess, sys
+            subprocess.check_call([sys.executable, "-m", "pip", "install", "numpy"])
+        _cache_instance = KnowledgeCache()
+    return _cache_instance
