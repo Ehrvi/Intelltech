@@ -1,6 +1,6 @@
 # Manus Global Knowledge - Master Index
 
-**Last Updated:** 2026-02-14  
+**Last Updated:** 2026-02-15  
 **Purpose:** Central index of ALL knowledge across ALL projects for cross-project access
 
 ---
@@ -69,6 +69,18 @@
 | APAC Infrastructure Investment | `/projects/intelltech/data/APAC_infrastructure_investment.md` | IntellTech |
 | SHM Market Data | `/projects/intelltech/data/SHM_market_intelligence.md` | IntellTech |
 | Competitive Intelligence | `/projects/intelltech/data/competitive_intelligence.md` | IntellTech |
+
+### Design & Visual Theory
+
+| Topic | Location | Applicable To |
+|-------|----------|---------------|
+| Psychology & Neuroscience of Design | `/docs/reference/design/01_psychology_neuroscience.md` | All visual projects |
+| Mathematics & Geometry in Design | `/docs/reference/design/02_mathematics_geometry.md` | Layout, branding, architecture |
+| Culture & History of Design | `/docs/reference/design/03_culture_history.md` | Understanding design evolution |
+| Advanced Color Theory | `/docs/reference/design/04_advanced_color_theory.md` | Branding, UI/UX, accessibility |
+| Typography Deep Dive | `/docs/reference/design/05_typography_deep_dive.md` | All text-based design |
+| Modern Design Systems | `/docs/reference/design/06_modern_design_systems.md` | Web/app development |
+| Design Knowledge Index | `/docs/reference/design/README.md` | Complete design reference |
 
 ### Processes & SOPs
 
@@ -177,7 +189,8 @@ READ /home/ubuntu/manus_global_knowledge/cross_project/shared_entities.md
 - **Total Contacts:** 200+
 - **Total Case Studies:** 10
 - **Total Market Reports:** 3
-- **Total Size:** 5.6 MB
+- **Total Design Knowledge Areas:** 6
+- **Total Size:** 5.7 MB
 
 ---
 

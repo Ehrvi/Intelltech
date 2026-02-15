@@ -5,30 +5,6 @@
       "project": "intelltech"
     },
     {
-      "file": "projects/intelltech/data/case_studies/water_dams_sermo_indonesia.md",
-      "project": "intelltech"
-    },
-    {
-      "file": "projects/intelltech/data/case_studies/renewable_greenough_australia.md",
-      "project": "intelltech"
-    },
-    {
-      "file": "projects/intelltech/data/case_studies/mining_cadia_australia.md",
-      "project": "intelltech"
-    },
-    {
-      "file": "projects/intelltech/data/market_data/competitive_intelligence.md",
-      "project": "intelltech"
-    },
-    {
-      "file": "projects/intelltech/data/market_data/APAC_infrastructure_investment.md",
-      "project": "intelltech"
-    },
-    {
-      "file": "projects/intelltech/data/market_data/strategic_frameworks.md",
-      "project": "intelltech"
-    },
-    {
       "file": "projects/intelltech/archives/2026-02-14_APAC_Strategic_Report/IntellTech_APAC_Strategic_Report_COMPLETE.md",
       "project": "intelltech"
     },
@@ -54,6 +30,30 @@
     },
     {
       "file": "projects/intelltech/archives/2026-02-14_APAC_Strategic_Report/chapters/chapter5_conclusion.md",
+      "project": "intelltech"
+    },
+    {
+      "file": "projects/intelltech/data/case_studies/mining_cadia_australia.md",
+      "project": "intelltech"
+    },
+    {
+      "file": "projects/intelltech/data/case_studies/renewable_greenough_australia.md",
+      "project": "intelltech"
+    },
+    {
+      "file": "projects/intelltech/data/case_studies/water_dams_sermo_indonesia.md",
+      "project": "intelltech"
+    },
+    {
+      "file": "projects/intelltech/data/market_data/APAC_infrastructure_investment.md",
+      "project": "intelltech"
+    },
+    {
+      "file": "projects/intelltech/data/market_data/competitive_intelligence.md",
+      "project": "intelltech"
+    },
+    {
+      "file": "projects/intelltech/data/market_data/strategic_frameworks.md",
       "project": "intelltech"
     }
   ],
@@ -63,22 +63,6 @@
       "project": "intelltech"
     },
     {
-      "file": "projects/intelltech/data/case_studies/railways_korea_hsr.md",
-      "project": "intelltech"
-    },
-    {
-      "file": "projects/intelltech/data/case_studies/renewable_greenough_australia.md",
-      "project": "intelltech"
-    },
-    {
-      "file": "projects/intelltech/data/market_data/APAC_infrastructure_investment.md",
-      "project": "intelltech"
-    },
-    {
-      "file": "projects/intelltech/data/market_data/strategic_frameworks.md",
-      "project": "intelltech"
-    },
-    {
       "file": "projects/intelltech/archives/2026-02-14_APAC_Strategic_Report/IntellTech_APAC_Strategic_Report_COMPLETE.md",
       "project": "intelltech"
     },
@@ -105,31 +89,13 @@
     {
       "file": "projects/intelltech/archives/2026-02-14_APAC_Strategic_Report/chapters/chapter5_conclusion.md",
       "project": "intelltech"
-    }
-  ],
-  "indonesia": [
-    {
-      "file": "projects/intelltech/PROJECT_PROFILE.md",
-      "project": "intelltech"
     },
     {
       "file": "projects/intelltech/data/case_studies/railways_korea_hsr.md",
       "project": "intelltech"
     },
     {
-      "file": "projects/intelltech/data/case_studies/water_dams_sermo_indonesia.md",
-      "project": "intelltech"
-    },
-    {
       "file": "projects/intelltech/data/case_studies/renewable_greenough_australia.md",
-      "project": "intelltech"
-    },
-    {
-      "file": "projects/intelltech/data/case_studies/infrastructure_penang_bridge_malaysia.md",
-      "project": "intelltech"
-    },
-    {
-      "file": "projects/intelltech/data/case_studies/ports_quay_wall_korea.md",
       "project": "intelltech"
     },
     {
@@ -138,6 +104,12 @@
     },
     {
       "file": "projects/intelltech/data/market_data/strategic_frameworks.md",
+      "project": "intelltech"
+    }
+  ],
+  "indonesia": [
+    {
+      "file": "projects/intelltech/PROJECT_PROFILE.md",
       "project": "intelltech"
     },
     {
@@ -162,6 +134,34 @@
     },
     {
       "file": "projects/intelltech/archives/2026-02-14_APAC_Strategic_Report/chapters/chapter5_conclusion.md",
+      "project": "intelltech"
+    },
+    {
+      "file": "projects/intelltech/data/case_studies/infrastructure_penang_bridge_malaysia.md",
+      "project": "intelltech"
+    },
+    {
+      "file": "projects/intelltech/data/case_studies/ports_quay_wall_korea.md",
+      "project": "intelltech"
+    },
+    {
+      "file": "projects/intelltech/data/case_studies/railways_korea_hsr.md",
+      "project": "intelltech"
+    },
+    {
+      "file": "projects/intelltech/data/case_studies/renewable_greenough_australia.md",
+      "project": "intelltech"
+    },
+    {
+      "file": "projects/intelltech/data/case_studies/water_dams_sermo_indonesia.md",
+      "project": "intelltech"
+    },
+    {
+      "file": "projects/intelltech/data/market_data/APAC_infrastructure_investment.md",
+      "project": "intelltech"
+    },
+    {
+      "file": "projects/intelltech/data/market_data/strategic_frameworks.md",
       "project": "intelltech"
     }
   ],
@@ -171,30 +171,6 @@
       "project": "intelltech"
     },
     {
-      "file": "projects/intelltech/data/case_studies/oil_gas_ormen_lange_norway_malaysia.md",
-      "project": "intelltech"
-    },
-    {
-      "file": "projects/intelltech/data/case_studies/railways_korea_hsr.md",
-      "project": "intelltech"
-    },
-    {
-      "file": "projects/intelltech/data/case_studies/infrastructure_penang_bridge_malaysia.md",
-      "project": "intelltech"
-    },
-    {
-      "file": "projects/intelltech/data/case_studies/ports_quay_wall_korea.md",
-      "project": "intelltech"
-    },
-    {
-      "file": "projects/intelltech/data/market_data/APAC_infrastructure_investment.md",
-      "project": "intelltech"
-    },
-    {
-      "file": "projects/intelltech/data/market_data/strategic_frameworks.md",
-      "project": "intelltech"
-    },
-    {
       "file": "projects/intelltech/archives/2026-02-14_APAC_Strategic_Report/IntellTech_APAC_Strategic_Report_COMPLETE.md",
       "project": "intelltech"
     },
@@ -217,11 +193,55 @@
     {
       "file": "projects/intelltech/archives/2026-02-14_APAC_Strategic_Report/chapters/chapter5_conclusion.md",
       "project": "intelltech"
+    },
+    {
+      "file": "projects/intelltech/data/case_studies/infrastructure_penang_bridge_malaysia.md",
+      "project": "intelltech"
+    },
+    {
+      "file": "projects/intelltech/data/case_studies/oil_gas_ormen_lange_norway_malaysia.md",
+      "project": "intelltech"
+    },
+    {
+      "file": "projects/intelltech/data/case_studies/ports_quay_wall_korea.md",
+      "project": "intelltech"
+    },
+    {
+      "file": "projects/intelltech/data/case_studies/railways_korea_hsr.md",
+      "project": "intelltech"
+    },
+    {
+      "file": "projects/intelltech/data/market_data/APAC_infrastructure_investment.md",
+      "project": "intelltech"
+    },
+    {
+      "file": "projects/intelltech/data/market_data/strategic_frameworks.md",
+      "project": "intelltech"
     }
   ],
   "singapore": [
     {
       "file": "projects/intelltech/PROJECT_PROFILE.md",
+      "project": "intelltech"
+    },
+    {
+      "file": "projects/intelltech/archives/2026-02-14_APAC_Strategic_Report/IntellTech_APAC_Strategic_Report_COMPLETE.md",
+      "project": "intelltech"
+    },
+    {
+      "file": "projects/intelltech/archives/2026-02-14_APAC_Strategic_Report/KNOWLEDGE_MANAGEMENT.md",
+      "project": "intelltech"
+    },
+    {
+      "file": "projects/intelltech/archives/2026-02-14_APAC_Strategic_Report/chapters/chapter2_complete.md",
+      "project": "intelltech"
+    },
+    {
+      "file": "projects/intelltech/archives/2026-02-14_APAC_Strategic_Report/chapters/chapter4_complete.md",
+      "project": "intelltech"
+    },
+    {
+      "file": "projects/intelltech/archives/2026-02-14_APAC_Strategic_Report/chapters/chapter5_conclusion.md",
       "project": "intelltech"
     },
     {
@@ -233,35 +253,15 @@
       "project": "intelltech"
     },
     {
-      "file": "projects/intelltech/data/market_data/competitive_intelligence.md",
-      "project": "intelltech"
-    },
-    {
       "file": "projects/intelltech/data/market_data/APAC_infrastructure_investment.md",
       "project": "intelltech"
     },
     {
+      "file": "projects/intelltech/data/market_data/competitive_intelligence.md",
+      "project": "intelltech"
+    },
+    {
       "file": "projects/intelltech/data/market_data/strategic_frameworks.md",
-      "project": "intelltech"
-    },
-    {
-      "file": "projects/intelltech/archives/2026-02-14_APAC_Strategic_Report/IntellTech_APAC_Strategic_Report_COMPLETE.md",
-      "project": "intelltech"
-    },
-    {
-      "file": "projects/intelltech/archives/2026-02-14_APAC_Strategic_Report/KNOWLEDGE_MANAGEMENT.md",
-      "project": "intelltech"
-    },
-    {
-      "file": "projects/intelltech/archives/2026-02-14_APAC_Strategic_Report/chapters/chapter2_complete.md",
-      "project": "intelltech"
-    },
-    {
-      "file": "projects/intelltech/archives/2026-02-14_APAC_Strategic_Report/chapters/chapter4_complete.md",
-      "project": "intelltech"
-    },
-    {
-      "file": "projects/intelltech/archives/2026-02-14_APAC_Strategic_Report/chapters/chapter5_conclusion.md",
       "project": "intelltech"
     }
   ],
@@ -271,26 +271,6 @@
       "project": "intelltech"
     },
     {
-      "file": "projects/intelltech/data/case_studies/railways_korea_hsr.md",
-      "project": "intelltech"
-    },
-    {
-      "file": "projects/intelltech/data/case_studies/renewable_greenough_australia.md",
-      "project": "intelltech"
-    },
-    {
-      "file": "projects/intelltech/data/case_studies/infrastructure_penang_bridge_malaysia.md",
-      "project": "intelltech"
-    },
-    {
-      "file": "projects/intelltech/data/case_studies/ports_quay_wall_korea.md",
-      "project": "intelltech"
-    },
-    {
-      "file": "projects/intelltech/data/market_data/APAC_infrastructure_investment.md",
-      "project": "intelltech"
-    },
-    {
       "file": "projects/intelltech/archives/2026-02-14_APAC_Strategic_Report/IntellTech_APAC_Strategic_Report_COMPLETE.md",
       "project": "intelltech"
     },
@@ -301,15 +281,13 @@
     {
       "file": "projects/intelltech/archives/2026-02-14_APAC_Strategic_Report/chapters/chapter5_conclusion.md",
       "project": "intelltech"
-    }
-  ],
-  "vietnam": [
+    },
     {
-      "file": "projects/intelltech/PROJECT_PROFILE.md",
+      "file": "projects/intelltech/data/case_studies/infrastructure_penang_bridge_malaysia.md",
       "project": "intelltech"
     },
     {
-      "file": "projects/intelltech/data/case_studies/energy_donghai_china.md",
+      "file": "projects/intelltech/data/case_studies/ports_quay_wall_korea.md",
       "project": "intelltech"
     },
     {
@@ -321,15 +299,13 @@
       "project": "intelltech"
     },
     {
-      "file": "projects/intelltech/data/case_studies/infrastructure_penang_bridge_malaysia.md",
-      "project": "intelltech"
-    },
-    {
-      "file": "projects/intelltech/data/case_studies/ports_quay_wall_korea.md",
-      "project": "intelltech"
-    },
-    {
       "file": "projects/intelltech/data/market_data/APAC_infrastructure_investment.md",
+      "project": "intelltech"
+    }
+  ],
+  "vietnam": [
+    {
+      "file": "projects/intelltech/PROJECT_PROFILE.md",
       "project": "intelltech"
     },
     {
@@ -347,19 +323,9 @@
     {
       "file": "projects/intelltech/archives/2026-02-14_APAC_Strategic_Report/chapters/chapter5_conclusion.md",
       "project": "intelltech"
-    }
-  ],
-  "philippines": [
-    {
-      "file": "projects/intelltech/PROJECT_PROFILE.md",
-      "project": "intelltech"
     },
     {
-      "file": "projects/intelltech/data/case_studies/water_dams_sermo_indonesia.md",
-      "project": "intelltech"
-    },
-    {
-      "file": "projects/intelltech/data/case_studies/renewable_greenough_australia.md",
+      "file": "projects/intelltech/data/case_studies/energy_donghai_china.md",
       "project": "intelltech"
     },
     {
@@ -371,11 +337,21 @@
       "project": "intelltech"
     },
     {
-      "file": "projects/intelltech/data/market_data/APAC_infrastructure_investment.md",
+      "file": "projects/intelltech/data/case_studies/railways_korea_hsr.md",
       "project": "intelltech"
     },
     {
-      "file": "projects/intelltech/data/market_data/strategic_frameworks.md",
+      "file": "projects/intelltech/data/case_studies/renewable_greenough_australia.md",
+      "project": "intelltech"
+    },
+    {
+      "file": "projects/intelltech/data/market_data/APAC_infrastructure_investment.md",
+      "project": "intelltech"
+    }
+  ],
+  "philippines": [
+    {
+      "file": "projects/intelltech/PROJECT_PROFILE.md",
       "project": "intelltech"
     },
     {
@@ -389,16 +365,6 @@
     {
       "file": "projects/intelltech/archives/2026-02-14_APAC_Strategic_Report/chapters/chapter5_conclusion.md",
       "project": "intelltech"
-    }
-  ],
-  "south korea": [
-    {
-      "file": "projects/intelltech/PROJECT_PROFILE.md",
-      "project": "intelltech"
-    },
-    {
-      "file": "projects/intelltech/data/case_studies/railways_korea_hsr.md",
-      "project": "intelltech"
     },
     {
       "file": "projects/intelltech/data/case_studies/infrastructure_penang_bridge_malaysia.md",
@@ -409,7 +375,25 @@
       "project": "intelltech"
     },
     {
+      "file": "projects/intelltech/data/case_studies/renewable_greenough_australia.md",
+      "project": "intelltech"
+    },
+    {
+      "file": "projects/intelltech/data/case_studies/water_dams_sermo_indonesia.md",
+      "project": "intelltech"
+    },
+    {
       "file": "projects/intelltech/data/market_data/APAC_infrastructure_investment.md",
+      "project": "intelltech"
+    },
+    {
+      "file": "projects/intelltech/data/market_data/strategic_frameworks.md",
+      "project": "intelltech"
+    }
+  ],
+  "south korea": [
+    {
+      "file": "projects/intelltech/PROJECT_PROFILE.md",
       "project": "intelltech"
     },
     {
@@ -431,6 +415,22 @@
     {
       "file": "projects/intelltech/archives/2026-02-14_APAC_Strategic_Report/chapters/chapter5_conclusion.md",
       "project": "intelltech"
+    },
+    {
+      "file": "projects/intelltech/data/case_studies/infrastructure_penang_bridge_malaysia.md",
+      "project": "intelltech"
+    },
+    {
+      "file": "projects/intelltech/data/case_studies/ports_quay_wall_korea.md",
+      "project": "intelltech"
+    },
+    {
+      "file": "projects/intelltech/data/case_studies/railways_korea_hsr.md",
+      "project": "intelltech"
+    },
+    {
+      "file": "projects/intelltech/data/market_data/APAC_infrastructure_investment.md",
+      "project": "intelltech"
     }
   ],
   "japan": [
@@ -439,11 +439,19 @@
       "project": "intelltech"
     },
     {
-      "file": "projects/intelltech/data/case_studies/railways_korea_hsr.md",
+      "file": "projects/intelltech/archives/2026-02-14_APAC_Strategic_Report/IntellTech_APAC_Strategic_Report_COMPLETE.md",
       "project": "intelltech"
     },
     {
-      "file": "projects/intelltech/data/case_studies/water_dams_sermo_indonesia.md",
+      "file": "projects/intelltech/archives/2026-02-14_APAC_Strategic_Report/chapters/chapter2_complete.md",
+      "project": "intelltech"
+    },
+    {
+      "file": "projects/intelltech/archives/2026-02-14_APAC_Strategic_Report/chapters/chapter3_complete.md",
+      "project": "intelltech"
+    },
+    {
+      "file": "projects/intelltech/archives/2026-02-14_APAC_Strategic_Report/chapters/chapter5_conclusion.md",
       "project": "intelltech"
     },
     {
@@ -455,29 +463,7 @@
       "project": "intelltech"
     },
     {
-      "file": "projects/intelltech/data/market_data/APAC_infrastructure_investment.md",
-      "project": "intelltech"
-    },
-    {
-      "file": "projects/intelltech/archives/2026-02-14_APAC_Strategic_Report/IntellTech_APAC_Strategic_Report_COMPLETE.md",
-      "project": "intelltech"
-    },
-    {
-      "file": "projects/intelltech/archives/2026-02-14_APAC_Strategic_Report/chapters/chapter2_complete.md",
-      "project": "intelltech"
-    },
-    {
-      "file": "projects/intelltech/archives/2026-02-14_APAC_Strategic_Report/chapters/chapter3_complete.md",
-      "project": "intelltech"
-    },
-    {
-      "file": "projects/intelltech/archives/2026-02-14_APAC_Strategic_Report/chapters/chapter5_conclusion.md",
-      "project": "intelltech"
-    }
-  ],
-  "new zealand": [
-    {
-      "file": "projects/intelltech/PROJECT_PROFILE.md",
+      "file": "projects/intelltech/data/case_studies/railways_korea_hsr.md",
       "project": "intelltech"
     },
     {
@@ -487,6 +473,12 @@
     {
       "file": "projects/intelltech/data/market_data/APAC_infrastructure_investment.md",
       "project": "intelltech"
+    }
+  ],
+  "new zealand": [
+    {
+      "file": "projects/intelltech/PROJECT_PROFILE.md",
+      "project": "intelltech"
     },
     {
       "file": "projects/intelltech/archives/2026-02-14_APAC_Strategic_Report/IntellTech_APAC_Strategic_Report_COMPLETE.md",
@@ -499,17 +491,17 @@
     {
       "file": "projects/intelltech/archives/2026-02-14_APAC_Strategic_Report/chapters/chapter5_conclusion.md",
       "project": "intelltech"
-    }
-  ],
-  "china": [
+    },
     {
-      "file": "projects/intelltech/data/case_studies/energy_donghai_china.md",
+      "file": "projects/intelltech/data/case_studies/water_dams_sermo_indonesia.md",
       "project": "intelltech"
     },
     {
       "file": "projects/intelltech/data/market_data/APAC_infrastructure_investment.md",
       "project": "intelltech"
-    },
+    }
+  ],
+  "china": [
     {
       "file": "projects/intelltech/archives/2026-02-14_APAC_Strategic_Report/IntellTech_APAC_Strategic_Report_COMPLETE.md",
       "project": "intelltech"
@@ -520,6 +512,14 @@
     },
     {
       "file": "projects/intelltech/archives/2026-02-14_APAC_Strategic_Report/chapters/chapter3_complete.md",
+      "project": "intelltech"
+    },
+    {
+      "file": "projects/intelltech/data/case_studies/energy_donghai_china.md",
+      "project": "intelltech"
+    },
+    {
+      "file": "projects/intelltech/data/market_data/APAC_infrastructure_investment.md",
       "project": "intelltech"
     }
   ]
