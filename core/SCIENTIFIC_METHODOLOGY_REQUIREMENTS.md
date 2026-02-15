@@ -19,6 +19,7 @@ No "achismo" (guessing), no unfounded claims, no bullshit.
 
 **NEW STANDARD:**
 - **ALWAYS seek scientific knowledge** (default behavior)
+- **Scientific research MUST be quality research, not superficial** (deep, thorough, comprehensive)
 - **ALL outputs must be scientifically grounded** (not optional)
 - **AI University lessons MUST have quality bibliographic references** (non-negotiable)
 - **Only skip research if cost optimization system explicitly blocks** (rare exception)
@@ -35,13 +36,35 @@ Task received → Research (unless cost gate blocks)
 Task received → Look for reasons to skip research
 ```
 
-### 1.3 Quality Over Cost for Permanent Knowledge
+### 1.3 Quality Research, Not Superficial
+
+**Scientific research MUST be quality research:**
+
+**NOT quality research:**
+- Quick searches
+- Reading only abstracts
+- Single source
+- Superficial understanding
+- Uncritical acceptance
+
+**Quality research:**
+- Multiple authoritative sources (minimum 3)
+- Deep reading and understanding
+- Critical evaluation
+- Cross-referencing
+- Synthesis of knowledge
+- Verification of claims
+
+**The rule:** If doing research at all → Do quality research. Don't waste time and credits on superficial research.
+
+### 1.4 Quality Over Cost for Permanent Knowledge
 
 **For AI University lessons:**
 - Research is NON-NEGOTIABLE
+- Quality research is MANDATORY
 - Cost optimization does NOT apply
-- Quality references are MANDATORY
-- Academic rigor is REQUIRED
+- Quality references are REQUIRED
+- Academic rigor is ENFORCED
 
 ---
 
