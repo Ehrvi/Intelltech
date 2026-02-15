@@ -120,55 +120,58 @@ class MultiPlatformCostTracker:
         if not self.platforms:
             return "No operations logged"
         
+        # Calculate totals
+        total_credits = 0.0
+        total_usd = 0.0
+        
         report = "\n"
         report += "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
         report += "📊 MULTI-PLATFORM COST REPORT\n"
         report += "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n"
         
-        # Calculate totals
-        total_credits = 0.0
-        total_usd = 0.0
-        
-        # Summary by platform (with BOTH credits and USD)
-        report += "Subtotals by Platform:\n"
+        # Platform summaries
         for platform_name, platform_cost in self.platforms.items():
             if platform_cost.currency == "credits":
-                # Show credits + USD conversion
                 if platform_cost.platform == "Manus":
                     usd_value = platform_cost.total_cost * 0.01
                 elif platform_cost.platform == "Apollo":
                     usd_value = platform_cost.total_cost * self.APOLLO_CREDIT_USD
                 else:
                     usd_value = 0.0
-                
-                report += f"  💰 {platform_cost.platform}: "
-                report += f"{platform_cost.total_cost:.2f} credits = ${usd_value:.4f} USD\n"
+                report += f"💰 {platform_cost.platform}: {platform_cost.total_cost:.2f} credits\n"
                 total_credits += platform_cost.total_cost
                 total_usd += usd_value
             else:
-                # USD only (no credits)
-                report += f"  💵 {platform_cost.platform}: "
-                report += f"${platform_cost.total_cost:.4f} USD\n"
+                report += f"💵 {platform_cost.platform}: ${platform_cost.total_cost:.4f} USD\n"
                 total_usd += platform_cost.total_cost
         
-        # Grand totals
-        report += "\n"
-        report += "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
-        report += f"💎 TOTAL: {total_credits:.2f} credits = ${total_usd:.4f} USD\n"
-        report += "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
-        
-        report += "\n"
-        report += "Details by Platform:\n"
-        report += "─" * 62 + "\n"
+        report += "\nDetails by Platform:\n\n"
         
         # Details for each platform
         for platform_name, platform_cost in self.platforms.items():
-            report += f"\n{platform_cost.platform}:\n"
-            for op, count in sorted(platform_cost.operations.items(), 
-                                   key=lambda x: -x[1]):
-                report += f"  • {op:20s} {count:3d}x\n"
+            report += f"{platform_cost.platform}:\n"
+            for op, count in sorted(platform_cost.operations.items(), key=lambda x: -x[1]):
+                report += f"  • {op:20s} {count:2d}x\n"
+            report += "\n"
         
-        report += "\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
+        # Totals
+        report += "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
+        report += f"💎 TOTAL COST (USD): ${total_usd:.4f}\n\n"
+        report += "Breakdown:\n"
+        
+        for platform_name, platform_cost in self.platforms.items():
+            if platform_cost.currency == "credits":
+                if platform_cost.platform == "Manus":
+                    usd_value = platform_cost.total_cost * 0.01
+                elif platform_cost.platform == "Apollo":
+                    usd_value = platform_cost.total_cost * self.APOLLO_CREDIT_USD
+                else:
+                    usd_value = 0.0
+                report += f"  • {platform_cost.platform}: {platform_cost.total_cost:.2f} credits ≈ ${usd_value:.4f} USD\n"
+            else:
+                report += f"  • {platform_cost.platform}: ${platform_cost.total_cost:.4f} USD (real token cost)\n"
+        
+        report += "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
         
         return report
     
