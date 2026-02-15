@@ -125,11 +125,37 @@ class MultiPlatformCostTracker:
         report += "📊 MULTI-PLATFORM COST REPORT\n"
         report += "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n"
         
-        # Summary by platform
+        # Calculate totals
+        total_credits = 0.0
+        total_usd = 0.0
+        
+        # Summary by platform (with BOTH credits and USD)
+        report += "Subtotals by Platform:\n"
         for platform_name, platform_cost in self.platforms.items():
-            symbol = "💰" if platform_cost.currency == "credits" else "💵"
-            report += f"{symbol} {platform_cost.platform}: "
-            report += f"{platform_cost.total_cost:.4f} {platform_cost.currency}\n"
+            if platform_cost.currency == "credits":
+                # Show credits + USD conversion
+                if platform_cost.platform == "Manus":
+                    usd_value = platform_cost.total_cost * 0.01
+                elif platform_cost.platform == "Apollo":
+                    usd_value = platform_cost.total_cost * self.APOLLO_CREDIT_USD
+                else:
+                    usd_value = 0.0
+                
+                report += f"  💰 {platform_cost.platform}: "
+                report += f"{platform_cost.total_cost:.2f} credits = ${usd_value:.4f} USD\n"
+                total_credits += platform_cost.total_cost
+                total_usd += usd_value
+            else:
+                # USD only (no credits)
+                report += f"  💵 {platform_cost.platform}: "
+                report += f"${platform_cost.total_cost:.4f} USD\n"
+                total_usd += platform_cost.total_cost
+        
+        # Grand totals
+        report += "\n"
+        report += "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
+        report += f"💎 TOTAL: {total_credits:.2f} credits = ${total_usd:.4f} USD\n"
+        report += "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
         
         report += "\n"
         report += "Details by Platform:\n"
