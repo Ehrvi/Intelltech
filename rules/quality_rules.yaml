@@ -1,0 +1,55 @@
+version: "1.0"
+description: "Quality assurance rules based on scientific methodology"
+
+# Quality thresholds (0.0 to 1.0 scale)
+thresholds:
+  minimum: 0.70      # Minimum acceptable quality
+  target: 0.80       # Target quality for most tasks
+  excellent: 0.90    # Excellent quality benchmark
+  perfect: 0.95      # Near-perfect quality
+
+# Scientific method requirements
+scientific_method:
+  required: true
+  elements:
+    - hypothesis       # Clear statement of what we're investigating
+    - methodology      # How we'll approach the problem
+    - data            # What data/information we'll use
+    - analysis        # How we'll analyze the data
+    - conclusions     # What we learned
+    - limitations     # What are the constraints/caveats
+    - citations       # Sources and references
+
+# Guardian validation system
+guardian:
+  enabled: true
+  threshold: 0.80                    # Minimum quality to pass
+  validate_before_delivery: true     # Always validate before sending to user
+  escalate_on_failure: true         # Escalate if quality < threshold
+  
+  # What to validate
+  validation_criteria:
+    - completeness    # Did we answer the full question?
+    - accuracy        # Is the information correct?
+    - clarity         # Is it easy to understand?
+    - structure       # Is it well-organized?
+    - citations       # Are sources provided?
+    - actionability   # Can the user act on this?
+
+# Quality metrics
+metrics:
+  track_quality_over_time: true
+  generate_reports: true
+  alert_on_degradation: true
+
+# Standards compliance
+standards:
+  iso_25010: true      # ISO/IEC 25010:2011 Software Quality
+  itil_4: true         # ITIL 4 Service Management
+  devops: true         # DevOps Handbook principles
+
+# Continuous improvement
+improvement:
+  learn_from_failures: true
+  update_rules_based_on_feedback: true
+  quarterly_review: true

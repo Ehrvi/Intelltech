@@ -1,0 +1,207 @@
+version: "1.0"
+description: "System integration and coordination to eliminate overlaps"
+
+# Event-driven architecture
+events:
+  # System lifecycle events
+  system_initialized:
+    broadcast: true
+    priority: critical
+    recipients: [all]
+  
+  system_shutdown:
+    broadcast: true
+    priority: critical
+    recipients: [all]
+  
+  # Cost-related events
+  cost_gate_blocked:
+    broadcast: false
+    priority: high
+    recipients: [adaptive_router, metrics, logging]
+    payload:
+      - action_attempted
+      - estimated_cost
+      - cheaper_alternative
+  
+  cost_saved:
+    broadcast: false
+    priority: normal
+    recipients: [metrics, logging]
+    payload:
+      - original_cost
+      - actual_cost
+      - savings
+  
+  # Knowledge-related events
+  knowledge_reused:
+    broadcast: false
+    priority: normal
+    recipients: [system_registry, metrics, logging]
+    payload:
+      - query
+      - matched_content
+      - similarity_score
+  
+  knowledge_created:
+    broadcast: false
+    priority: normal
+    recipients: [system_registry, knowledge_lookup]
+    payload:
+      - content
+      - metadata
+      - tags
+  
+  # Quality-related events
+  quality_validated:
+    broadcast: false
+    priority: high
+    recipients: [adaptive_router, metrics]
+    payload:
+      - content
+      - quality_score
+      - passed
+  
+  quality_failed:
+    broadcast: true
+    priority: critical
+    recipients: [all]
+    payload:
+      - content
+      - quality_score
+      - issues
+  
+  # Routing events
+  task_routed:
+    broadcast: false
+    priority: normal
+    recipients: [metrics, logging]
+    payload:
+      - task
+      - destination
+      - reasoning
+
+# Overlap elimination
+overlaps:
+  # Define ownership to prevent duplicate checks
+  cost_checking:
+    owner: cost_gate
+    others_must_not: [check_cost, estimate_cost, calculate_cost]
+  
+  duplicate_checking:
+    owner: knowledge_lookup
+    others_must_not: [check_duplicates, find_similar, search_existing]
+  
+  quality_validation:
+    owner: guardian_validator
+    others_must_not: [validate_quality, check_quality, assess_quality]
+  
+  routing_decisions:
+    owner: adaptive_router
+    others_must_not: [route_task, decide_tool, select_executor]
+  
+  metrics_collection:
+    owner: metrics_system
+    others_must_not: [collect_metrics, track_metrics, log_metrics]
+
+# System bus configuration
+system_bus:
+  type: in_memory
+  max_queue_size: 1000
+  delivery_guarantee: at_least_once
+  
+  # Subscription management
+  subscriptions:
+    allow_dynamic: true
+    require_registration: true
+    max_per_system: 10
+  
+  # Message routing
+  routing:
+    direct: true      # Send directly to specified recipients
+    broadcast: true   # Support broadcast to all
+    pattern: true     # Support pattern-based routing (e.g., "cost.*")
+
+# Inter-system communication protocols
+protocols:
+  # Request-response pattern
+  request_response:
+    enabled: true
+    timeout: 5000  # milliseconds
+    retry: 3
+  
+  # Publish-subscribe pattern
+  pub_sub:
+    enabled: true
+    topics:
+      - cost
+      - quality
+      - knowledge
+      - routing
+      - metrics
+  
+  # Event streaming
+  event_stream:
+    enabled: true
+    buffer_size: 100
+
+# Coordination rules
+coordination:
+  # Sequential execution (must happen in order)
+  sequential:
+    - initialization
+    - cost_check
+    - knowledge_lookup
+    - execution
+    - quality_validation
+    - learning
+  
+  # Parallel execution (can happen simultaneously)
+  parallel:
+    - metrics_collection
+    - logging
+    - event_broadcasting
+  
+  # Mutual exclusion (only one at a time)
+  mutex:
+    - knowledge_base_write
+    - metrics_db_write
+    - config_file_update
+
+# Health monitoring
+health:
+  enabled: true
+  check_interval: 60  # seconds
+  
+  # What to monitor
+  monitor:
+    - system_bus_operational
+    - all_systems_responsive
+    - no_message_backlog
+    - no_deadlocks
+  
+  # Actions on failure
+  on_failure:
+    - log_error
+    - attempt_recovery
+    - notify_admin
+
+# Performance optimization
+performance:
+  # Caching
+  cache:
+    enabled: true
+    ttl: 3600  # seconds
+    max_size: 1000  # entries
+  
+  # Batching
+  batch:
+    enabled: true
+    max_batch_size: 10
+    max_wait_time: 1000  # milliseconds
+  
+  # Connection pooling
+  pool:
+    enabled: true
+    min_connections: 2
+    max_connections: 10

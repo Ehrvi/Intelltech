@@ -1,0 +1,140 @@
+version: "1.0"
+description: "Total enforcement configuration for unified pipeline"
+
+# Guiding Pillar: Scientific Method
+guiding_pillar:
+  scientific_method:
+    enabled: true
+    applies_to: all_operations
+    config_file: scientific_method_rules.yaml
+    description: "Método científico guia COMO resolver problemas, não substitui ordem de prioridades"
+
+# Mandatory initialization
+mandatory_init:
+  enabled: true
+  block_until_complete: true
+  fail_fast: true
+  
+  # What to initialize
+  components:
+    - system_registry
+    - cost_gate
+    - knowledge_lookup
+    - guardian_validator
+    - adaptive_router
+    - system_bus
+    - ai_university
+  
+  # Initialization checks
+  checks:
+    - verify_all_configs_loaded
+    - verify_system_bus_operational
+    - verify_knowledge_base_accessible
+    - verify_ai_university_loaded
+
+# System registry (prevent duplicates)
+system_registry:
+  enabled: true
+  block_duplicates: true
+  similarity_threshold: 0.85
+  
+  # What to track
+  track:
+    - task_descriptions
+    - generated_content
+    - research_queries
+    - code_artifacts
+  
+  # Deduplication strategy
+  deduplication:
+    check_before_execution: true
+    reuse_if_similar: true
+    update_if_improved: true
+
+# Knowledge lookup (reuse existing)
+knowledge_lookup:
+  enabled: true
+  threshold: 0.80
+  
+  # Search strategy
+  search:
+    - local_cache
+    - project_knowledge
+    - ai_university
+    - global_knowledge
+  
+  # Reuse policy
+  reuse:
+    exact_match: always
+    high_similarity: prompt_user
+    low_similarity: create_new
+
+# Rule engine
+rule_engine:
+  enabled: true
+  strict_mode: true
+  
+  # Rule priority (executed in order)
+  priority:
+    1: initialization
+    2: cost_optimization
+    3: knowledge_management
+    4: execution_routing
+    5: quality_assurance
+    6: continuous_learning
+  
+  # Enforcement level
+  enforcement:
+    level_1_init: MANDATORY
+    level_2_cost: BLOCK_IF_EXPENSIVE
+    level_3_knowledge: REUSE_IF_EXISTS
+    level_4_execution: ROUTE_OPTIMAL
+    level_5_quality: VALIDATE_ALWAYS
+    level_6_learning: TRACK_AND_ADAPT
+
+# Monkey patching (intercept all Manus tools)
+monkey_patching:
+  enabled: true
+  
+  # Tools to intercept
+  intercept:
+    - search
+    - browser
+    - shell
+    - file
+    - match
+    - map
+    - slides
+    - generate
+    - webdev_init_project
+  
+  # Interception strategy
+  strategy:
+    before_execution: check_cost_and_knowledge
+    during_execution: monitor_and_log
+    after_execution: validate_and_learn
+
+# Logging and monitoring
+logging:
+  enabled: true
+  level: INFO
+  
+  # What to log
+  log:
+    - all_enforcements
+    - blocked_actions
+    - cost_savings
+    - knowledge_reuse
+    - quality_scores
+    - routing_decisions
+  
+  # Log destinations
+  destinations:
+    - file: /home/ubuntu/manus_global_knowledge/metrics/enforcement.log
+    - metrics_db: /home/ubuntu/manus_global_knowledge/metrics/metrics.db
+
+# Exceptions (when to bypass enforcement)
+exceptions:
+  emergency_mode: false
+  bypass_for_testing: false
+  allow_manual_override: false  # TOTAL enforcement - no exceptions!

@@ -1,0 +1,53 @@
+version: "1.0"
+description: "Cost optimization rules for Manus Global Knowledge System"
+
+# Cost thresholds in Manus credits
+thresholds:
+  low: 5          # Tasks under 5 credits
+  medium: 20      # Tasks 5-20 credits
+  high: 50        # Tasks 20-50 credits
+  critical: 100   # Tasks over 100 credits (requires approval)
+
+# Routing strategy: which tool to use first
+routing:
+  # Tasks that should try OpenAI first (cheaper, faster)
+  openai_first:
+    - research
+    - analysis
+    - writing
+    - translation
+    - code_generation
+    - data_processing
+    - summarization
+    - question_answering
+  
+  # Tasks that MUST use Manus (no alternative)
+  manus_only:
+    - browser
+    - mcp
+    - file_ops
+    - shell
+    - slides
+    - generate
+    - webdev
+
+# Cost multipliers (relative to baseline)
+cost_multiplier:
+  openai: 0.0001        # Extremely cheap
+  manus_search: 10      # 10 credits per search
+  manus_browser: 50     # 50 credits per browser session
+  manus_parallel: 5     # 5 credits per parallel task
+  manus_slides: 30      # 30 credits per slide generation
+
+# Blocking rules
+blocking:
+  enabled: true
+  block_if_cheaper_exists: true
+  require_justification_above: 100  # Require justification for >100 credits
+
+# Optimization strategies
+optimization:
+  cache_enabled: true
+  batch_operations: true
+  prefer_local_files: true
+  avoid_redundant_searches: true

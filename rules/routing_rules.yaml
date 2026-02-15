@@ -1,0 +1,92 @@
+version: "1.0"
+description: "Adaptive routing rules for optimal task distribution"
+
+# Adaptive router configuration
+adaptive_router:
+  enabled: true
+  learning_enabled: true
+  
+  # Initial distribution (will adapt over time)
+  initial_split:
+    openai: 0.80      # 80% of eligible tasks to OpenAI
+    manus: 0.20       # 20% of tasks to Manus
+  
+  # Learning parameters
+  learning_rate: 0.1
+  min_samples_before_adaptation: 10
+  
+  # Performance tracking
+  track_metrics:
+    - cost
+    - quality
+    - speed
+    - success_rate
+
+# Keywords that indicate high-value tasks (route to Manus)
+manus_keywords:
+  - strategic
+  - client
+  - final
+  - investor
+  - board
+  - CEO
+  - critical
+  - executive
+  - presentation
+  - pitch
+  - proposal
+  - contract
+
+# Keywords that indicate routine tasks (route to OpenAI)
+openai_keywords:
+  - draft
+  - outline
+  - summary
+  - research
+  - analysis
+  - review
+  - brainstorm
+  - ideas
+  - options
+
+# Task complexity scoring
+complexity:
+  simple:           # Score 1-3
+    route_to: openai
+    examples:
+      - "Summarize this article"
+      - "Translate this text"
+      - "Generate code snippet"
+  
+  moderate:         # Score 4-6
+    route_to: openai_with_validation
+    examples:
+      - "Write a technical report"
+      - "Analyze this dataset"
+      - "Create a presentation outline"
+  
+  complex:          # Score 7-9
+    route_to: manus_with_guardian
+    examples:
+      - "Build a complete web application"
+      - "Conduct comprehensive market research"
+      - "Create executive presentation with data"
+  
+  critical:         # Score 10
+    route_to: manus_with_full_validation
+    examples:
+      - "Prepare board presentation"
+      - "Draft investor proposal"
+      - "Create strategic plan"
+
+# Fallback rules
+fallback:
+  if_openai_fails: manus
+  if_manus_fails: escalate_to_human
+  max_retries: 3
+
+# Load balancing
+load_balancing:
+  enabled: true
+  prefer_less_loaded: true
+  max_queue_length: 10

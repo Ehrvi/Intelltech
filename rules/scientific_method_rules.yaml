@@ -1,0 +1,222 @@
+version: "1.0"
+description: "Scientific Method as guiding pillar for problem-solving and system development"
+
+# Pilar Guia - Método Científico
+scientific_method:
+  enabled: true
+  mandatory_for:
+    - problem_solving
+    - new_feature_development
+    - performance_optimization
+    - debugging
+    - system_design
+  
+  # As 12 etapas do método científico
+  steps:
+    1_observe:
+      name: "Observar e Identificar o Problema"
+      question: "O que está errado? Qual é o fenômeno observado?"
+      actions:
+        - collect_initial_evidence
+        - define_problem_clearly
+        - document_symptoms_and_behaviors
+    
+    2_investigate:
+      name: "Investigar e Coletar Dados"
+      question: "Por que está acontecendo? Quais são os fatos?"
+      actions:
+        - gather_relevant_information
+        - measure_and_quantify
+        - identify_patterns_and_anomalies
+    
+    3_hypothesize:
+      name: "Formular Hipótese"
+      question: "Qual é a causa provável? O que pode explicar?"
+      actions:
+        - propose_testable_explanation
+        - base_on_collected_data
+        - consider_multiple_hypotheses
+    
+    4_research:
+      name: "Buscar Informação"
+      question: "O que já existe sobre isso? Quem já resolveu?"
+      actions:
+        - search_scientific_literature
+        - consult_documentation
+        - learn_from_previous_cases
+        - identify_best_practices
+    
+    5_select:
+      name: "Selecionar Solução"
+      question: "Qual é a melhor abordagem baseada em evidências?"
+      actions:
+        - evaluate_alternatives
+        - consider_cost_benefit
+        - choose_most_adequate_solution
+        - justify_choice
+    
+    6_test:
+      name: "Testar em Escala Controlada"
+      question: "Funciona em ambiente limitado?"
+      actions:
+        - create_controlled_experiment
+        - define_success_metrics
+        - execute_pilot_test
+        - minimize_external_variables
+    
+    7_analyze:
+      name: "Analisar e Validar Resultados"
+      question: "Os dados confirmam a hipótese?"
+      iterative: true
+      actions:
+        - collect_experiment_data
+        - compare_with_expectations
+        - analyze_statistically
+        - if_fail_go_to_step_3_or_5
+        - if_pass_proceed
+    
+    8_apply:
+      name: "Aplicar em Escala Real"
+      question: "Implementar completamente a solução validada"
+      actions:
+        - plan_rollout
+        - execute_implementation
+        - prepare_rollback_if_necessary
+    
+    9_monitor:
+      name: "Monitorar e Corrigir"
+      question: "Acompanhar performance e ajustar"
+      actions:
+        - define_kpis
+        - monitor_continuously
+        - detect_deviations
+        - apply_corrections
+    
+    10_document:
+      name: "Documentar"
+      question: "Registrar processo e resultados"
+      actions:
+        - document_methodology
+        - record_results
+        - note_lessons_learned
+        - create_troubleshooting_guides
+    
+    11_replicate:
+      name: "Replicar e Automatizar"
+      question: "Tornar a solução repetível e escalável"
+      actions:
+        - create_scripts_and_tools
+        - standardize_process
+        - facilitate_reuse
+        - eliminate_manual_work
+    
+    12_auto_improve:
+      name: "Auto-Gerenciar e Auto-Melhorar"
+      question: "Sistema autônomo que evolui continuamente"
+      actions:
+        - implement_self_monitoring
+        - create_feedback_loops
+        - enable_continuous_learning
+        - optimize_automatically
+
+# Princípios Fundamentais
+principles:
+  never_run_from_problems:
+    enabled: true
+    description: "Nunca fugir do problema para solução mais cara"
+    enforcement: MANDATORY
+  
+  data_driven_decisions:
+    enabled: true
+    description: "Basear todas as decisões em dados e evidências"
+    enforcement: MANDATORY
+  
+  iterative_process:
+    enabled: true
+    description: "Processo iterativo - falha é parte do aprendizado"
+    enforcement: RECOMMENDED
+  
+  document_everything:
+    enabled: true
+    description: "Documentar tudo para replicação e aprendizado"
+    enforcement: MANDATORY
+  
+  think_at_scale:
+    enabled: true
+    description: "Pensar em escala desde o início"
+    enforcement: RECOMMENDED
+
+# Integração com Sistema de Enforcement
+integration_with_enforcement:
+  # O método científico NÃO substitui a ordem de prioridades
+  preserves_priority_order: true
+  
+  # Mas GUIA como resolver problemas em cada nível
+  applies_to_all_levels:
+    - initialization
+    - cost_optimization
+    - knowledge_management
+    - execution_routing
+    - quality_assurance
+    - continuous_improvement
+  
+  # Quando aplicar
+  triggers:
+    - problem_encountered: apply_12_steps
+    - new_feature: follow_method
+    - optimization_needed: use_scientific_approach
+    - debugging_required: systematic_investigation
+
+# Checklist de Aplicação
+checklist:
+  before_implementation:
+    - problem_clearly_defined
+    - data_collected_and_analyzed
+    - hypothesis_formulated_and_testable
+    - existing_information_researched
+    - solution_selected_with_justification
+    - controlled_test_executed
+    - results_validated_statistically
+    - implementation_planned
+    - monitoring_configured
+    - documentation_complete
+    - process_automated
+    - system_self_improvable
+
+# Métricas de Sucesso
+success_metrics:
+  problem_resolution_rate: 0.95  # 95% dos problemas resolvidos
+  time_to_resolution: "< 2 hours"  # Tempo médio de resolução
+  solution_reusability: 0.80  # 80% das soluções são reutilizáveis
+  documentation_completeness: 1.00  # 100% documentado
+
+# Referências Científicas
+references:
+  - "Bacon, F. (1620). Novum Organum"
+  - "Popper, K. (1959). The Logic of Scientific Discovery"
+  - "Kuhn, T. (1962). The Structure of Scientific Revolutions"
+  - "Feynman, R. (1974). Cargo Cult Science"
+  - "ISO/IEC 25010 (2011). Software Quality Standards"
+
+# Exemplo de Aplicação (OpenAI API)
+example_case_study:
+  problem: "API OpenAI timeout"
+  steps_applied:
+    1: "Observado: timeout após 30s"
+    2: "Investigado: testado diferentes tamanhos de prompt"
+    3: "Hipótese: modelo incorreto ou timeout curto"
+    4: "Pesquisa: gpt-5 usa reasoning (lento por design)"
+    5: "Solução: modelo híbrido (gpt-4-turbo rápido, gpt-5 complexo)"
+    6: "Teste: validado com prompts curto e longo"
+    7: "Validação: 1.71s (simples) e 43.43s (complexo) - SUCESSO"
+    8: "Aplicação: implementado openai_helper.py"
+    9: "Monitoramento: rastreamento de latência"
+    10: "Documentação: SCIENTIFIC_METHOD.md criado"
+    11: "Replicação: helper reutilizável em todo sistema"
+    12: "Auto-melhoria: sistema aprende qual modelo usar"
+  
+  results:
+    success: true
+    performance_improvement: "96% mais rápido"
+    cost_reduction: "~90% (usando gpt-4-turbo quando possível)"
+    reusability: "100% (helper usado em todo sistema)"
