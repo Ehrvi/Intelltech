@@ -30,6 +30,25 @@
 
 **"When facing a problem, always respond with the best solution instead of asking what to choose. Solving problems autonomously with wisdom is also cost savings."**
 
+### Principle 3: MANDATORY Cost Reporting
+
+**"EVERY task MUST end with a cost report. No exceptions."**
+
+**Before sending FINAL result to user:**
+1. Count all operations performed
+2. Generate compact cost report (10 lines max)
+3. Include report at END of final message
+4. Format: Operations | Total Cost | Savings | Rate
+
+**Checklist before final result:**
+- [ ] Counted all operations (shell, file, openai, etc.)
+- [ ] Generated cost report
+- [ ] Report is compact (≤10 lines)
+- [ ] Report included in final message
+- [ ] NO EXCEPTIONS - This is MANDATORY
+
+**If you forget:** You violated the protocol. Learn and never forget again.
+
 ---
 
 ## 🎯 The Decision Framework
