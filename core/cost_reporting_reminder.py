@@ -100,16 +100,19 @@ def generate_simple_cost_report(operations_count: dict) -> str:
     else:
         savings_rate = 0
     
-    # Format report
-    report = "=" * 70 + "\n"
+    # Format report (clean and compact)
+    report = "\n"
+    report += "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
     report += "📊 COST REPORT\n"
-    report += "=" * 70 + "\n"
-    report += f"Total Cost: {total_cost:.2f} credits | "
-    report += f"Savings: {total_saved:.2f} credits | "
-    report += f"Savings Rate: {savings_rate:.1f}%\n\n"
+    report += "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
+    report += f"💰 Total: {total_cost:.2f} credits"
+    if total_saved > 0:
+        report += f"  |  💎 Saved: {total_saved:.2f} credits  |  📈 Rate: {savings_rate:.1f}%"
+    report += "\n\n"
     report += "Operations:\n"
-    report += "\n".join(lines)
-    report += "\n" + "=" * 70
+    for line in lines:
+        report += "  " + line + "\n"
+    report += "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
     
     return report
 
