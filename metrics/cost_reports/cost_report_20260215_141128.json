@@ -1,0 +1,50 @@
+{
+  "timestamp": "2026-02-15T14:11:28.597102",
+  "costs": {
+    "manus_credits": 43.0,
+    "manus_usd": 0.43,
+    "openai_usd": 0.11519999999999998,
+    "openai_tokens": 15168,
+    "openai_calls": 6,
+    "total_usd": 0.5452,
+    "breakdown": {
+      "shell": {
+        "count": 15,
+        "cost": 15.0
+      },
+      "file_read": {
+        "count": 8,
+        "cost": 4.0
+      },
+      "file_write": {
+        "count": 5,
+        "cost": 2.5
+      },
+      "file_edit": {
+        "count": 3,
+        "cost": 1.5
+      },
+      "search": {
+        "count": 1,
+        "cost": 20.0
+      }
+    }
+  },
+  "savings": {
+    "alternative_cost": 300.0,
+    "savings": 299.94,
+    "rate": 99.98
+  },
+  "operations": {
+    "shell": 15,
+    "file_read": 8,
+    "file_write": 5,
+    "file_edit": 3,
+    "search": 1
+  },
+  "openai_usage": {
+    "calls": 6,
+    "total_tokens": 15168,
+    "total_cost_usd": 0.11519999999999998
+  }
+}
