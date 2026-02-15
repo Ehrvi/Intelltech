@@ -1,0 +1,15 @@
+{
+  "total_feedback": 6,
+  "average_rating": 4.333333333333333,
+  "median_rating": 4.5,
+  "rating_distribution": {
+    "5_star": 3,
+    "4_star": 2,
+    "3_star": 1,
+    "2_star": 0,
+    "1_star": 0
+  },
+  "satisfaction_rate": 83.33333333333334,
+  "last_updated": "2026-02-15T13:11:50.791974",
+  "recommendations": []
+}

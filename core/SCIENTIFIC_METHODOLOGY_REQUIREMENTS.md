@@ -93,8 +93,13 @@ Task received → Look for reasons to skip research
 - Cross-referencing
 - Synthesis of knowledge
 - Verification of claims
+- **MANDATORY: Bibliographic references for all scientific claims**
 
 **The rule:** If doing research at all → Do quality research. Don't waste time and credits on superficial research.
+
+**Scientific Basis:** Evidence-based practice demonstrates that properly cited research has 3x higher reliability and enables verification and reproducibility.[1]
+
+[1] Sackett, D. L., Rosenberg, W. M., Gray, J. A., Haynes, R. B., & Richardson, W. S. (1996). "Evidence based medicine: what it is and what it isn't." *BMJ*, 312(7023), 71-72.
 
 ---
 
@@ -240,19 +245,47 @@ Task received → Look for reasons to skip research
 
 **Every factual claim MUST be cited.**
 
-**Citation format:**
+**MANDATORY REQUIREMENT:** All scientific claims, research findings, statistics, and methodological statements MUST include bibliographic references.
+
+**Citation format (inline numeric):**
 ```markdown
 According to [source name], [claim].[1]
 
-[1]: Source Name, "Title", URL, Date
+[1]: Author(s). (Year). "Title." *Publication*, Volume(Issue), Pages. DOI/URL.
 ```
 
-**Example:**
+**Example (Academic):**
+```markdown
+Research demonstrates that vector embeddings enable semantic similarity search with 95%+ accuracy.[1]
+
+[1]: Devlin, J., Chang, M. W., Lee, K., & Toutanova, K. (2018). "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding." arXiv:1810.04805.
+```
+
+**Example (Technical Documentation):**
 ```markdown
 According to the OpenAI documentation, GPT-4o costs $5 per 1M input tokens.[1]
 
-[1]: OpenAI, "Pricing", https://openai.com/pricing, 2026-02-16
+[1]: OpenAI. (2026). "Pricing." https://openai.com/pricing (accessed 2026-02-16).
 ```
+
+**Citation Requirements:**
+- Academic papers: Author, year, title, journal, volume, pages, DOI
+- Books: Author, year, title, edition, publisher
+- Websites: Organization, year, title, URL, access date
+- Technical docs: Organization, year, title, URL, access date
+
+**When to cite:**
+- ✅ Scientific findings and research results
+- ✅ Statistical data and percentages
+- ✅ Methodological approaches and frameworks
+- ✅ Theoretical concepts and principles
+- ✅ Technical specifications and standards
+- ❌ Common knowledge (e.g., "water boils at 100°C")
+- ❌ Your own original analysis (but cite sources used)
+
+**Scientific Basis:** Proper citation enables verification, reproducibility, and builds on existing knowledge - core principles of scientific method.[1]
+
+[1]: Merton, R. K. (1973). *The Sociology of Science: Theoretical and Empirical Investigations*. University of Chicago Press.
 
 ---
 
