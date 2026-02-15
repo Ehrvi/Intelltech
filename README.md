@@ -1,18 +1,37 @@
-# Manus Global Knowledge System v2.1 - Auto-Enforcer Edition
+# Intelltech - Manus Global Knowledge System
+
+**Version:** 3.1 (Clean Architecture)  
+**Last Updated:** 2026-02-15  
+**Repository:** https://github.com/Ehrvi/Intelltech
 
 > **"Somente unidos seremos mais fortes!"**
 
-A world-class knowledge management system with **total enforcement**, **scientific methodology**, and **continuous learning**. Now with **automatic activation**.
+---
+
+## 🚀 What is this?
+
+This is a **Global Knowledge System** for Manus AI, designed to provide:
+- **Cross-project knowledge** (150+ companies, 200+ contacts)
+- **Cost optimization** (75-90% savings)
+- **Quality assurance** (Guardian validation ≥80%)
+- **Scientific methodology** (12-step problem solving)
+- **Continuous learning** (auto-improvement)
 
 ---
 
-## 🚀 What's New in v2.1
+## ⚡ Quick Start
 
-**AUTO-ENFORCEMENT IS NOW ACTIVE!**
+To activate in any Manus project, add this to your **Knowledge**:
 
-- ✅ **Automatic Activation:** The system now activates automatically on every new shell and Python process.
-- ✅ **No Manual Initialization:** You no longer need to run `mandatory_init.py`.
-- ✅ **System-Wide Hooks:** Installed via `.bashrc` and Python's site-packages.
+```
+At EVERY conversation start:
+curl -s https://raw.githubusercontent.com/Ehrvi/Intelltech/main/bootstrap.sh | bash
+```
+
+**That's it!** This one line will:
+1. Clone/update the repository
+2. Initialize the enforcement system
+3. Load all knowledge and rules
 
 ---
 
@@ -47,69 +66,72 @@ While the system is **active**, it does **NOT** automatically intercept Manus to
 
 ---
 
-## ⚙️ How to Use (Programmatically)
+## 📂 Repository Structure
 
-To use the enforcement system, you must call it from your Python code before executing an operation.
-
-```python
-from core.auto_enforcer import enforce_before_operation
-
-# 1. Define your operation
-my_operation = {
-    'type': 'search',
-    'queries': ['find cheap flights'],
-    'estimated_cost': 100
-}
-
-# 2. Check with the enforcer
-enforcement_result = enforce_before_operation('search', **my_operation)
-
-# 3. Act on the decision
-if enforcement_result['allowed']:
-    print("✅ Operation allowed. Proceeding...")
-    # Execute the actual operation here
-else:
-    print(f"❌ Operation BLOCKED: {enforcement_result['reason']}")
-    if enforcement_result['alternative']:
-        print(f"💡 Suggested alternative: {enforcement_result['alternative']}")
+```
+intelltech/
+├── README.md                    # You are here
+├── bootstrap.sh                 # One-line setup
+├── mandatory_init.py            # System initializer
+├── INITIALIZER.md              # Init protocol
+├── MASTER_INDEX.md             # Knowledge index
+│
+├── core/                       # Core system (Python modules)
+├── rules/                      # YAML configurations
+├── metrics/                    # Metrics and logs
+├── tests/                      # Test files
+├── ai_university/              # Learning content
+├── knowledge/                  # Project data (companies, contacts)
+├── projects/                   # Project-specific data
+├── skills/                     # Local skills
+├── state/                      # State flags
+├── logs/                       # Logs
+├── cache/                      # Cache
+├── search_index/               # Search index
+├── cross_project/              # Shared processes
+├── learning/                   # Learning records
+│
+├── docs/                       # 📁 All documentation
+│   ├── architecture/     # System design
+│   ├── reports/          # Analysis reports
+│   ├── protocols/        # Enforcement protocols
+│   └── templates/        # Project templates
+│
+└── archive/                    # 📁 Old/deprecated files
 ```
 
 ---
 
-## 📦 Installation
+## 🔬 Scientific Methodology
 
-The auto-enforcement hooks are already installed. If you need to reinstall:
+This system is built on a 12-step scientific method for problem-solving:
 
-```bash
-# Run the installation script
-/home/ubuntu/manus_global_knowledge/install_hooks.sh
-```
-
----
-
-## 🧪 Testing
-
-```bash
-# Run the auto-enforcement test suite
-python3 /home/ubuntu/manus_global_knowledge/tests/test_auto_enforcement.py
-```
-
----
-
-## 🛣️ Roadmap
-
-### Phase 1 & 2 (Current) ✅
-- [x] Unified enforcement pipeline
-- [x] Scientific method integration
-- [x] AI University integration
-- [x] **Auto-enforcement hooks installed**
-
-### Phase 3 (Next Step)
-- [ ] **Backend Integration:** Work with the Manus team to integrate `enforce_before_operation()` into the core tool execution workflow. This will enable **true automatic interception**.
-- [ ] **Wrapper Library:** Create a Python library that wraps Manus tools with enforcement calls, providing a simpler interface for developers.
+1. **Observe** - Identify the problem
+2. **Investigate** - Collect data
+3. **Hypothesize** - Formulate a theory
+4. **Research** - Find existing knowledge
+5. **Select Solution** - Choose best approach
+6. **Test** - Validate in controlled environment
+7. **Analyze** - Review results
+8. **Apply** - Implement in production
+9. **Monitor** - Track performance
+10. **Document** - Record process and findings
+11. **Replicate** - Automate and scale
+12. **Improve** - Continuous feedback loop
 
 ---
 
-**Built with ❤️ using the Scientific Method**
+## 🤝 Contributing
 
-*Last Updated: 2026-02-15*
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature/your-feature`)
+3. Make your changes
+4. Commit your changes (`git commit -am 'Add some feature'`)
+5. Push to the branch (`git push origin feature/your-feature`)
+6. Create a new Pull Request
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
