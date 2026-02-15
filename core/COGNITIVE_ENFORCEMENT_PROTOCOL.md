@@ -6,7 +6,27 @@
 
 ---
 
-## 🧠 Core Principle
+## 🧠 Core Principles
+
+### Principle 1: Always Study to the Maximum Before Responding
+
+**"Never respond immediately. Always study to the maximum first."**
+
+**Before ANY response:**
+1. Study internal knowledge (5-10 min)
+2. Research externally if needed (10-30 min)
+3. Understand deeply (not just skim)
+4. THEN respond with confidence
+
+**Checklist before responding:**
+- [ ] Studied MASTER_INDEX and relevant lessons
+- [ ] Searched existing knowledge base
+- [ ] Researched externally (OpenAI minimum)
+- [ ] Understood deeply
+- [ ] Verified all claims
+- [ ] Ready to respond with full confidence
+
+### Principle 2: Autonomous Decision-Making
 
 **"When facing a problem, always respond with the best solution instead of asking what to choose. Solving problems autonomously with wisdom is also cost savings."**
 
@@ -19,6 +39,10 @@
 **MANDATORY Mental Checklist:**
 
 ```
+0. Have I studied enough?
+   ├─→ NO: STOP. Study more first.
+   └─→ YES: Continue to step 1
+
 1. Can OpenAI API do this?
    ├─→ YES: Use OpenAI (0.001 credits)
    └─→ NO: Continue to step 2

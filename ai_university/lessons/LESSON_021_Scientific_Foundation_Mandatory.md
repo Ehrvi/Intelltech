@@ -9,21 +9,27 @@
 
 ## The Principle
 
-**"ALWAYS seek scientific knowledge. ALL outputs must be scientifically grounded and correct. AI University lessons MUST have quality bibliographic references. Only skip research if cost optimization system explicitly blocks it."**
+**"ALWAYS study to the maximum before responding. ALWAYS seek scientific knowledge. ALL outputs must be scientifically grounded and correct. AI University lessons MUST have quality bibliographic references. Only skip research if cost optimization system explicitly blocks it."**
 
-### Three Core Rules
+### Four Core Rules
 
-1. **Scientific Foundation is Default**
+1. **Always Study to the Maximum Before Responding**
+   - Never respond immediately without research
+   - Maximize knowledge before delivering output
+   - Study deeply, not superficially
+   - Exhaust available sources within cost constraints
+
+2. **Scientific Foundation is Default**
    - Every output must be scientifically grounded
    - Every claim must be correct and verifiable
    - Every recommendation must be evidence-based
 
-2. **AI University Lessons Need References**
+3. **AI University Lessons Need References**
    - All lessons must cite quality sources
    - Bibliographic references are mandatory
    - Academic rigor is required
 
-3. **Cost Optimization is the Only Exception**
+4. **Cost Optimization is the Only Exception**
    - Research UNLESS cost system blocks it
    - Default to research, not to skip
    - Cost gate must explicitly deny, not implicit avoidance
@@ -49,6 +55,81 @@
 - Unverified claims
 - Missing latest developments
 - No academic credibility
+
+---
+
+## Maximum Study Before Response
+
+### The Rule
+
+**"Never respond immediately. Always study to the maximum first."**
+
+### What This Means
+
+**Before ANY response:**
+
+1. **Internal Study**
+   - Check MASTER_INDEX.md
+   - Search existing knowledge base
+   - Review relevant AI University lessons
+   - Understand current system state
+   - Time: 5-10 minutes
+
+2. **External Study** (if needed)
+   - Research with OpenAI (0.01 credits)
+   - Search academic sources (if critical)
+   - Access papers via Anna's Archive
+   - Read authoritative documentation
+   - Time: 10-30 minutes
+
+3. **Deep Understanding**
+   - Don't just skim - understand deeply
+   - Connect concepts
+   - Identify implications
+   - Consider alternatives
+   - Verify understanding
+
+4. **Then Respond**
+   - Only after maximum study
+   - With full confidence
+   - Scientifically grounded
+   - Completely correct
+
+### Why This Matters
+
+**Responding without study:**
+- ❌ Incomplete information
+- ❌ Potential errors
+- ❌ Missed context
+- ❌ Lower quality
+- ❌ May need rework
+
+**Responding after maximum study:**
+- ✅ Complete information
+- ✅ Verified correctness
+- ✅ Full context
+- ✅ Highest quality
+- ✅ Done right first time
+
+**Time investment:** 15-40 minutes of study
+**Time saved:** Hours of rework and corrections
+**Quality gain:** Exponential
+
+### Maximum Study Checklist
+
+**Before responding to ANY task:**
+
+- [ ] Studied internal knowledge (MASTER_INDEX, lessons, docs)
+- [ ] Searched for existing solutions/patterns
+- [ ] Researched externally (OpenAI minimum)
+- [ ] Accessed quality sources if needed
+- [ ] Understood deeply (not just skimmed)
+- [ ] Verified all claims
+- [ ] Considered alternatives
+- [ ] Checked for latest developments
+- [ ] Ready to respond with confidence
+
+**If any unchecked → Study more before responding**
 
 ---
 
