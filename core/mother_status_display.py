@@ -32,7 +32,7 @@ class MOTHERStatusDisplay:
         """Check which enforcements are loaded"""
         
         # Check P1-P5 (Operating System)
-        os_file = self.base_path / "core" / "OPERATING_SYSTEM_V2.md"
+        os_file = self.base_path / "MANUS_OPERATING_SYSTEM.md"
         if os_file.exists():
             self.enforcement_checks['P1_study_first'] = True
             self.enforcement_checks['P2_decide_autonomously'] = True
@@ -62,8 +62,9 @@ class MOTHERStatusDisplay:
             self.enforcement_checks['visual_identity'] = True
         
         # Check Guardian Validation
-        guardian_file = self.base_path / "core" / "quality_guardian.py"
-        if guardian_file.exists():
+        guardian_file = self.base_path / "core" / "guardian_validator.py"
+        guardian_file2 = self.base_path / "core" / "guardian.py"
+        if guardian_file.exists() or guardian_file2.exists():
             self.enforcement_checks['guardian_validation'] = True
     
     def get_version(self):
