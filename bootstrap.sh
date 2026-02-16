@@ -50,6 +50,12 @@ fi
 
 echo "✅ Manus Global Knowledge System V3.2 initialized successfully!"
 echo ""
+echo "⚠️  COGNITIVE ENFORCEMENT REMINDER:"
+echo "   - Research tasks REQUIRE browser research (P1)"
+echo "   - Decision points REQUIRE autonomous choice (P2)"
+echo "   - All outputs REQUIRE truthfulness (P7)"
+echo "   - Read COGNITIVE_ENFORCEMENT.md for details"
+echo ""
 
 # Display MOTHER Status
 python3 /home/ubuntu/manus_global_knowledge/core/mother_status_display.py detailed
