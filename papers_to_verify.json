@@ -1,0 +1,76 @@
+[
+    {
+        "title": "A Modular Architecture for Software Development",
+        "authors": ["Van Der Linden, P.", "Kant, A."],
+        "year": 2017,
+        "venue": "Journal of Systems and Software",
+        "doi": "10.1016/j.jss.2017.03.043",
+        "status": "TO_VERIFY"
+    },
+    {
+        "title": "Design Patterns for Modular Software Architecture",
+        "authors": ["Gamma, E.", "Helm, R.", "Johnson, R.", "Vlissides, J."],
+        "year": 1994,
+        "venue": "Addison-Wesley",
+        "doi": null,
+        "status": "TO_VERIFY",
+        "note": "This is likely 'Design Patterns: Elements of Reusable Object-Oriented Software' - the Gang of Four book"
+    },
+    {
+        "title": "Layered Architecture for Software Systems",
+        "authors": ["Bass, L.", "Clements, P.", "Kazman, R."],
+        "year": 2012,
+        "venue": "Software Architecture in Practice",
+        "doi": "10.5555/9780321812680",
+        "status": "TO_VERIFY",
+        "note": "This is a book, not a paper"
+    },
+    {
+        "title": "Measuring Software Complexity: A Review",
+        "authors": ["Councill, I.", "Bichsel, P."],
+        "year": 2011,
+        "venue": "Information and Software Technology",
+        "doi": "10.1016/j.ist.2010.08.007",
+        "status": "TO_VERIFY"
+    },
+    {
+        "title": "Managing Complexity in Software Systems: A Systematic Review",
+        "authors": ["Meyer, B."],
+        "year": 2013,
+        "venue": "IEEE Software",
+        "doi": "10.1109/MS.2013.81",
+        "status": "TO_VERIFY"
+    },
+    {
+        "title": "Complexity Metrics: A New Approach",
+        "authors": ["Abdel-Hamid, T.K."],
+        "year": 2015,
+        "venue": "Software Engineering: An International Journal",
+        "doi": null,
+        "status": "TO_VERIFY"
+    },
+    {
+        "title": "Patterns for Bootstrapping Systems",
+        "authors": ["Kramer, J.", "Carrington, D."],
+        "year": 2019,
+        "venue": "Software Engineering Conference",
+        "doi": "10.1109/ASE.2019.00034",
+        "status": "TO_VERIFY"
+    },
+    {
+        "title": "Initialization Patterns in Software Architecture",
+        "authors": ["Woods, D."],
+        "year": 2016,
+        "venue": "International Journal of Software Engineering and Knowledge Engineering",
+        "doi": null,
+        "status": "TO_VERIFY"
+    },
+    {
+        "title": "Fail-Safe Initialization Patterns",
+        "authors": ["Vander Meer, J.", "Passport, M."],
+        "year": 2020,
+        "venue": "Proceedings of the ACM SIGPLAN Symposium",
+        "doi": "10.1145/3346681.3346702",
+        "status": "TO_VERIFY"
+    }
+]
