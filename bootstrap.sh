@@ -30,24 +30,8 @@ cd /home/ubuntu/manus_global_knowledge && python3 mandatory_init.py
 
 echo "✅ Manus Global Knowledge System V3.1 initialized successfully!"
 echo ""
-echo "🎯 OPERATING SYSTEM V3.1 ACTIVE"
-echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-echo "Prime Directive: Deliver maximum value with maximum efficiency"
-echo ""
-echo "5 Core Principles:"
-echo "   P1: Always Study First (100% compliance)"
-echo "   P2: Always Decide Autonomously (99.9% compliance)"
-echo "   P3: Always Optimize Cost (75-90% savings)"
-echo "   P4: Always Ensure Quality (≥80% score)"
-echo "   P5: Always Report Accurately (100% compliance)"
-echo ""
-echo "📊 System Features:"
-echo "   - Cost optimization (75-90% savings)"
-echo "   - Knowledge cache (150+ companies, 200+ contacts)"
-echo "   - Guardian validation (quality ≥80%)"
-echo "   - Scientific method (12 steps)"
-echo "   - Autonomous decision enforcement"
-echo "   - Multi-platform cost tracking"
-echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+
+# Display MOTHER Status
+python3 /home/ubuntu/manus_global_knowledge/core/mother_status_display.py detailed
 echo ""
 echo "Repository: https://github.com/Ehrvi/Intelltech"
