@@ -1,3 +1,4 @@
+import logging
 #!/usr/bin/env python3
 """
 MACHINE LEARNING PATTERN RECOGNITION ENGINE V2 - MANUS OPERATING SYSTEM V4.1

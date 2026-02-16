@@ -1,3 +1,4 @@
+import logging
 #!/usr/bin/env python3
 """
 Test Suite for Auto-Enforcement System

@@ -487,7 +487,8 @@ Can I skip research? → Looking for reasons to skip ❌
 def should_research(task):
     # Default: YES
     if task.requires_scientific_foundation():  # Always true
-        # Check cost gate
+
+# Check cost gate
         if cost_gate.allows_research(task):
             return True, "Research approved"
         else:

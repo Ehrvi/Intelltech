@@ -137,6 +137,7 @@ print("✅ File backed up to Google Drive")
 echo "data" > important.txt
 
 # Forget to backup
+
 # Sandbox resets
 # Data lost ❌
 ```
@@ -205,6 +206,7 @@ rclone copy local.json "manus_google_drive:Backups/$backup_name"
 # After backup, verify it exists
 rclone ls manus_google_drive:IntellTech/Config/ | grep api_keys
 # ✅ File found → Safe
+
 # ❌ Not found → Backup failed!
 ```
 
@@ -278,6 +280,7 @@ Before considering a file "saved":
 ```python
 create_important_file()
 # TODO: backup to Google Drive
+
 # ← Sandbox resets before you do it
 ```
 
@@ -289,6 +292,7 @@ create_important_file()
 ```python
 # Save to project folder
 /home/ubuntu/projects/intelltech/data.json  # ✅ More persistent
+
 # But still backup to Google Drive for 100% safety
 ```
 
@@ -299,8 +303,10 @@ create_important_file()
 ### **Mistake 3: "I saved it to the sandbox"**
 ```python
 # User: "Where's my file?"
+
 # AI: "In the sandbox at /home/ubuntu/file.txt"
 # Sandbox resets
+
 # User: "It's gone!"
 ```
 

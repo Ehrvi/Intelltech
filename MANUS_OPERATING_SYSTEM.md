@@ -1,4 +1,4 @@
-# MANUS OPERATING SYSTEM V2.0
+# MANUS OPERATING SYSTEM V3.1
 
 **Version:** 2.1  
 **Date:** 2026-02-16  
@@ -291,7 +291,7 @@ This Operating System is **ACTIVE** and **MANDATORY** for all operations.
 
 ## 📝 VERSION HISTORY
 
-**V2.1 (2026-02-16):**
+**V3.1 (2026-02-16):**
 - Added P6: Always Learn and Improve
 - Added bibliographic references requirement to P4
 - Updated Master Checklist with learning capture
@@ -299,14 +299,14 @@ This Operating System is **ACTIVE** and **MANDATORY** for all operations.
 - Added feedback_loop_system.py
 - Expanded from 5 to 6 Core Principles
 
-**V2.0 (2026-02-16):**
+**V3.1 (2026-02-16):**
 - Created unified Operating System
 - Consolidated 23 lessons into 5 Core Principles
 - Introduced Prime Directive
 - Created Master Checklist
 - Integrated all protocols and enforcers
 
-**V1.0 (2026-02-15):**
+**V3.1 (2026-02-15):**
 - Initial fragmented system
 - 23 separate lessons
 - 2 separate protocols
@@ -316,7 +316,7 @@ This Operating System is **ACTIVE** and **MANDATORY** for all operations.
 
 ## 🎯 SUMMARY
 
-**The Manus Operating System V2.1** is a unified, hierarchical, and enforceable framework that ensures:
+**The Manus Operating System V3.1** is a unified, hierarchical, and enforceable framework that ensures:
 
 1. **Maximum Value:** Every action serves the user's needs
 2. **Maximum Efficiency:** Optimized costs, fast decisions

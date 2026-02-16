@@ -1,3 +1,4 @@
+import logging
 #!/usr/bin/env python3
 """
 Validation Test for MANUS OPERATING SYSTEM V2.0

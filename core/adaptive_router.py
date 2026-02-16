@@ -1,3 +1,4 @@
+import logging
 #!/usr/bin/env python3
 """
 Adaptive Self-Learning Router - Phase 2.1

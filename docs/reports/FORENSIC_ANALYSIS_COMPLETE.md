@@ -31,7 +31,7 @@
 ### 3. Creation of New Systems Without Checking Existing Ones
 **Technical cause:** The agent lacks a comprehensive inventory or registry of existing systems, leading to redundant system creation.
 
-**My observation:** I created v1.0, v2.0, v3.0 templates WITHOUT reading existing INITIALIZER.md. No mandatory "check existing" step.
+**My observation:** I created v3.1, v3.1, v3.1 templates WITHOUT reading existing INITIALIZER.md. No mandatory "check existing" step.
 
 ### 4. Ignoring Cost Optimization Rules
 **Technical cause:** The agent's internal rule-checking mechanism is either malfunctioning or not prioritized in its decision-making process.
@@ -159,8 +159,8 @@ def validate_action(action_type, task_description):
     if can_openai_handle(task_description):
         if action_type in ['browser', 'search', 'manus_research']:
             return (False, 'openai_api', 0.01)  # BLOCK expensive action
-    
-    # Step 2: Check adaptive router
+
+# Step 2: Check adaptive router
     router_decision = adaptive_router.route(task_description)
     
     # Step 3: Validate cost
@@ -396,6 +396,7 @@ Result: Rule ENFORCED by code
 ### Test 1: Mandatory Initialization
 ```python
 # Scenario: Agent starts without running init
+
 # Expected: BLOCKED, cannot proceed
 # Actual: [TO BE TESTED]
 ```
@@ -403,6 +404,7 @@ Result: Rule ENFORCED by code
 ### Test 2: Cost Gate
 ```python
 # Scenario: Agent tries to use browser for simple research
+
 # Expected: BLOCKED, redirected to OpenAI
 # Actual: [TO BE TESTED]
 ```
@@ -410,6 +412,7 @@ Result: Rule ENFORCED by code
 ### Test 3: System Registry
 ```python
 # Scenario: Agent tries to create "initialization system"
+
 # Expected: BLOCKED, "System already exists at INITIALIZER.md"
 # Actual: [TO BE TESTED]
 ```

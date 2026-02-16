@@ -136,6 +136,7 @@ file READ /home/ubuntu/manus_global_knowledge/MASTER_INDEX.md
 file READ /home/ubuntu/manus_global_knowledge/INITIALIZER.md
 
 # Step 3: Enable Guardian Middleware
+
 # (Conceptual - Guardian is always available)
 ```
 

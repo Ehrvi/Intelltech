@@ -1,3 +1,4 @@
+import logging
 #!/usr/bin/env python3
 """
 SECURITY & PRIVACY LAYER - MANUS OPERATING SYSTEM V2.1

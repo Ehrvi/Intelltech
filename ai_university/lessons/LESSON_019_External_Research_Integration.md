@@ -189,6 +189,7 @@ if not is_sufficient(research_result):
 
 ```python
 # Instead of searching each database manually (expensive)
+
 # Ask OpenAI to synthesize from its knowledge (cheap)
 
 response = client.chat.completions.create(
@@ -205,6 +206,7 @@ response = client.chat.completions.create(
 )
 
 # Cost: 0.01 credits
+
 # vs manually searching 4 databases: 80 credits
 # Savings: 99.99%
 ```
@@ -301,6 +303,7 @@ research = openai_research("cost optimization best practices 2024")
 validation = openai_validate(research, "cross-check with industry standards")
 
 # Total cost: 0.02 credits
+
 # vs search + browser: 50 credits
 # Savings: 99.96%
 ```
@@ -321,6 +324,7 @@ validation = openai_validate(research, "cross-check with industry standards")
 response = use_internal_knowledge("scientific method")
 
 # Cost: 0 credits
+
 # Quality: Sufficient for task
 ```
 

@@ -1,3 +1,4 @@
+import logging
 #!/usr/bin/env python3
 """
 Phase 2 Credit Optimization - Integrated System

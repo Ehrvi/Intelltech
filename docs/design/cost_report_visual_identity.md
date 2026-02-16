@@ -338,8 +338,8 @@ def generate_report():
     report.append(f"║    Total Cost:        ${total:.4f} USD" + padding + "║")
     
     # ... more sections
-    
-    # Footer (Light weight)
+
+# Footer (Light weight)
     report.append("╠" + "═" * 78 + "╣")
     report.append(f"║  Generated: {timestamp}" + padding + "║")
     report.append("╚" + "═" * 78 + "╝")

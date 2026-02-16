@@ -1,3 +1,4 @@
+import logging
 #!/usr/bin/env python3
 """
 Guardian Validation Middleware - Phase 2 Credit Optimization

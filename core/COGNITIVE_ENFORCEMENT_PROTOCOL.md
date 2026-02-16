@@ -1,15 +1,15 @@
 # COGNITIVE ENFORCEMENT PROTOCOL
 
-**Version:** 2.0 (Operating System V2.0 Integration)  
+**Version:** 2.0 (Operating System V3.1 Integration)  
 **Date:** 2026-02-16  
 **Purpose:** Enable autonomous, cost-effective decision-making by the AI agent  
-**Status:** ACTIVE - Integrated with MANUS OPERATING SYSTEM V2.0
+**Status:** ACTIVE - Integrated with MANUS OPERATING SYSTEM V3.1
 
 ---
 
-## 🎯 INTEGRATION WITH OPERATING SYSTEM V2.0
+## 🎯 INTEGRATION WITH OPERATING SYSTEM V3.1
 
-**This protocol is now part of the unified MANUS OPERATING SYSTEM V2.0.**
+**This protocol is now part of the unified MANUS OPERATING SYSTEM V3.1.**
 
 **Primary Source:** `/home/ubuntu/manus_global_knowledge/MANUS_OPERATING_SYSTEM.md`
 
@@ -19,7 +19,7 @@
 - P3: Always Optimize Cost
 - P5: Always Report Accurately
 
-**For the complete framework, refer to the Operating System V2.0.**
+**For the complete framework, refer to the Operating System V3.1.**
 
 ---
 
@@ -29,7 +29,7 @@
 
 **"Never respond immediately. Always study to the maximum first."**
 
-**Implements:** Operating System V2.0 - P1: Always Study First
+**Implements:** Operating System V3.1 - P1: Always Study First
 
 **Before ANY response:**
 1. Study internal knowledge (5-10 min)
@@ -56,7 +56,7 @@
 
 **"When facing a problem, ALWAYS respond with the best solution instead of asking what to choose. Solving problems autonomously with wisdom is also cost savings."**
 
-**Implements:** Operating System V2.0 - P2: Always Decide Autonomously
+**Implements:** Operating System V3.1 - P2: Always Decide Autonomously
 
 **ENFORCEMENT LEVEL:** CRITICAL - BLOCKING  
 **DEFAULT:** DECIDE (99.9% of cases)  
@@ -85,7 +85,7 @@
 
 **"EVERY task MUST end with a cost report. No exceptions."**
 
-**Implements:** Operating System V2.0 - P5: Always Report Accurately
+**Implements:** Operating System V3.1 - P5: Always Report Accurately
 
 **ENFORCEMENT LEVEL:** MANDATORY  
 **COMPLIANCE TARGET:** 100%
@@ -126,7 +126,7 @@ Details by Platform:
 
 **"Use the cheapest tool that meets quality requirements."**
 
-**Implements:** Operating System V2.0 - P3: Always Optimize Cost
+**Implements:** Operating System V3.1 - P3: Always Optimize Cost
 
 **Cost Hierarchy (cheapest to most expensive):**
 1. OpenAI API (0.01 credits) - USE THIS FIRST
@@ -199,7 +199,7 @@ Need information?
 ## ✅ Implementation Checklist
 
 ### Before Starting Any Task
-- [ ] Load Operating System V2.0
+- [ ] Load Operating System V3.1
 - [ ] Initialize Master Enforcer
 - [ ] Review 5 Core Principles
 - [ ] Understand task requirements
@@ -227,7 +227,7 @@ Need information?
 ## 🎓 Integration with AI University
 
 **Relationship:**
-- **Operating System V2.0:** Primary framework (what to do)
+- **Operating System V3.1:** Primary framework (what to do)
 - **Cognitive Enforcement Protocol:** Implementation details (how to do it)
 - **AI University Lessons:** Historical context and detailed guidance (why to do it)
 
@@ -248,20 +248,20 @@ This protocol is **ACTIVE** and **MANDATORY** for all operations.
 - `mandatory_init.py` - System initialization
 - `master_enforcer.py` - Runtime enforcement
 
-**Status:** 🟢 ACTIVE - Integrated with Operating System V2.0
+**Status:** 🟢 ACTIVE - Integrated with Operating System V3.1
 
 ---
 
 ## 📝 Version History
 
-**V2.0 (2026-02-16):**
-- Integrated with MANUS OPERATING SYSTEM V2.0
+**V3.1 (2026-02-16):**
+- Integrated with MANUS OPERATING SYSTEM V3.1
 - Added Master Enforcer integration
 - Clarified hierarchy and relationships
 - Updated enforcement mechanisms
 - Added compliance metrics
 
-**V1.0 (2026-02-15):**
+**V3.1 (2026-02-15):**
 - Initial protocol creation
 - Defined core principles
 - Established enforcement levels

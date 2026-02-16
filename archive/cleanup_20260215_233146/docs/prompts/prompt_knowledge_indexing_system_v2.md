@@ -1,4 +1,4 @@
-# Prompt: Implementar Sistema Moderno de Indexação de Conhecimento (V2.0)
+# Prompt: Implementar Sistema Moderno de Indexação de Conhecimento (V3.1)
 
 ## 1. Contexto e Objetivo
 
@@ -167,7 +167,7 @@ Schema(
 - **Fase 1 (Pesquisa)** força checklist mental antes de cada operação.
 - **Decisões baseadas em custo** (OpenAI primeiro).
 
-### ✅ SCIENTIFIC_METHODOLOGY_REQUIREMENTS V3.0
+### ✅ SCIENTIFIC_METHODOLOGY_REQUIREMENTS V3.1
 - **Fase 1 (Pesquisa)** segue processo científico de 12 passos.
 - **Referências obrigatórias** (Seção 6).
 - **Anna's Archive** como fonte primária para papers.
@@ -180,7 +180,7 @@ Schema(
 
 - [ ] Li TODAS as lições relevantes (017, 018, 019, 020, 021, 01)
 - [ ] Entendi o COGNITIVE_ENFORCEMENT_PROTOCOL
-- [ ] Revisei SCIENTIFIC_METHODOLOGY_REQUIREMENTS V3.0
+- [ ] Revisei SCIENTIFIC_METHODOLOGY_REQUIREMENTS V3.1
 - [ ] Estou pronto para seguir TODAS as normas
 
 **Se algum item não marcado → Estudar mais antes de continuar.**

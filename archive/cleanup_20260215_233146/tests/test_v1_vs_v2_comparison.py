@@ -1,6 +1,7 @@
+import logging
 #!/usr/bin/env python3
 """
-V1 VS V2 COMPARISON TEST - MANUS OPERATING SYSTEM V4.1
+V1 VS V2 COMPARISON TEST - MANUS OPERATING SYSTEM V3.1
 
 Comprehensive comparison of V1 (manual implementations) vs V2 (sklearn/statsmodels).
 
@@ -230,11 +231,11 @@ def test_multi_tenant_system():
 def main():
     """Run all comparison tests"""
     print("="*70)
-    print("MANUS OPERATING SYSTEM V4.1 - V1 VS V2 COMPARISON")
+    print("MANUS OPERATING SYSTEM V3.1 - V1 VS V2 COMPARISON")
     print("="*70)
     print("\nTesting refactored modules with P1 compliance...")
-    print("V1: Manual implementations (V4.0)")
-    print("V2: sklearn/statsmodels implementations (V4.1)")
+    print("V1: Manual implementations (V3.1)")
+    print("V2: sklearn/statsmodels implementations (V3.1)")
     
     # Run tests
     ml_results = test_ml_pattern_recognition()

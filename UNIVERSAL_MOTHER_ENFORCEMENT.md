@@ -9,7 +9,7 @@
 
 ## CRITICAL MANDATE
 
-**EVERY output in EVERY project MUST follow MOTHER Operating System V2.0 guidelines.**
+**EVERY output in EVERY project MUST follow MOTHER Operating System V3.1 guidelines.**
 
 This is **NON-NEGOTIABLE** and applies to:
 - ✅ All Manus conversations
@@ -23,7 +23,7 @@ This is **NON-NEGOTIABLE** and applies to:
 
 ---
 
-## MOTHER OPERATING SYSTEM V2.0
+## MOTHER OPERATING SYSTEM V3.1
 
 ### Prime Directive
 **Deliver maximum value with maximum efficiency**
@@ -349,7 +349,7 @@ This is **NON-NEGOTIABLE** and applies to:
 **The bootstrap script (`bootstrap.sh`) MUST:**
 1. Clone/update Manus Global Knowledge System
 2. Run `mandatory_init.py`
-3. Display MOTHER Operating System V2.0 status
+3. Display MOTHER Operating System V3.1 status
 4. Show enforcement reminder
 5. Verify all systems operational
 
@@ -402,7 +402,7 @@ curl -s https://raw.githubusercontent.com/Ehrvi/Intelltech/main/bootstrap.sh | b
 
 ## VERSION HISTORY
 
-- **v1.0 (2026-02-16):** Initial universal enforcement document
+- **v3.1 (2026-02-16):** Initial universal enforcement document
   - Integrated all MOTHER principles
   - Added scientific method enforcement
   - Added Anna's Archive workflow

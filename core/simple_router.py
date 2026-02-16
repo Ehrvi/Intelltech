@@ -1,3 +1,4 @@
+import logging
 #!/usr/bin/env python3
 """
 Simple Rule-Based OpenAI Router - Phase 2 Credit Optimization

@@ -1,3 +1,4 @@
+import logging
 """
 Modern Knowledge Indexing System
 Fast, reliable, and scalable indexing for AI University knowledge base

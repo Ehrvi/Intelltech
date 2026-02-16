@@ -1,3 +1,4 @@
+import logging
 #!/usr/bin/env python3
 """
 LESSON CONTRIBUTION SYSTEM - MANUS OPERATING SYSTEM V2.1

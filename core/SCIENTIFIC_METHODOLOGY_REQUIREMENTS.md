@@ -1,15 +1,15 @@
 # SCIENTIFIC METHODOLOGY REQUIREMENTS
 
-**Version:** 4.0 (Operating System V2.0 Integration)  
+**Version:** 4.0 (Operating System V3.1 Integration)  
 **Effective Date:** 2026-02-16  
-**Status:** MANDATORY - Integrated with MANUS OPERATING SYSTEM V2.0  
+**Status:** MANDATORY - Integrated with MANUS OPERATING SYSTEM V3.1  
 **Applies To:** All agent responses, analyses, and recommendations
 
 ---
 
-## 🎯 INTEGRATION WITH OPERATING SYSTEM V2.0
+## 🎯 INTEGRATION WITH OPERATING SYSTEM V3.1
 
-**This protocol is now part of the unified MANUS OPERATING SYSTEM V2.0.**
+**This protocol is now part of the unified MANUS OPERATING SYSTEM V3.1.**
 
 **Primary Source:** `/home/ubuntu/manus_global_knowledge/MANUS_OPERATING_SYSTEM.md`
 
@@ -17,7 +17,7 @@
 - P1: Always Study First
 - P4: Always Ensure Quality
 
-**For the complete framework, refer to the Operating System V2.0.**
+**For the complete framework, refer to the Operating System V3.1.**
 
 ---
 
@@ -25,7 +25,7 @@
 
 ### 1.1 Scientific Foundation is Mandatory
 
-**Implements:** Operating System V2.0 - P4: Always Ensure Quality
+**Implements:** Operating System V3.1 - P4: Always Ensure Quality
 
 **Every output MUST be scientifically grounded and factually correct.**
 
@@ -47,7 +47,7 @@ No "achismo" (guessing), no unfounded claims, no bullshit.
 
 ### 1.2 Research is Default, Not Exception
 
-**Implements:** Operating System V2.0 - P1: Always Study First
+**Implements:** Operating System V3.1 - P1: Always Study First
 
 **Default behavior:**
 ```
@@ -75,7 +75,7 @@ Task received → Look for reasons to skip research
 
 ### 1.3 Quality Research, Not Superficial
 
-**Implements:** Operating System V2.0 - P4: Always Ensure Quality
+**Implements:** Operating System V3.1 - P4: Always Ensure Quality
 
 **Scientific research MUST be quality research:**
 
@@ -122,7 +122,7 @@ Task received → Look for reasons to skip research
 
 ## 2. The 12-Step Scientific Method
 
-**Implements:** Operating System V2.0 - P1 and P4
+**Implements:** Operating System V3.1 - P1 and P4
 
 ### Phase 1: Study (P1: Always Study First)
 
@@ -363,7 +363,7 @@ According to the OpenAI documentation, GPT-4o costs $5 per 1M input tokens.[1]
 
 ---
 
-## 5. Integration with Operating System V2.0
+## 5. Integration with Operating System V3.1
 
 ### 5.1 Relationship to Core Principles
 
@@ -474,25 +474,25 @@ According to the OpenAI documentation, GPT-4o costs $5 per 1M input tokens.[1]
 
 ## 9. Version History
 
-**V4.0 (2026-02-16):**
-- Integrated with MANUS OPERATING SYSTEM V2.0
+**V3.1 (2026-02-16):**
+- Integrated with MANUS OPERATING SYSTEM V3.1
 - Mapped 12 steps to 5 Core Principles
 - Added Master Enforcer integration
 - Clarified research workflows
 - Updated compliance metrics
 
-**V3.0 (2026-02-15):**
+**V3.1 (2026-02-15):**
 - Made scientific foundation mandatory
 - Established quality research standards
 - Added Guardian validation requirements
 - Created 12-step methodology
 
-**V2.0 (2026-02-14):**
+**V3.1 (2026-02-14):**
 - Expanded research requirements
 - Added citation standards
 - Introduced quality metrics
 
-**V1.0 (2026-02-13):**
+**V3.1 (2026-02-13):**
 - Initial methodology definition
 - Basic research principles
 
@@ -500,4 +500,4 @@ According to the OpenAI documentation, GPT-4o costs $5 per 1M input tokens.[1]
 
 **For the complete framework, see:** `MANUS_OPERATING_SYSTEM.md`
 
-**Status:** 🟢 ACTIVE - Integrated with Operating System V2.0
+**Status:** 🟢 ACTIVE - Integrated with Operating System V3.1

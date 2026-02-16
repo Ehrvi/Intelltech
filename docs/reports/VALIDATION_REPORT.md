@@ -227,12 +227,12 @@ The Manus Global Knowledge System is fully functional and ready to provide unlim
 
 ### What Changed
 
-**Before (Universal University v2.0):**
+**Before (Universal University v3.1):**
 - Project-specific knowledge in `/manus_university/projects/`
 - No cross-project search
 - No automatic sync
 
-**After (Global Knowledge v3.0):**
+**After (Global Knowledge v3.1):**
 - All projects in `/manus_global_knowledge/projects/`
 - Cross-project search enabled
 - Automatic Google Drive sync

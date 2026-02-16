@@ -1,3 +1,4 @@
+import logging
 #!/usr/bin/env python3
 """
 Comprehensive Test Suite for Manus Global Knowledge System v2.0

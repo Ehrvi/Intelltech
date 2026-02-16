@@ -1,3 +1,4 @@
+import logging
 #!/usr/bin/env python3
 """
 OpenAI Routing Decision Engine - Phase 2 Credit Optimization

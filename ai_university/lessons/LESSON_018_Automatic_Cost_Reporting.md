@@ -333,6 +333,7 @@ end_task()
 **Right:**
 ```python
 start_task("Task name")  # Always start first
+
 # Do work...
 log_op(...)
 end_task()

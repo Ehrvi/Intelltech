@@ -1,3 +1,4 @@
+import logging
 #!/usr/bin/env python3
 """
 AUTOMATED TESTING FRAMEWORK - MANUS OPERATING SYSTEM V2.1

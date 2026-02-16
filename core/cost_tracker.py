@@ -1,3 +1,4 @@
+import logging
 #!/usr/bin/env python3
 """
 Cost Tracking and Logging System
