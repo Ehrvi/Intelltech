@@ -1,0 +1,31 @@
+# Visual Identity Automation Configuration
+
+automation_level: 3  # 1=suggest, 2=ask, 3=auto
+
+# Automation level 3 behavior:
+# - High priority (confidence >= 90%): Auto-create immediately
+# - Medium priority (confidence >= 70%): Ask user
+# - Low priority: Suggest only
+
+# Thresholds for auto-creation
+auto_create_threshold:
+  high_priority: 0.90
+  medium_priority: 0.70
+
+# Default output directory
+output_dir: "/home/ubuntu/design_systems"
+
+# Enable/disable features
+features:
+  auto_detection: true
+  auto_generation: true
+  cost_reporting: true
+  quality_validation: true
+
+# Integration with MOTHER principles
+principles:
+  P1_study_first: true      # Load design knowledge before generating
+  P2_decide_autonomously: true  # Auto-create without asking (level 3)
+  P3_optimize_cost: true    # Use OpenAI efficiently
+  P4_guarantee_quality: true    # Validate WCAG, consistency
+  P5_report_precisely: true     # Generate cost reports
