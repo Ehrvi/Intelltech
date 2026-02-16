@@ -44,6 +44,7 @@ class APIKeyManager:
         self.secrets_file = self.home / '.manus_secrets.enc'
         self.backup_dir = self.home / '.manus_secrets_backup'
         self.backup_dir.mkdir(exist_ok=True)
+        self.audit_log = self.home / '.manus_secrets_audit.jsonl'
         
         # Generate encryption key from sandbox-specific data
         self.encryption_key = self._generate_encryption_key()
@@ -51,20 +52,68 @@ class APIKeyManager:
     
     def _generate_encryption_key(self) -> bytes:
         """
-        Generate encryption key from sandbox-specific identifier
+        Generate encryption key from sandbox-specific identifier using PBKDF2
+        
+        Uses PBKDF2-HMAC-SHA256 with 100,000 iterations (NIST recommendation)
+        to derive a strong encryption key from sandbox-specific data.
         
         Returns:
             Encryption key bytes
         """
         # Use hostname + user as seed (sandbox-specific)
         import socket
+        from cryptography.hazmat.primitives import hashes
+        from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2HMAC
+        
         seed = f"{socket.gethostname()}-{os.getuid()}-manus-secrets"
         
-        # Derive 32-byte key using SHA256
-        key_material = hashlib.sha256(seed.encode()).digest()
+        # Fixed salt (acceptable for this use case as seed is already unique per sandbox)
+        salt = b'manus-secrets-salt-v1'
+        
+        # Use PBKDF2 with 100,000 iterations (NIST SP 800-132 recommendation)
+        kdf = PBKDF2HMAC(
+            algorithm=hashes.SHA256(),
+            length=32,  # 32 bytes = 256 bits
+            salt=salt,
+            iterations=100000,
+        )
+        
+        key_material = kdf.derive(seed.encode())
         
         # Encode for Fernet (base64)
         return base64.urlsafe_b64encode(key_material)
+    
+    def _log_access(self, operation: str, success: bool, **metadata):
+        """
+        Log access to secrets for audit trail
+        
+        Args:
+            operation: Operation performed (save, load, update, validate, etc.)
+            success: Whether operation succeeded
+            **metadata: Additional metadata to log
+        """
+        import socket
+        
+        log_entry = {
+            'timestamp': datetime.now().isoformat(),
+            'operation': operation,
+            'success': success,
+            'user': os.getenv('USER', 'unknown'),
+            'hostname': socket.gethostname(),
+            **metadata
+        }
+        
+        try:
+            # Append to audit log
+            with open(self.audit_log, 'a') as f:
+                f.write(json.dumps(log_entry) + '\n')
+            
+            # Set permissions on first write
+            if self.audit_log.stat().st_size == len(json.dumps(log_entry)) + 1:
+                os.chmod(self.audit_log, 0o600)
+        except Exception:
+            # Don't fail operation if logging fails
+            pass
     
     def save_keys(self, keys: Optional[Dict[str, str]] = None) -> Tuple[bool, str]:
         """
@@ -107,9 +156,14 @@ class APIKeyManager:
             # Set restrictive permissions
             os.chmod(self.secrets_file, 0o600)
             
+            # Log successful save
+            self._log_access('save', True, keys_saved=len(keys), key_names=list(keys.keys()))
+            
             return (True, f"Saved {len(keys)} keys to {self.secrets_file}")
         
         except Exception as e:
+            # Log failed save
+            self._log_access('save', False, error=str(e))
             return (False, f"Error saving keys: {e}")
     
     def load_keys(self) -> Tuple[bool, Dict[str, str], str]:
@@ -135,9 +189,14 @@ class APIKeyManager:
             keys = data.get('keys', {})
             timestamp = data.get('timestamp', 'unknown')
             
+            # Log successful load
+            self._log_access('load', True, keys_loaded=len(keys), key_names=list(keys.keys()))
+            
             return (True, keys, f"Loaded {len(keys)} keys (saved: {timestamp})")
         
         except Exception as e:
+            # Log failed load
+            self._log_access('load', False, error=str(e))
             return (False, {}, f"Error loading keys: {e}")
     
     def load_keys_to_environment(self) -> Tuple[bool, str]:
