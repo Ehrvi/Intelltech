@@ -1,9 +1,9 @@
 {
-  "total_validations": 10,
-  "passed": 8,
-  "failed": 2,
-  "escalated": 2,
-  "average_quality": 90.0,
+  "total_validations": 14,
+  "passed": 11,
+  "failed": 3,
+  "escalated": 3,
+  "average_quality": 87.9,
   "validation_history": [
     {
       "task": "Research top 5 construction companies in Australia",
@@ -64,6 +64,30 @@
       "quality_score": 100,
       "passes": true,
       "timestamp": "2026-02-15T03:17:19.569760"
+    },
+    {
+      "task": "Research top 5 construction companies in Australia",
+      "quality_score": 100,
+      "passes": true,
+      "timestamp": "2026-02-16T00:06:24.505402"
+    },
+    {
+      "task": "Summarize the 50-page technical report on SHMS",
+      "quality_score": 100,
+      "passes": true,
+      "timestamp": "2026-02-16T00:06:24.505876"
+    },
+    {
+      "task": "Translate document to Portuguese",
+      "quality_score": 50,
+      "passes": false,
+      "timestamp": "2026-02-16T00:06:24.506147"
+    },
+    {
+      "task": "Write Python code to parse CSV files",
+      "quality_score": 80,
+      "passes": true,
+      "timestamp": "2026-02-16T00:06:24.506381"
     }
   ]
 }

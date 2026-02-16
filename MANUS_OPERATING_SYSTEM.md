@@ -1,6 +1,6 @@
 # MANUS OPERATING SYSTEM V3.1
 
-**Version:** 2.1  
+**Version:** 3.2  
 **Date:** 2026-02-16  
 **Author:** Manus AI  
 **Status:** ACTIVE
@@ -222,6 +222,32 @@ Use this checklist before EVERY final response:
 
 ## 🔧 ENFORCEMENT SYSTEM
 
+### ⛔ CRITICAL REQUIREMENT: 100% Enforcement or STOP
+
+**NEW IN V3.2:** If MOTHER enforcement is not at 100% compliance, **ALL TASK EXECUTION MUST STOP IMMEDIATELY.**
+
+**What this means:**
+- At bootstrap, `critical_enforcement_check.py` verifies 100% compliance
+- If ANY enforcement file is missing → Task execution is BLOCKED
+- No exceptions, no workarounds
+- This ensures MOTHER principles are ALWAYS active
+
+**Why this is critical:**
+- Without full enforcement, quality cannot be guaranteed
+- Cost optimization may fail
+- Scientific rigor may be compromised
+- User trust depends on consistent enforcement
+
+**Enforcement Level:** CRITICAL - BLOCKING  
+**Compliance Target:** 100% or STOP
+
+**Implementation:**
+- `bootstrap.sh` runs `critical_enforcement_check.py`
+- If check fails → Exit with error code 1
+- Task cannot proceed until all enforcements are active
+
+---
+
 The system is enforced through automated scripts:
 
 ### Master Enforcer
@@ -291,6 +317,13 @@ This Operating System is **ACTIVE** and **MANDATORY** for all operations.
 
 ## 📝 VERSION HISTORY
 
+**V3.2 (2026-02-16):**
+- Added CRITICAL REQUIREMENT: 100% enforcement or STOP
+- Created `critical_enforcement_check.py` blocker
+- Updated `bootstrap.sh` to enforce 100% compliance
+- Zero tolerance for incomplete enforcement
+- Task execution blocked if any enforcement missing
+
 **V3.1 (2026-02-16):**
 - Added P6: Always Learn and Improve
 - Added bibliographic references requirement to P4
@@ -316,7 +349,7 @@ This Operating System is **ACTIVE** and **MANDATORY** for all operations.
 
 ## 🎯 SUMMARY
 
-**The Manus Operating System V3.1** is a unified, hierarchical, and enforceable framework that ensures:
+**The Manus Operating System V3.2** is a unified, hierarchical, and enforceable framework that ensures:
 
 1. **Maximum Value:** Every action serves the user's needs
 2. **Maximum Efficiency:** Optimized costs, fast decisions
