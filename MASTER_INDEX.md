@@ -195,3 +195,21 @@ READ /home/ubuntu/manus_global_knowledge/cross_project/shared_entities.md
 ---
 
 **This index is automatically updated when new knowledge is added to any project.**
+
+## Business & Marketing Knowledge
+
+### P0 - Critical (Immediate Impact)
+- [Copywriting & Storytelling](docs/reference/p0_critical/copywriting_storytelling.md) - Persuasive writing, AIDA, PAS, emotional triggers
+- [Data Visualization](docs/reference/p0_critical/data_visualization.md) - Tufte, Few, dashboard design, storytelling with data
+- [Procurement & Tender](docs/reference/p0_critical/procurement_tender.md) - RFP/RFQ/RFI, APAC compliance, bid writing
+- [Content Marketing](docs/reference/p0_critical/content_marketing.md) - SEO, thought leadership, LinkedIn strategy
+
+### P1 - Important (Strategic Value)
+- [Product Management](docs/reference/p1_important/product_management.md) - Lean, Agile, JTBD, RICE, OKRs
+- [Customer Success](docs/reference/p1_important/customer_success.md) - Health scores, churn prevention, upsell strategies
+- [Partnership Strategy](docs/reference/p1_important/partnership_strategy.md) - Channel management, co-marketing, alliances
+
+### P2 - Useful (Growth & Scale)
+- [Growth Hacking](docs/reference/p2_useful/growth_hacking.md) - AARRR, viral loops, experimentation
+- [DevOps & Cloud](docs/reference/p2_useful/devops_cloud.md) - AWS/Azure/GCP, Kubernetes, CI/CD
+- [Venture Capital](docs/reference/p2_useful/venture_capital.md) - Pitch decks, valuations, term sheets
