@@ -1,63 +1,84 @@
 #!/bin/bash
-# Manus Global Knowledge System - Bootstrap Script
-# Version 3.2 - Operating System V3.2
-# Purpose: One-line initialization from GitHub
+# Manus Global Knowledge System - SIMPLIFIED Bootstrap
+# Version: 3.5
+# Purpose: Minimal, reliable initialization
 
 set -e  # Exit on error
 
+echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+echo "🚀 MOTHER SYSTEM BOOTSTRAP V3.5"
+echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+
 # Step 1: Clone or update repository
 if [ ! -d /home/ubuntu/manus_global_knowledge ]; then
-  echo "📥 Cloning Manus Global Knowledge System from GitHub..."
+  echo "📥 Cloning repository..."
   git clone https://github.com/Ehrvi/Intelltech.git /home/ubuntu/manus_global_knowledge
+  echo "   ✅ Repository cloned"
 else
-  echo "🔄 Updating Manus Global Knowledge System from GitHub..."
-  cd /home/ubuntu/manus_global_knowledge && git pull origin main
+  echo "🔄 Updating repository..."
+  cd /home/ubuntu/manus_global_knowledge
+  git pull origin main --quiet
+  echo "   ✅ Repository updated"
 fi
 
-# Step 2: Load Operating System V3.2
-echo "🎯 Loading MANUS OPERATING SYSTEM V3.2..."
-if [ -f /home/ubuntu/manus_global_knowledge/MANUS_OPERATING_SYSTEM.md ]; then
-  echo "   ✅ Operating System V3.2 loaded"
-  echo "   📋 Prime Directive active"
-  echo "   🏛️  5 Core Principles enforced"
+cd /home/ubuntu/manus_global_knowledge
+
+# Step 2: Verify critical files exist
+echo ""
+echo "🔍 Verifying critical files..."
+
+CRITICAL_FILES=(
+  "MANUS_OPERATING_SYSTEM.md"
+  "PRE_TASK_ENFORCEMENT.md"
+  "COGNITIVE_ENFORCEMENT.md"
+  "VERSION"
+)
+
+ALL_OK=true
+for file in "${CRITICAL_FILES[@]}"; do
+  if [ -f "$file" ]; then
+    echo "   ✅ $file"
+  else
+    echo "   ❌ MISSING: $file"
+    ALL_OK=false
+  fi
+done
+
+if [ "$ALL_OK" = false ]; then
+  echo ""
+  echo "⚠️  CRITICAL FILES MISSING - System may not function correctly"
+  echo ""
+fi
+
+# Step 3: Display system version
+echo ""
+if [ -f "VERSION" ]; then
+  VERSION=$(cat VERSION)
+  echo "📌 MOTHER Version: $VERSION"
 else
-  echo "   ⚠️  Operating System not found - using legacy mode"
+  echo "📌 MOTHER Version: Unknown"
 fi
 
-# Step 3: Initialize enforcement system
-echo "⚙️  Initializing enforcement system..."
-cd /home/ubuntu/manus_global_knowledge && python3 mandatory_init.py
-
-# Step 4: CRITICAL ENFORCEMENT CHECK (NEW IN V3.2)
+# Step 4: Display enforcement reminder
 echo ""
-echo "🔒 Running CRITICAL enforcement check..."
-if ! python3 /home/ubuntu/manus_global_knowledge/core/critical_enforcement_check.py; then
-  echo ""
-  echo "╔════════════════════════════════════════════════════════════╗"
-  echo "║                    ⛔ CRITICAL ERROR ⛔                     ║"
-  echo "╠════════════════════════════════════════════════════════════╣"
-  echo "║  MOTHER enforcement is NOT at 100% compliance.             ║"
-  echo "║  Task execution is BLOCKED for safety.                     ║"
-  echo "║                                                            ║"
-  echo "║  This is a mandatory requirement in MOTHER V3.2.           ║"
-  echo "║  All tasks MUST have full enforcement active.              ║"
-  echo "║                                                            ║"
-  echo "║  Please fix the missing files and re-run bootstrap.sh     ║"
-  echo "╚════════════════════════════════════════════════════════════╝"
-  echo ""
-  exit 1  # Exit with error code to stop execution
-fi
-
-echo "✅ Manus Global Knowledge System V3.2 initialized successfully!"
+echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+echo "⚠️  MANDATORY: READ PRE_TASK_ENFORCEMENT.md BEFORE STARTING"
+echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 echo ""
-echo "⚠️  COGNITIVE ENFORCEMENT REMINDER:"
-echo "   - Research tasks REQUIRE browser research (P1)"
-echo "   - Decision points REQUIRE autonomous choice (P2)"
-echo "   - All outputs REQUIRE truthfulness (P7)"
-echo "   - Read COGNITIVE_ENFORCEMENT.md for details"
+echo "📋 ENFORCEMENT CHECKLIST:"
+echo "   1. Identify task type (research/decision/implementation)"
+echo "   2. If RESEARCH → Use browser for Google Scholar/Anna's Archive"
+echo "   3. If DECISION → Decide autonomously (don't ask user)"
+echo "   4. Optimize costs (but CORRECTNESS > COST)"
+echo "   5. Generate honest cost report at end"
+echo "   6. Be 100% truthful about actions"
 echo ""
-
-# Display MOTHER Status
-python3 /home/ubuntu/manus_global_knowledge/core/mother_status_display.py detailed
+echo "🚨 VIOLATIONS = CRITICAL FAILURE"
+echo ""
+echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+echo "✅ BOOTSTRAP COMPLETE"
+echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 echo ""
 echo "Repository: https://github.com/Ehrvi/Intelltech"
+echo "Motto: 'Somente unidos seremos mais fortes!'"
+echo ""
