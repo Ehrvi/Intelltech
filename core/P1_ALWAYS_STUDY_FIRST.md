@@ -18,6 +18,30 @@
 
 ---
 
+## ENFORCEMENT V3.3 (NEW)
+
+Enforcement is no longer just declarative; it is programmatic and non-negotiable.
+
+### 1. P1 Enforcer (`P1_enforcer.py` - To Be Implemented)
+
+-   **Function:** `check_proof_of_research(task_type, browser_history)`
+-   **Logic:**
+    -   If a task is marked as `research` or `knowledge_creation`, this script will verify that the browser history contains visits to relevant academic or source domains.
+    -   If no such history exists, it **BLOCKS** the task from proceeding. An AI-generated summary is **NOT** research.
+
+### 2. Citation Integrity Protocol (ACTIVE)
+
+-   **File:** `core/CITATION_INTEGRITY_PROTOCOL.md`
+-   **Logic:** This protocol is now a core part of P1. Studying includes understanding how to cite sources with integrity. Any violation is a P1 violation.
+-   **Enforcement:** `source_verifier.py` will block outputs with unverified citations.
+
+### 3. Pre-Delivery Self-Audit (ACTIVE)
+
+-   **File:** `core/pre_delivery_audit.py`
+-   **Logic:** Before delivering a final result, the agent MUST pass a self-audit that includes the question: "Did I *really* study first, and is there proof?"
+
+---
+
 ## ENFORCEMENT RULES
 
 ### BLOCKING Violations
@@ -137,14 +161,14 @@ Minimum sources:
 ## ANTI-PATTERNS
 
 ### ❌ DON'T DO THIS
-1. Act without studying
-2. Rely on single source
-3. Skip Anna's Archive for research
-4. Make assumptions
-5. Ignore existing knowledge
-6. No cross-referencing
-7. Skip scientific method
-8. No citations
+1. **Act without studying (CRITICAL VIOLATION)**
+2. **Rely on a single source**
+3. **Skip Anna's Archive for academic research**
+4. **Make assumptions without validation**
+5. **Ignore the existing knowledge base**
+6. **Use an AI-generated list of papers as final research (CRITICAL VIOLATION)**
+7. **Cite a source without verifying its existence and reading it (CRITICAL VIOLATION)**
+8. **Claim to have researched without proof (e.g., browser history)**
 
 ### ✅ DO THIS INSTEAD
 1. Study first, act second

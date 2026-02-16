@@ -99,6 +99,14 @@ def critical_enforcement_check() -> bool:
         "visual_identity_detector.py"
     ):
         all_checks_passed = False
+
+    # Check 9: Citation Integrity Protocol
+    print(f"\n{BOLD}9. Citation Integrity Protocol{RESET}")
+    if not check_file_exists(
+        str(base_path / "core" / "CITATION_INTEGRITY_PROTOCOL.md"),
+        "CITATION_INTEGRITY_PROTOCOL.md"
+    ):
+        all_checks_passed = False
     
     # Check 8: Guardian Validation
     print(f"\n{BOLD}8. Guardian Quality Validation{RESET}")

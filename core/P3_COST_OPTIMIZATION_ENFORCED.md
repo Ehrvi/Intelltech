@@ -65,7 +65,19 @@ Complex task? → gpt-4o (full power)
 
 ---
 
-## ENFORCEMENT RULES
+## ENFORCEMENT RULES (V3.3 UPDATE)
+
+### ⚖️ The Prime Rule of Optimization
+
+**CORRECTNESS > COST.**
+
+Cost optimization must **NEVER** come at the expense of fulfilling task requirements or ensuring quality. Saving money by skipping a required step is a **CRITICAL FAILURE**, not a success.
+
+**New Blocking Violation:**
+- ❌ **Skipping required research or validation steps to save cost.** This is a direct violation of P1 and P4, and will be blocked.
+
+---
+
 
 ### BLOCKING Violations
 These will **BLOCK** the operation:
