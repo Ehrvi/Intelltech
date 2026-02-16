@@ -1,0 +1,73 @@
+name: Research Task Lifecycle
+description: Checklist for research-intensive tasks requiring literature review, analysis, and documentation.
+
+phases:
+  - phase: 1  # Literature Search
+    items:
+      - id: search_queries_defined
+        text: "Search queries and keywords defined"
+        priority: critical
+      
+      - id: sources_identified
+        text: "Relevant papers/articles identified (minimum 3-5)"
+        priority: critical
+      
+      - id: sources_accessed
+        text: "All identified sources accessed and downloaded"
+        priority: normal
+
+  - phase: 2  # Study & Analysis
+    items:
+      - id: papers_read
+        text: "All papers/articles read and understood"
+        priority: critical
+      
+      - id: key_findings_extracted
+        text: "Key findings extracted and documented"
+        priority: critical
+      
+      - id: citations_recorded
+        text: "Citations properly recorded with URLs"
+        priority: normal
+
+  - phase: 3  # Synthesis
+    items:
+      - id: findings_consolidated
+        text: "Findings consolidated into coherent synthesis"
+        priority: critical
+      
+      - id: gaps_identified
+        text: "Gaps and limitations identified"
+        priority: normal
+      
+      - id: recommendations_made
+        text: "Recommendations based on research"
+        priority: normal
+
+  - phase: 4  # Documentation
+    items:
+      - id: research_doc_created
+        text: "Research document created with all findings"
+        priority: critical
+      
+      - id: references_section_complete
+        text: "References section complete with all citations"
+        priority: critical
+      
+      - id: executive_summary_written
+        text: "Executive summary written"
+        priority: normal
+
+  - phase: 5  # Delivery
+    items:
+      - id: document_reviewed
+        text: "Document reviewed for accuracy and completeness"
+        priority: critical
+      
+      - id: findings_saved
+        text: "All findings saved to appropriate location"
+        priority: critical
+      
+      - id: deliverables_prepared
+        text: "All deliverables prepared for user"
+        priority: critical

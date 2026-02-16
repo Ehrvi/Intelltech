@@ -1,0 +1,77 @@
+name: Standard Software Development Lifecycle
+description: Comprehensive checklist for software development tasks with research, implementation, integration, and delivery phases.
+
+phases:
+  - phase: 1  # Research & Planning
+    items:
+      - id: research_complete
+        text: "Research papers/documentation reviewed and findings documented"
+        priority: critical
+      
+      - id: design_doc_created
+        text: "Design document created with architecture and approach"
+        priority: normal
+      
+      - id: requirements_clear
+        text: "Requirements are clear and unambiguous"
+        priority: critical
+
+  - phase: 2  # Implementation
+    items:
+      - id: code_written
+        text: "All code modules implemented"
+        priority: critical
+      
+      - id: unit_tests_passing
+        text: "Unit tests written and passing (>90% coverage)"
+        priority: critical
+      
+      - id: code_documented
+        text: "Code is documented with docstrings and comments"
+        priority: normal
+
+  - phase: 3  # Integration
+    items:
+      - id: integration_complete
+        text: "Component integrated into main system"
+        priority: critical
+      
+      - id: integration_tests_passing
+        text: "Integration tests passing"
+        priority: critical
+      
+      - id: bootstrap_updated
+        text: "Bootstrap script updated if needed"
+        priority: normal
+
+  - phase: 4  # Verification
+    items:
+      - id: e2e_test_passing
+        text: "End-to-end verification test passed"
+        priority: critical
+      
+      - id: system_activated
+        text: "System is active and operational"
+        priority: critical
+      
+      - id: health_check_passing
+        text: "Health check confirms all systems operational"
+        priority: critical
+
+  - phase: 5  # Documentation & Delivery
+    items:
+      - id: user_docs_complete
+        text: "User documentation is complete and accurate"
+        priority: normal
+      
+      - id: usage_examples_provided
+        text: "Usage examples and guides provided"
+        priority: normal
+      
+      - id: changes_committed
+        text: "All changes committed to version control"
+        priority: critical
+      
+      - id: delivery_report_created
+        text: "Delivery report created with summary and results"
+        priority: normal
