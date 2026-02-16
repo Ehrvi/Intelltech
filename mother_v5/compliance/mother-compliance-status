@@ -1,0 +1,95 @@
+#!/usr/bin/env python3
+"""
+MOTHER V5 - Compliance Status CLI
+==================================
+
+Command-line tool to check MOTHER compliance status.
+
+Usage:
+    mother-compliance-status              # Show dashboard
+    mother-compliance-status violations   # Show recent violations
+    mother-compliance-status report       # Show compliance report
+
+Author: MOTHER V5 Compliance System
+Version: 1.0.0
+Date: 2026-02-16
+"""
+
+import sys
+from pathlib import Path
+
+# Add compliance system to path
+sys.path.insert(0, str(Path(__file__).parent.parent))
+
+from compliance.compliance_dashboard import COMPLIANCE_DASHBOARD
+from compliance.compliance_report import COMPLIANCE_REPORT
+from compliance.violation_logger import VIOLATION_LOGGER
+
+
+def show_help():
+    """Show help message."""
+    print("""
+MOTHER V5 - Compliance Status CLI
+
+Usage:
+    mother-compliance-status              # Show dashboard
+    mother-compliance-status violations   # Show recent violations
+    mother-compliance-status report       # Show compliance report
+    mother-compliance-status summary      # Show violation summary
+    mother-compliance-status help         # Show this help
+
+Options:
+    --days N    Number of days to include (default: 7)
+    --limit N   Limit number of violations shown (default: 10)
+""")
+
+
+def main():
+    """Main entry point."""
+    args = sys.argv[1:]
+    
+    if not args or args[0] == "dashboard":
+        # Show dashboard
+        days = 7
+        if "--days" in args:
+            idx = args.index("--days")
+            if idx + 1 < len(args):
+                days = int(args[idx + 1])
+        
+        print(COMPLIANCE_DASHBOARD.get_status(days))
+    
+    elif args[0] == "violations":
+        # Show recent violations
+        limit = 10
+        if "--limit" in args:
+            idx = args.index("--limit")
+            if idx + 1 < len(args):
+                limit = int(args[idx + 1])
+        
+        print(COMPLIANCE_DASHBOARD.get_recent_violations(limit))
+    
+    elif args[0] == "report":
+        # Show compliance report
+        print(COMPLIANCE_REPORT.generate())
+    
+    elif args[0] == "summary":
+        # Show violation summary
+        days = 7
+        if "--days" in args:
+            idx = args.index("--days")
+            if idx + 1 < len(args):
+                days = int(args[idx + 1])
+        
+        print(VIOLATION_LOGGER.generate_summary(days))
+    
+    elif args[0] == "help":
+        show_help()
+    
+    else:
+        print(f"Unknown command: {args[0]}")
+        print("Run 'mother-compliance-status help' for usage.")
+        sys.exit(1)
+
+
+if __name__ == "__main__":
+    main()
