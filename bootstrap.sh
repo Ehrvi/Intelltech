@@ -23,6 +23,33 @@ fi
 
 cd /home/ubuntu/manus_global_knowledge
 
+# Step 1.5: Load API keys from persistent storage
+echo ""
+echo "🔑 Loading API keys from persistent storage..."
+
+if [ -f "core/api_key_manager.py" ]; then
+  # Try to load saved keys
+  LOAD_OUTPUT=$(python3 core/api_key_manager.py load 2>&1)
+  LOAD_STATUS=$?
+  
+  if [ $LOAD_STATUS -eq 0 ]; then
+    # Extract export commands and execute them
+    echo "$LOAD_OUTPUT" | grep "^export" | while read -r line; do
+      eval "$line"
+    done
+    echo "   ✅ API keys loaded from persistent storage"
+    
+    # Save current keys (in case Manus provided new ones)
+    python3 core/api_key_manager.py save > /dev/null 2>&1
+  else
+    echo "   ⚠️  No saved keys found - using Manus-provided keys"
+    # Save Manus-provided keys for next time
+    python3 core/api_key_manager.py save > /dev/null 2>&1
+  fi
+else
+  echo "   ⚠️  API Key Manager not found"
+fi
+
 # Step 2: Verify critical files exist
 echo ""
 echo "🔍 Verifying critical files..."
