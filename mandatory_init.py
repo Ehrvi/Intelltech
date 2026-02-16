@@ -106,6 +106,10 @@ def verify_system_health() -> bool:
         "core_modules": (BASE_PATH / "core").exists(),
         "ai_university": (BASE_PATH / "ai_university").exists(),
         "metrics": (BASE_PATH / "metrics").exists(),
+        "scientific_enforcement": (BASE_PATH / "core" / "mandatory_scientific_enforcement.py").exists(),
+        "cost_reporter": (BASE_PATH / "core" / "auto_cost_reporter.py").exists(),
+        "visual_identity_detector": (BASE_PATH / "core" / "visual_identity_detector.py").exists(),
+        "design_system_generator": (BASE_PATH / "modules" / "design_system_generator.py").exists(),
     }
     
     all_passed = all(checks.values())
@@ -162,7 +166,16 @@ def main():
         print("  • Knowledge reuse (prevent duplicates)")
         print("  • Quality assurance (Guardian ≥80%)")
         print("  • Scientific methodology (12 steps)")
+        print("  • Bibliographic references (MANDATORY)")
+        print("  • Anna's Archive integration (MANDATORY for academic research)")
+        print("  • Automatic visual identity detection (Nível 3)")
         print("  • Continuous learning")
+        print()
+        print("⚠️  MANDATORY ENFORCEMENT ACTIVE:")
+        print("  • EVERY output MUST follow MOTHER Operating System V2.0")
+        print("  • EVERY scientific claim MUST have bibliographic reference")
+        print("  • EVERY conversation MUST end with cost report")
+        print("  • Violations = BLOCKING (output will be rejected)")
     else:
         print("⚠️  SYSTEM INITIALIZATION INCOMPLETE")
         print("Please check errors above and fix before proceeding.")
