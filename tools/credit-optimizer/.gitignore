@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Logs
+logs/*.log
+*.jsonl
+
+# Reports (keep directory structure but not generated reports)
+reports/*.txt
+reports/*.json
+
+# Cache
+.semantic_cache/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.bak
